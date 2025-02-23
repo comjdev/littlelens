@@ -1,0 +1,19 @@
+<!-- Slider main container -->
+<div class="swiper w-full mb-10">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+		<% for (let i = 0; i < 12; i++) { %>
+		<div class="swiper-slide">
+			<figure>
+				<img
+					class="slide-image"
+					src="<%= 'img/photo-' + (i + 1) + '.jpg' %>"
+					alt="Childcare Photographer Melbourne"
+					loading="eager"
+				/>
+			</figure>
+		</div>
+		<% } %>
+	</div>
+</div>

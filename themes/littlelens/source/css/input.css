@@ -1,3 +1,87 @@
 @import "tailwindcss";
 @plugin "flowbite/plugin";
 @source "../../../../node_modules/flowbite";
+
+@theme {
+	--color-primary-50: #f2fbf5;
+	--color-primary-100: #e0f8e7;
+	--color-primary-200: #c2f0d1;
+	--color-primary-300: #93e2ae;
+	--color-primary-400: #50c878;
+	--color-primary-500: #36b15f;
+	--color-primary-600: #27924c;
+	--color-primary-700: #22733d;
+	--color-primary-800: #205b34;
+	--color-primary-900: #1c4b2e;
+	--color-primary-950: #0a2916;
+
+	--color-blue-50: #f2f9fd;
+	--color-blue-100: #e4f1fa;
+	--color-blue-200: #c3e4f4;
+	--color-blue-300: #71c2e5;
+	--color-blue-400: #53b6dd;
+	--color-blue-500: #2c9dcb;
+	--color-blue-600: #1d7eac;
+	--color-blue-700: #19658b;
+	--color-blue-800: #185674;
+	--color-blue-900: #1a4760;
+	--color-blue-950: #112e40;
+
+	--color-yellow-50: #fffbeb;
+	--color-yellow-100: #fff5c6;
+	--color-yellow-200: #ffe988;
+	--color-yellow-300: #ffd84a;
+	--color-yellow-400: #ffc72b;
+	--color-yellow-500: #f9a307;
+	--color-yellow-600: #dd7a02;
+	--color-yellow-700: #b75606;
+	--color-yellow-800: #94410c;
+	--color-yellow-900: #7a360d;
+	--color-yellow-950: #461b02;
+
+	--font-sans: "Alegreya Sans", serif;
+	--font-body: "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
+}
+
+.swiper {
+	width: 100%;
+}
+/* .swiper-wrapper {
+	width: 50%;
+} */
+.swiper-slide {
+	text-align: center;
+	width: auto;
+}
+.slide-image {
+	height: 400px;
+	width: auto;
+}
+
+.gradient {
+	background: radial-gradient(
+		circle,
+		var(--color-blue-700),
+		var(--color-yellow-100)
+	);
+	background-clip: text;
+	color: transparent;
+	animation: gradient 15s linear infinite;
+	background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}

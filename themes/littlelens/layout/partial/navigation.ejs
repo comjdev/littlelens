@@ -1,0 +1,10 @@
+<nav class="hidden md:flex space-x-10">
+	<% for (var i in theme.menu){ %>
+	<a
+		class="text-gray-300 hover:text-white"
+		href="<%- url_for(theme.menu[i]) %>"
+	>
+		<%= i %>
+	</a>
+	<% } %>
+</nav>

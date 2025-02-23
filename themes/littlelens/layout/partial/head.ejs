@@ -4,19 +4,16 @@
 	<title><%= config.title %></title>
 	<meta name="description" content="<%= config.description %>" />
 	<meta name="author" content="<%= config.author %>" />
-	<link rel="stylesheet" href="/css/styles.css" />
-	<link rel="stylesheet" href="<%= url_for('/css/littlelens.css') %>" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+		rel="stylesheet"
+	/>
 
-	<script>
-		// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-		if (
-			localStorage.getItem("color-theme") === "dark" ||
-			(!("color-theme" in localStorage) &&
-				window.matchMedia("(prefers-color-scheme: dark)").matches)
-		) {
-			document.documentElement.classList.add("dark");
-		} else {
-			document.documentElement.classList.remove("dark");
-		}
-	</script>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="stylesheet" href="/css/styles.css" />
 </head>

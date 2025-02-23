@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
+title: Little Lens
+subtitle: "Childcare Photography in Melbourne"
+description: "Individual portraits, group photos, and candid moments - Little Lens specializes in capturing the joy of childhood at childcare centres across Melbourne. Serving all suburbs.  Contact us for package details."
 keywords:
-author: John Doe
+author: Gill Jürgens
 language: en
 timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://littlelens.com.au
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
