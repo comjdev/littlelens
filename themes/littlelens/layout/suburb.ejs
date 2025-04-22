@@ -17,9 +17,7 @@
 	>
 		<article class="format w-full md:pr-8 lg:pr-16 xl:pr-32">
 			<p class="lead"><%= page.summary %></p>
-			<section class="format format-sm sm:format-base lg:format-lg">
-				<%- page.content %>
-			</section>
+			<section><%- page.content %></section>
 			<%- partial('partial/suburbs/contact', {suburb: page.suburb}) %>
 		</article>
 		<!-- Sidebar -->
