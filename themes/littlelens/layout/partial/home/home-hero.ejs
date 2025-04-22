@@ -1,24 +1,155 @@
-<section class="bg-white">
-	<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-		<h1
-			class="mb-2 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl gradient"
-		>
-			<span class="inline-block h-12 -mb-1 fill-blue-500"
-				><%- getSvg('logos/logo.svg') %></span
-			>
-			Little Lens
-		</h1>
-		<h2
-			class="mb-10 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl"
-		>
-			Childcare Photography in Melbourne
-		</h2>
-		<p
-			class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48"
-		>
-			Capturing precious moments of childhood with warmth and fun, Gill is a
-			dedicated childcare photographer in Melbourne, specialising in natural,
-			heartfelt images that families will treasure forever.
-		</p>
+<section class="antialiased">
+	<div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+		<div class="flex flex-col gap-8 lg:items-center lg:gap-16 lg:flex-row">
+			<div class="lg:max-w-xl xl:shrink-0">
+				<div>
+					<h1
+						class="text-3xl font-extrabold leading-none tracking-tight text-gray-900 sm:text-5xl"
+					>
+						Little Lens - Childcare Photography in Melbourne
+					</h1>
+					<p
+						class="mt-5 text-base font-normal text-gray-500 md:max-w-3xl sm:text-xl"
+					>
+						Capturing precious moments of childhood with warmth and fun, Gill is
+						a dedicated childcare photographer in Melbourne, specialising in
+						natural, heartfelt images that families will treasure forever.
+					</p>
+				</div>
+
+				<div class="flex flex-col gap-4 mt-8 sm:flex-row">
+					<a
+						href="/families-faqs"
+						class="sm:w-[182px] px-5 py-3 w-full text-base font-medium text-center text-white bg-little-lens-light-700 rounded-lg shrink-0 hover:bg-primary-800 hover:bg-little-lens-light-800"
+						role="button"
+					>
+						Parents Info
+					</a>
+
+					<a
+						href="/childcare-centre-faqs"
+						class="sm:w-[182px] inline-flex w-full justify-center items-center px-5 py-3 text-base font-medium text-center text-white bg-little-lens-green-900 border rounded-lg shrink-0 focus:outline-none hover:text-little-lens-green-100 hover:bg-little-lens-green-800"
+						role="button"
+					>
+						Childcare Centers Info
+					</a>
+				</div>
+			</div>
+
+			<div id="default-carousel" class="relative w-full" data-carousel="slide">
+				<!-- Carousel wrapper -->
+				<div
+					class="relative h-56 overflow-hidden rounded-lg md:h-96 bg-little-lens-light-900"
+				>
+					<% for (let i = 1; i < 5; i++) { %>
+					<div
+						class="hidden duration-700 ease-in-out rounded-lg"
+						data-carousel-item
+					>
+						<img
+							src="<%= 'img/slider/slide-' + i + '.jpg' %>"
+							class="absolute rounded-lg block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="Childcare Photography in Melbourne"
+							width="600"
+							height="400"
+						/>
+					</div>
+					<% } %>
+				</div>
+				<!-- Slider indicators -->
+				<div
+					class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+				>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="true"
+						aria-label="Slide 1"
+						data-carousel-slide-to="0"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 2"
+						data-carousel-slide-to="1"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 3"
+						data-carousel-slide-to="2"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 4"
+						data-carousel-slide-to="3"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 5"
+						data-carousel-slide-to="4"
+					></button>
+				</div>
+				<!-- Slider controls -->
+				<button
+					type="button"
+					class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+					data-carousel-prev
+				>
+					<span
+						class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+					>
+						<svg
+							aria-hidden="true"
+							class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 19l-7-7 7-7"
+							></path>
+						</svg>
+						<span class="sr-only">Previous</span>
+					</span>
+				</button>
+				<button
+					type="button"
+					class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+					data-carousel-next
+				>
+					<span
+						class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+					>
+						<svg
+							aria-hidden="true"
+							class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 5l7 7-7 7"
+							></path>
+						</svg>
+						<span class="sr-only">Next</span>
+					</span>
+				</button>
+			</div>
+		</div>
 	</div>
 </section>

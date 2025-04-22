@@ -22,6 +22,7 @@
 		"hexo-generator-archive": "^2.0.0",
 		"hexo-generator-category": "^2.0.0",
 		"hexo-generator-index": "^4.0.0",
+		"hexo-generator-sitemap": "^3.0.1",
 		"hexo-generator-tag": "^2.0.0",
 		"hexo-renderer-ejs": "^2.0.0",
 		"hexo-renderer-marked": "^7.0.0",
@@ -32,8 +33,10 @@
 		"swiper": "^11.2.2"
 	},
 	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.16",
 		"autoprefixer": "^10.4.20",
 		"concurrently": "^9.0.1",
+		"flowbite-typography": "^1.0.5",
 		"tailwindcss": "^4.0.3"
 	}
 }

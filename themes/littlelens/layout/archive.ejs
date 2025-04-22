@@ -1,0 +1,31 @@
+<section class="antialiased">
+	<div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+		<div class="max-w-2xl mx-auto text-center">
+			<h2
+				class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl"
+			>
+				Childcare Photography Blog
+			</h2>
+			<p class="mt-4 text-base font-normal text-gray-500 sm:text-xl">
+				Step into the heart of Melbourne’s childcare moments, captured one
+				precious frame at a time. My blog is where photography meets
+				storytelling — a collection of tips, behind-the-scenes peeks, and
+				heartwarming highlights from my work with childcare centres across the
+				city.
+			</p>
+			<p class="mt-4 text-base font-normal text-gray-500 sm:text-xl">
+				Whether you're a parent, educator, or fellow creative, you'll find
+				inspiration here through the lens of early learning, laughter, and
+				genuine connection. Take a scroll through the stories that celebrate
+				childhood in all its beautifully messy magic.
+			</p>
+		</div>
+
+		<div
+			class="grid grid-cols-1 gap-12 mt-12 sm:gap-8 lg:gap-16 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3"
+		>
+			<% page.posts.each(function(post){ %> <%- partial('partial/article-card',
+			{ post: post }) %> <% }) %>
+		</div>
+	</div>
+</section>

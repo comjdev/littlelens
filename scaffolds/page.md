@@ -1,4 +1,5 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title: { { title } }
+subtitle: { { subtitle } }
+description: { { summary } }
 ---

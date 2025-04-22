@@ -1,0 +1,38 @@
+<section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+	<div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+		<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+			Childcare Photography Blog
+		</h2>
+		<p class="font-light text-gray-500 sm:text-xl">
+			Discover helpful tips, creative tricks, and expert insights on capturing
+			the joy and wonder of early childhood in our Melbourne childcare
+			photography blog.
+		</p>
+	</div>
+	<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+		<% site.posts.sort('date', -1).limit(3).forEach(function(post) { %> <%-
+		partial('partial/article-card', { post: post }) %> <% }) %>
+	</div>
+
+	<div class="flex justify-center mt-10">
+		<a
+			href="/blog"
+			class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-little-lens-green-600 rounded-lg hover:bg-little-lens-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+		>
+			See all blog posts
+			<svg
+				aria-hidden="true"
+				class="w-4 h-4 ml-2 -mr-1"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M10.293 15.293a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 12.586l4.293-4.293a1 1 0 011.414 1.414l-5 5z"
+					clip-rule="evenodd"
+				></path>
+			</svg>
+		</a>
+	</div>
+</section>

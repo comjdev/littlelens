@@ -1,0 +1,39 @@
+<main class="pb-16 lg:pb-24 antialiased">
+	<header class="py-12">
+		<div class="px-4 mx-auto w-full max-w-screen-xl text-center">
+			<h1
+				class="mx-auto mb-4 max-w-2xl text-2xl font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl"
+			>
+				<%= page.title %>
+			</h1>
+			<p class="text-lg font-normal text-gray-500">
+				Professional childcare photography services to families and childcare
+				centres in <%= page.suburb %> and surrounding suburbs
+			</p>
+		</div>
+	</header>
+	<div
+		class="flex relative z-20 justify-between px-4 mx-auto max-w-screen-xl rounded"
+	>
+		<article class="w-full max-w-none">
+			<p class="lead"><%= page.summary %></p>
+			<section class="format format-sm sm:format-base lg:format-lg">
+				<%- page.content %>
+			</section>
+			<%- partial('partial/suburbs/contact', {suburb: page.suburb}) %>
+		</article>
+		<aside class="hidden xl:block" aria-labelledby="sidebar-label">
+			<div class="xl:w-[336px] sticky top-6">
+				<h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+				<!-- Contact -->
+				<%- partial('partial/aside/contact') %>
+
+				<!-- Info -->
+				<%- partial('partial/aside/info') %>
+
+				<!-- Latest Posts -->
+				<%-partial('partial/aside/latest-posts') %>
+			</div>
+		</aside>
+	</div>
+</main>

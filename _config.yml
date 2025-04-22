@@ -5,16 +5,16 @@
 # Site
 title: Little Lens
 subtitle: "Childcare Photography in Melbourne"
-description: "Individual portraits, group photos, and candid moments - Little Lens specializes in capturing the joy of childhood at childcare centres across Melbourne. Serving all suburbs.  Contact us for package details."
+description: "Individual portraits, group photos, and candid moments - Little Lens specialises in capturing the joy of childhood at childcare centres across Melbourne. Serving all suburbs. Contact us for package details."
 keywords:
 author: Gill Jürgens
 language: en
-timezone: ""
+timezone: "Australia/Melbourne"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://littlelens.com.au
-permalink: :year/:month/:day/:title/
+url: https://littlelens.com.au
+permalink: blog/:slug/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -24,7 +24,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: blog
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -40,7 +40,7 @@ external_link:
   exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -89,8 +89,8 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+include: []
+exclude: []
 ignore:
 
 # Extensions
@@ -102,3 +102,7 @@ theme: littlelens
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+#sitemap
+sitemap:
+path: sitemap.xml

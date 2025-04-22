@@ -1,19 +1,93 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title><%= config.title %></title>
-	<meta name="description" content="<%= config.description %>" />
-	<meta name="author" content="<%= config.author %>" />
+	<title>
+		<% if (page.title) { %> <%= page.title %> | Childcare Photography Melbourne
+		<% } else { %> <%= config.title %> | Childcare Photography Melbourne <% } %>
+	</title>
+	<meta
+		name="description"
+		content="<%= page.description || config.description %>"
+	/>
+	<meta name="author" content="<%= page.author || config.author %>" />
+
+	<!-- Open Graph Meta Tags -->
+	<meta property="og:title" content="<%= page.title || config.title %>" />
+	<meta
+		property="og:description"
+		content="<%= page.description || config.description %>"
+	/>
+	<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
+	<meta property="og:url" content="<%= config.url + '/' + page.path %>" />
+	<% if (page.cover) { %>
+	<meta
+		property="og:image"
+		content="<%= config.url + url_for(page.asset_dir + page.cover) %>"
+	/>
+	<% } %>
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="<%= page.title || config.title %>" />
+	<meta
+		name="twitter:description"
+		content="<%= page.description || config.description %>"
+	/>
+	<% if (page.cover) { %>
+	<meta
+		name="twitter:image"
+		content="<%= config.url + url_for(page.asset_dir + page.cover) %>"
+	/>
+	<% } %>
+
+	<meta name="geo.region" content="AU-VIC" />
+	<meta name="geo.placename" content="Boronia" />
+	<meta name="geo.position" content="-37.8627;145.2857" />
+	<meta name="ICBM" content="-37.8627, 145.2857" />
+
+	<link rel="canonical" href="<%= config.url + '/' + page.path %>" />
+
+	<link rel="icon" href="/logos/favicon.png" type="image/png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
 		rel="stylesheet"
 	/>
-
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
 	<link
 		rel="stylesheet"
 		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 	/>
 	<link rel="stylesheet" href="/css/styles.css" />
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Little Lens - Childcare Photography Melbourne",
+			"image": "<%= config.url %>/img/logos/logo.png",
+			"url": "<%= config.url %>",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Boronia",
+				"addressRegion": "VIC",
+				"postalCode": "3155",
+				"addressCountry": "AU"
+			},
+			"telephone": "+61 403 188 674",
+			"description": "<%= config.description %>"
+		}
+	</script>
 </head>

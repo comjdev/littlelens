@@ -1,0 +1,32 @@
+<section class="max-w-xl">
+	<!-- Text & Button -->
+
+	<h2 class="text-2xl font-bold text-gray-900 my-4">
+		Let's talk about your <%= suburb %> Childcare Centre
+	</h2>
+	<!-- Image -->
+
+	<img
+		src="<%= url_for('img/gill-about.jpg') %>"
+		alt="Childcare photographer in <%= suburb %> capturing happy children"
+		class="rounded-lg shadow-lg max-w-md h-auto mb-4"
+		loading="lazy"
+	/>
+	<h3 class="text-2xl font-bold text-gray-900 mb-4">Hi, I'm Gill</h3>
+	<p class="mb-4 text-lg text-gray-700">
+		If you’re looking for a friendly, professional
+		<strong>childcare photographer in <%= suburb %></strong>, I’d love to hear
+		from you. I work closely with centre directors, educators, and families to
+		ensure a relaxed, enjoyable photo day that everyone loves.
+	</p>
+	<p class="mb-6 text-lg text-gray-700">
+		Whether your centre is in <strong><%= suburb %></strong> or in one of its
+		surrounding suburbs, I'm here to make capturing childhood moments simple,
+		natural, and fun.
+	</p>
+	<a
+		href="/contact"
+		class="bg-little-lens-green-700 text-little-lens-light-300 hover:bg-little-lens-green-800 rounded-md px-7 py-3 no-underline"
+		>Get in touch</a
+	>
+</section>

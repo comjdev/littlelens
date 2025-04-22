@@ -1,1 +1,26 @@
-<h1 class="text-blue-400">This is a page</h1>
+<main class="pb-16 lg:pb-24 antialiased">
+	<header class="py-12">
+		<div class="px-4 mx-auto w-full max-w-screen-xl text-center">
+			<h1
+				class="mx-auto mb-4 max-w-2xl text-2xl font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl"
+			>
+				<%= page.title %>
+			</h1>
+			<p class="text-lg font-normal text-gray-500"><%= page.subtitle %></p>
+		</div>
+	</header>
+	<div
+		class="flex relative z-20 justify-between px-4 mx-auto max-w-screen-xl rounded"
+	>
+		<article class="format w-full md:pr-8 lg:pr-16 xl:pr-32">
+			<!-- <article
+			class="format format-sm sm:format-base lg:format-lg w-full max-w-none"
+		> -->
+			<p class="lead"><%= page.summary %></p>
+			<%- page.content %>
+		</article>
+		<!-- Sidebar -->
+		<%- partial('partial/sidebar', {contact: false, info: true, latestPosts:
+		true, familyPhotos: true}) %>
+	</div>
+</main>

@@ -1,46 +1,69 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @plugin "flowbite/plugin";
 @source "../../../../node_modules/flowbite";
 
 @theme {
-	--color-primary-50: #f2fbf5;
-	--color-primary-100: #e0f8e7;
-	--color-primary-200: #c2f0d1;
-	--color-primary-300: #93e2ae;
-	--color-primary-400: #50c878;
-	--color-primary-500: #36b15f;
-	--color-primary-600: #27924c;
-	--color-primary-700: #22733d;
-	--color-primary-800: #205b34;
-	--color-primary-900: #1c4b2e;
-	--color-primary-950: #0a2916;
+	--color-little-lens-green-50: #f7fcfb;
+	--color-little-lens-green-100: #f5fcfa;
+	--color-little-lens-green-200: #e1f7ee;
+	--color-little-lens-green-300: #d3f5e5;
+	--color-little-lens-green-400: #b2ebcc;
+	--color-little-lens-green-500: #93e2ae;
+	--color-little-lens-green-600: #78cc94;
+	--color-little-lens-green-700: #54ab6e;
+	--color-little-lens-green-800: #35874c;
+	--color-little-lens-green-900: #1e6630;
+	--color-little-lens-green-950: #0d4219;
 
-	--color-blue-50: #f2f9fd;
-	--color-blue-100: #e4f1fa;
-	--color-blue-200: #c3e4f4;
-	--color-blue-300: #71c2e5;
-	--color-blue-400: #53b6dd;
-	--color-blue-500: #2c9dcb;
-	--color-blue-600: #1d7eac;
-	--color-blue-700: #19658b;
-	--color-blue-800: #185674;
-	--color-blue-900: #1a4760;
-	--color-blue-950: #112e40;
+	--color-little-lens-light-50: #ffffff;
+	--color-little-lens-light-100: #fcfffe;
+	--color-little-lens-light-200: #fcfffe;
+	--color-little-lens-light-300: #f7fcfa;
+	--color-little-lens-light-400: #f2fcf7;
+	--color-little-lens-light-500: #e9f9ee;
+	--color-little-lens-light-600: #bfe0c9;
+	--color-little-lens-light-700: #82ba92;
+	--color-little-lens-light-800: #549665;
+	--color-little-lens-light-900: #2f703e;
+	--color-little-lens-light-950: #13471e;
 
-	--color-yellow-50: #fffbeb;
-	--color-yellow-100: #fff5c6;
-	--color-yellow-200: #ffe988;
-	--color-yellow-300: #ffd84a;
-	--color-yellow-400: #ffc72b;
-	--color-yellow-500: #f9a307;
-	--color-yellow-600: #dd7a02;
-	--color-yellow-700: #b75606;
-	--color-yellow-800: #94410c;
-	--color-yellow-900: #7a360d;
-	--color-yellow-950: #461b02;
+	--color-gray-50: #f7f7f7;
+	--color-gray-100: #ededed;
+	--color-gray-200: #d4d4d4;
+	--color-gray-300: #b8b8b8;
+	--color-gray-400: #828282;
+	--color-gray-500: #4d4d4d;
+	--color-gray-600: #453e3e;
+	--color-gray-700: #382a2a;
+	--color-gray-800: #2e1c1c;
+	--color-gray-900: #210f0f;
+	--color-gray-950: #170707;
+
+	--color-little-lens-blue-50: #f5fbff;
+	--color-little-lens-blue-100: #e8f5fc;
+	--color-little-lens-blue-200: #c5e3fa;
+	--color-little-lens-blue-300: #a3cff7;
+	--color-little-lens-blue-400: #629df0;
+	--color-little-lens-blue-500: #2463eb;
+	--color-little-lens-blue-600: #1e54d4;
+	--color-little-lens-blue-700: #1340b0;
+	--color-little-lens-blue-800: #0d2d8c;
+	--color-little-lens-blue-900: #071e69;
+	--color-little-lens-blue-950: #031045;
 
 	--font-sans: "Alegreya Sans", serif;
 	--font-body: "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
+}
+
+.format {
+	max-width: 100% !important;
+	width: 100% !important;
+
+	img {
+		@apply rounded-lg;
+		max-width: 600px;
+	}
 }
 
 .swiper {
