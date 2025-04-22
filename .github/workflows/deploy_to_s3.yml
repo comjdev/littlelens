@@ -1,0 +1,54 @@
+name: Deploy Hexo to AWS S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install Hexo dependencies
+        run: npm install
+
+      - name: Generate Hexo static files
+        run: npx hexo generate
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync \
+            public/ \
+            s3://littlelens.com.au/ \
+            --delete
+        env:
+          # AWS credentials are automatically picked up by the aws-actions/configure-aws-credentials step
+          # but explicitly setting the AWS_REGION here can be good practice, though often not strictly necessary
+          # for s3 sync if configured correctly in the previous step.
+          AWS_REGION: YOUR_AWS_REGION
+
+      - name: Invalidate CloudFront Cache (Optional - if using CloudFront)
+        # This step is only needed if you are using CloudFront in front of your S3 bucket
+        # You would need to add AWS_DISTRIBUTION_ID to your GitHub Secrets
+        # and potentially add the 'cloudfront:CreateInvalidation' permission to your IAM policy.
+        # if: success() # Only run if previous steps succeed
+        # run: |
+        #   aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/*"
+        # env:
+        #   AWS_REGION: YOUR_AWS_REGION # CloudFront invalidations are global, but AWS CLI needs a region
