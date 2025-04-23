@@ -15,7 +15,7 @@
 	>
 		<a
 			href="<%- url_for() %>"
-			class="mb-2 text-2xl font-extrabold tracking-tight leading-none md:text-3xl lg:text-4xl gradient"
+			class="mb-2 ml-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl lg:text-4xl gradient"
 		>
 			<span class="inline-block h-6 md:h-7 lg:h-8 -mb-1 fill-blue-500"
 				><%- getSvg('logos/logo.svg') %></span
@@ -23,7 +23,7 @@
 			Little Lens
 		</a>
 		<ul
-			class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-sm"
+			class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-sm mr-4"
 		>
 			<% for(name in theme.menu) { %>
 			<li class="text-little-lens-gray-500 hover:text-little-lens-gray-300">
@@ -36,8 +36,23 @@
 				>Get in touch</a
 			>
 		</ul>
-		<div class="flex sm:hidden flex-1 justify-end">
-			<i class="fas fa-bars text-2xl"></i>
+		<div class="flex sm:hidden flex-1 justify-end mr-4 mb-2">
+			<svg
+				class="w-6 h-6 text-gray-800"
+				aria-hidden="true"
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+			>
+				<path
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M18 6H6m12 4H6m12 4H6m12 4H6"
+				/>
+			</svg>
 		</div>
 	</nav>
 </div>
