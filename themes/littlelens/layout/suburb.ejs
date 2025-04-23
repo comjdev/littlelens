@@ -16,7 +16,7 @@
 		class="flex relative z-20 justify-between px-4 mx-auto max-w-screen-xl rounded"
 	>
 		<article class="format w-full md:pr-8 lg:pr-16 xl:pr-32">
-			<p class="lead"><%= page.summary %></p>
+			<p class="lead"><%= page.description %></p>
 			<section><%- page.content %></section>
 			<%- partial('partial/suburbs/contact', {suburb: page.suburb}) %>
 		</article>
@@ -25,3 +25,9 @@
 		true, familyPhotos: true}) %>
 	</div>
 </main>
+
+<!-- Testimonial  -->
+<%- partial('partial/testimonials') %>
+
+<!-- Contact  -->
+<%- partial('partial/home/contact') %>
