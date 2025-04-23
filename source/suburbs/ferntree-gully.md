@@ -2,8 +2,10 @@
 title: Childcare Photography in Ferntree Gully
 suburb: Ferntree Gully
 description: Capture the joy of childhood with our professional childcare photography services in Ferntree Gully. We specialise in creating beautiful, natural images that families will treasure forever.
-permalink: /childcare-photography/ferntree-gully
+permalink: childcare-photography/ferntree-gully
 layout: suburb
+latitude: -37.8767
+longitude: 145.2833
 ---
 
 At Little Lens Photography, we specialise in capturing the joy, laughter, and unique personality of every child — and we’re proud to offer our professional childcare photography services to families and childcare centres in **Ferntree Gully** and surrounding suburbs.

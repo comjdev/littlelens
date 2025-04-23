@@ -9,7 +9,10 @@
 		name="description"
 		content="<%= page.description || config.description %>"
 	/>
-	<meta name="author" content="<%= page.author || config.author %>" />
+	<meta
+		name="author"
+		content="Little Lens - <%= page.author || config.author %>"
+	/>
 
 	<!-- Open Graph Meta Tags -->
 	<meta property="og:title" content="<%= page.title || config.title %>" />
@@ -41,9 +44,15 @@
 	<% } %>
 
 	<meta name="geo.region" content="AU-VIC" />
-	<meta name="geo.placename" content="Boronia" />
-	<meta name="geo.position" content="-37.8627;145.2857" />
-	<meta name="ICBM" content="-37.8627, 145.2857" />
+	<meta name="geo.placename" content="<%= page.suburb  || 'Melbourne'%>" />
+	<meta
+		name="geo.position"
+		content="<%= page.latitude  || '-37.8781'%>;<%= page.longitude  || '145.1669'%>"
+	/>
+	<meta
+		name="ICBM"
+		content="<%= page.latitude  || '-37.8781'%>, <%= page.longitude  || '145.1669'%>"
+	/>
 
 	<link rel="canonical" href="<%= config.url + '/' + page.path %>" />
 
@@ -73,22 +82,7 @@
 	/>
 
 	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "LocalBusiness",
-			"name": "Little Lens - Childcare Photography Melbourne",
-			"image": "<%= config.url %>/img/logos/logo.png",
-			"url": "<%= config.url %>",
-			"address": {
-				"@type": "PostalAddress",
-				"addressLocality": "Boronia",
-				"addressRegion": "VIC",
-				"postalCode": "3155",
-				"addressCountry": "AU"
-			},
-			"telephone": "+61 403 188 674",
-			"description": "<%= config.description %>"
-		}
+		<%- jsonld(page, site, config) %>
 	</script>
 
 	<!-- Google tag (gtag.js) -->
