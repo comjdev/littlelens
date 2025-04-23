@@ -106,3 +106,8 @@ deploy:
 #sitemap
 sitemap:
 path: sitemap.xml
+
+# Contact
+addres: { suburb: "Boronia", state: "VIC", postcode: "3155" }
+phone: "0403 188 674"
+tel: "+61 403 188 674"
