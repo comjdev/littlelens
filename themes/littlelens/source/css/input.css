@@ -56,6 +56,31 @@
 	--font-body: "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+.show-nav {
+	@apply visible opacity-100;
+}
+
+.mobile-hamburger {
+	animation: rotate 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* .mobile-hamburger i {
+	color: white !important;
+} */
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+
 .format {
 	max-width: 100% !important;
 	width: 100% !important;
@@ -66,21 +91,6 @@
 		width: 100%;
 		height: auto;
 	}
-}
-
-.swiper {
-	width: 100%;
-}
-/* .swiper-wrapper {
-	width: 50%;
-} */
-.swiper-slide {
-	text-align: center;
-	width: auto;
-}
-.slide-image {
-	height: 400px;
-	width: auto;
 }
 
 .gradient {
@@ -105,8 +115,4 @@
 	100% {
 		background-position: 0% 0%;
 	}
-}
-
-html {
-	scroll-behavior: smooth;
 }
