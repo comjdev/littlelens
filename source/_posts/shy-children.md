@@ -1,5 +1,5 @@
 ---
-title: Shy Children at the photo shoot
+title: Shy children at the photo shoot
 author: Gill Jürgens
 subtitle: What if my child does not want to be photographed?
 description: "Shy children can be a challenge during a photo shoot, but with the right approach, you can help them feel comfortable and capture beautiful moments. Here are some tips to consider."
