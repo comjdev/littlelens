@@ -17,3 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 });
+
+// ——————————————————————————————————————————————————
+// Socials
+// ——————————————————————————————————————————————————
+
+document.addEventListener("DOMContentLoaded", function () {
+	const btn = document.getElementById("copy-link-btn");
+
+	if (btn) {
+		btn.addEventListener("click", function () {
+			const url = btn.getAttribute("data-url");
+			navigator.clipboard
+				.writeText(url)
+				.then(() => {})
+				.catch((err) => {
+					console.error("Failed to copy link:", err);
+				});
+		});
+	}
+});
