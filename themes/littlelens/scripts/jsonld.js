@@ -36,13 +36,21 @@ hexo.extend.helper.register("jsonld", function (page, site, config) {
 			latitude: page.latitude || -37.8781,
 			longitude: page.longitude || 145.1669,
 		},
-		openingHours: "Mo,Tu,We,Th,Fr 09:00-17:00",
-		contactPoint: {
-			"@type": "ContactPoint",
-			telephone: "+61 403 188 674",
-			contactType: "Customer Service",
-			areaServed: "AU",
-			availableLanguage: "English",
+		openingHoursSpecification: [
+			{
+				"@type": "OpeningHoursSpecification",
+				dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				opens: "08:30",
+				closes: "16:30",
+			},
+		],
+		aggregateRating: {
+			// Optional: If you have reviews marked up
+			"@type": "AggregateRating",
+			ratingValue: "5", // Your average rating
+			reviewCount: "17", // Total number of reviews
+			bestRating: "5",
+			worstRating: "1",
 		},
 	};
 
