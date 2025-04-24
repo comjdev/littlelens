@@ -3,7 +3,7 @@ suburb: Scoresby
 title: Childcare Photography in Scoresby
 description: My aim as a childcare photographer in Scoresby is to ensure each child feels comfortable and has fun having their photo taken.
 layout: suburb
-permalink: childcare-photography/scoresby
+permalink: childcare-photography/scoresby/
 latitude: -37.8986
 longitude: 145.2417
 ---

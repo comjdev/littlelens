@@ -2,7 +2,7 @@
 title: Childcare Photography in Ferntree Gully
 suburb: Ferntree Gully
 description: Capture the joy of childhood with our professional childcare photography services in Ferntree Gully. We specialise in creating beautiful, natural images that families will treasure forever.
-permalink: childcare-photography/ferntree-gully
+permalink: childcare-photography/ferntree-gully/
 layout: suburb
 latitude: -37.8767
 longitude: 145.2833

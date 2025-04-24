@@ -2,7 +2,7 @@
 title: Childcare Photography in Boronia
 suburb: Boronia
 description: Capture the joy of childhood with our professional childcare photography services in Boronia. We specialise in creating beautiful, natural images that families will treasure forever.
-permalink: childcare-photography/boronia
+permalink: childcare-photography/boronia/
 layout: suburb
 latitude: -37.8500
 longitude: 145.2833
