@@ -1,13 +1,13 @@
 ---
 title: What to wear for childcare and kinder photos
 author: Gill Jürgens
-subtitle: Dress for fun! What to wear for childcare and kinder photos.
+subtitle: Dress for fun! What to wear for childcare and kinder photos
 description: "One of the most common questions I get from parents is, 'What should my child wear for their childcare or kinder photos?' And it's a great question! Let's start by setting your mind at ease."
 date: 2025-02-17 12:00:00
 cover: cover.jpg
 ---
 
-## Dress for fun! What to wear for childcare and kinder photos.
+## Dress for fun! What to wear for childcare and kinder photos
 
 One of the most common questions I get from parents is, 'What should my child wear for their childcare or kinder photos?' And it's a great question!
 
