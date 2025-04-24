@@ -1,5 +1,5 @@
 ---
-title: { { title } }
-subtitle: { { subtitle } }
-description: { { summary } }
+title: {{title}}
+subtitle: {{subtitle}}
+description: {{description}}
 ---
