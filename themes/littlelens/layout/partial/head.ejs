@@ -1,10 +1,12 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<title>
 		<% if (page.title) { %> <%= page.title %> | Childcare Photography Melbourne
 		<% } else { %> <%= config.title %> | Childcare Photography Melbourne <% } %>
 	</title>
+
 	<meta
 		name="description"
 		content="<%= page.description || config.description %>"
@@ -14,56 +16,61 @@
 		content="Little Lens - <%= page.author || config.author %>"
 	/>
 
-	<!-- Open Graph Meta Tags -->
+	<!-- Canonical URL -->
+	<% const cleanedPath = url_for(page.path).replace(/index\.html$/,
+	'').replace(/\.html$/, ''); const canonicalUrl = config.url.replace(/\/$/, '')
+	+ cleanedPath; %>
+	<link rel="canonical" href="<%= canonicalUrl %>" />
+
+	<!-- Open Graph Meta -->
 	<meta property="og:title" content="<%= page.title || config.title %>" />
 	<meta
 		property="og:description"
 		content="<%= page.description || config.description %>"
 	/>
 	<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
-	<meta property="og:url" content="<%= config.url + '/' + page.path %>" />
-	<% if (page.cover) { %>
-	<meta
-		property="og:image"
-		content="<%= config.url + url_for(page.asset_dir + page.cover) %>"
-	/>
+	<meta property="og:url" content="<%= canonicalUrl %>" />
+
+	<% if (page.cover) { const imageUrl = config.url.replace(/\/$/, '') +
+	url_for(page.asset_dir + page.cover); %>
+	<meta property="og:image" content="<%= imageUrl %>" />
 	<% } %>
 
 	<!-- Twitter Cards -->
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:card"
+		content="<%= page.cover ? 'summary_large_image' : 'summary' %>"
+	/>
 	<meta name="twitter:title" content="<%= page.title || config.title %>" />
 	<meta
 		name="twitter:description"
 		content="<%= page.description || config.description %>"
 	/>
+
 	<% if (page.cover) { %>
-	<meta
-		name="twitter:image"
-		content="<%= config.url + url_for(page.asset_dir + page.cover) %>"
-	/>
+	<meta name="twitter:image" content="<%= imageUrl %>" />
 	<% } %>
 
+	<!-- Location Tags -->
 	<meta name="geo.region" content="AU-VIC" />
-	<meta name="geo.placename" content="<%= page.suburb  || 'Melbourne'%>" />
+	<meta name="geo.placename" content="<%= page.suburb || 'Melbourne' %>" />
 	<meta
 		name="geo.position"
-		content="<%= page.latitude  || '-37.8781'%>;<%= page.longitude  || '145.1669'%>"
+		content="<%= page.latitude || '-37.8781' %>;<%= page.longitude || '145.1669' %>"
 	/>
 	<meta
 		name="ICBM"
-		content="<%= page.latitude  || '-37.8781'%>, <%= page.longitude  || '145.1669'%>"
+		content="<%= page.latitude || '-37.8781' %>, <%= page.longitude || '145.1669' %>"
 	/>
 
-	<link rel="canonical" href="<%= config.url + '/' + page.path %>" />
-
+	<!-- Styles & Fonts -->
 	<link rel="icon" href="/logos/favicon.png" type="image/png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap"
 		rel="stylesheet"
 	/>
-
 	<link rel="stylesheet" href="/css/styles.css" />
 	<link
 		rel="stylesheet"
@@ -71,11 +78,12 @@
 		href="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"
 	/>
 
+	<!-- Structured Data -->
 	<script type="application/ld+json">
 		<%- jsonld(page, site, config) %>
 	</script>
 
-	<!-- Google tag (gtag.js) -->
+	<!-- Google Analytics -->
 	<script
 		async
 		src="https://www.googletagmanager.com/gtag/js?id=G-F07ZWTFL4X"
@@ -86,7 +94,6 @@
 			dataLayer.push(arguments);
 		}
 		gtag("js", new Date());
-
 		gtag("config", "G-F07ZWTFL4X");
 	</script>
 </head>
