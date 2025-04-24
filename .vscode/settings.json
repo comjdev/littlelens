@@ -1,0 +1,13 @@
+{
+	// Set EJS Beautify as the default formatter for .ejs files
+	"[ejs]": {
+		"editor.defaultFormatter": "j69.ejs-beautify"
+	},
+
+	// Optional but recommended: Disable Prettier specifically for EJS files
+	// This ensures Prettier doesn't even try to format them.
+	"prettier.disableLanguages": ["ejs"]
+
+	// If you were using the 'editor.formatOnSave' globally,
+	// you don't need to add it here specifically for EJS
+}

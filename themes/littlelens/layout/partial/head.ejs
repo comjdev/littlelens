@@ -16,13 +16,14 @@
 		content="Little Lens - <%= page.author || config.author %>"
 	/>
 
-	<!-- Canonical URL -->
 	<% const cleanedPath = url_for(page.path).replace(/index\.html$/,
 	'').replace(/\.html$/, ''); const canonicalUrl = config.url.replace(/\/$/, '')
 	+ cleanedPath; %>
 	<link rel="canonical" href="<%= canonicalUrl %>" />
 
-	<!-- Open Graph Meta -->
+	<% let imageUrl = null; %> <% if (page.cover) { imageUrl =
+	config.url.replace(/\/$/, '') + url_for(page.asset_dir + page.cover); } %>
+
 	<meta property="og:title" content="<%= page.title || config.title %>" />
 	<meta
 		property="og:description"
@@ -31,15 +32,18 @@
 	<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
 	<meta property="og:url" content="<%= canonicalUrl %>" />
 
-	<% if (page.cover) { const imageUrl = config.url.replace(/\/$/, '') +
-	url_for(page.asset_dir + page.cover); %>
+	<% if (imageUrl) { %>
 	<meta property="og:image" content="<%= imageUrl %>" />
+	<% } else { %>
+	<meta
+		property="og:image"
+		content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
+	/>
 	<% } %>
 
-	<!-- Twitter Cards -->
 	<meta
 		name="twitter:card"
-		content="<%= page.cover ? 'summary_large_image' : 'summary' %>"
+		content="<%= imageUrl ? 'summary_large_image' : 'summary' %>"
 	/>
 	<meta name="twitter:title" content="<%= page.title || config.title %>" />
 	<meta
@@ -47,11 +51,15 @@
 		content="<%= page.description || config.description %>"
 	/>
 
-	<% if (page.cover) { %>
+	<% if (imageUrl) { %>
 	<meta name="twitter:image" content="<%= imageUrl %>" />
+	<% } else { %>
+	<meta
+		name="twitter:image"
+		content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
+	/>
 	<% } %>
 
-	<!-- Location Tags -->
 	<meta name="geo.region" content="AU-VIC" />
 	<meta name="geo.placename" content="<%= page.suburb || 'Melbourne' %>" />
 	<meta
@@ -63,14 +71,14 @@
 		content="<%= page.latitude || '-37.8781' %>, <%= page.longitude || '145.1669' %>"
 	/>
 
-	<!-- Styles & Fonts -->
 	<link rel="icon" href="/logos/favicon.png" type="image/png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&amp;display=swap"
 		rel="stylesheet"
 	/>
+
 	<link rel="stylesheet" href="/css/styles.css" />
 	<link
 		rel="stylesheet"
@@ -78,12 +86,10 @@
 		href="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"
 	/>
 
-	<!-- Structured Data -->
 	<script type="application/ld+json">
 		<%- jsonld(page, site, config) %>
 	</script>
 
-	<!-- Google Analytics -->
 	<script
 		async
 		src="https://www.googletagmanager.com/gtag/js?id=G-F07ZWTFL4X"
