@@ -2,15 +2,10 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>
-		<% if (page.title) { %> <%= page.title %> | Little Lens Photography <% }
-		else { %> <%= config.title %> | Childcare Photography Melbourne <% } %>
-	</title>
+	<title><%= seoTitle() %></title>
 
-	<meta
-		name="description"
-		content="<%= page.description || config.description %>"
-	/>
+	<meta name="description" content="<%= seoDescription() %>" />
+
 	<meta
 		name="author"
 		content="Little Lens - <%= page.author || config.author %>"
@@ -24,11 +19,9 @@
 	<% let imageUrl = null; %> <% if (page.cover) { imageUrl =
 	config.url.replace(/\/$/, '') + url_for(page.asset_dir + page.cover); } %>
 
-	<meta property="og:title" content="<%= page.title || config.title %>" />
-	<meta
-		property="og:description"
-		content="<%= page.description || config.description %>"
-	/>
+	<meta property="og:title" content="<%= seoOgTitle() %>" />
+	<meta property="og:description" content="<%= seoOgDescription() %>" />
+
 	<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
 	<meta property="og:url" content="<%= canonicalUrl %>" />
 
@@ -45,11 +38,8 @@
 		name="twitter:card"
 		content="<%= imageUrl ? 'summary_large_image' : 'summary' %>"
 	/>
-	<meta name="twitter:title" content="<%= page.title || config.title %>" />
-	<meta
-		name="twitter:description"
-		content="<%= page.description || config.description %>"
-	/>
+	<meta name="twitter:title" content="<%= seoTwitterTitle() %>" />
+	<meta name="twitter:description" content="<%= seoTwitterDescription() %>" />
 
 	<% if (imageUrl) { %>
 	<meta name="twitter:image" content="<%= imageUrl %>" />
@@ -96,6 +86,7 @@
 	></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
+
 		function gtag() {
 			dataLayer.push(arguments);
 		}
