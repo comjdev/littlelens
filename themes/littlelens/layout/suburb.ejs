@@ -31,8 +31,14 @@
 	</div>
 </main>
 
+<!-- Services  -->
+<%- partial('partial/suburbs/faq', {suburb: page.suburb}) %>
+
+<!-- Posts  -->
+<%- partial('partial/suburbs/article-archive', {suburb: page.suburb}) %>
+
 <!-- Testimonial  -->
 <%- partial('partial/testimonials') %>
 
 <!-- Contact  -->
-<%- partial('partial/home/contact') %>
+<%- partial('partial/home/contact', {suburb: page.suburb}) %>

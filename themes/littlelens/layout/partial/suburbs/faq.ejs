@@ -1,0 +1,39 @@
+<% let familiesFaq = null; site.pages.forEach(p => { if (p.path ===
+'families-faqs/index.html') { familiesFaq = p; } }); %>
+
+<section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+	<div class="mx-auto max-w-screen-sm text-center mb-4 lg:mb-8">
+		<h2 class="text-4xl tracking-tight font-extrabold text-gray-900">
+			Frequently Asked Questions
+		</h2>
+		<p class="font-light text-gray-500 sm:text-xl mt-4">
+			We’ve compiled a list of frequently asked questions to help <%= suburb %>
+			families and local childcare centres, early learning services, and
+			kindergartens navigate our photography offerings with ease.
+		</p>
+	</div>
+
+	<div
+		class="grid pt-8 text-left border-t border-gray-200 md:gap-16 md:grid-cols-2"
+	>
+		<% if (familiesFaq && familiesFaq._content) { %> <%-
+		renderFaqs(familiesFaq._content, 4) %> <% } else { %>
+		<p>FAQ page not found.</p>
+		<% } %>
+	</div>
+
+	<div class="flex justify-center mt-10 gap-4">
+		<a
+			href="/childcare-centre-faqs/"
+			class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-little-lens-green-600 rounded-lg hover:bg-little-lens-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+		>
+			All FAQs for <%= suburb %> Centres
+		</a>
+		<a
+			href="/families-faqs/"
+			class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-little-lens-green-600 rounded-lg hover:bg-little-lens-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+		>
+			All FAQs for <%= suburb %> Families
+		</a>
+	</div>
+</section>
