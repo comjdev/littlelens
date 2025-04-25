@@ -116,3 +116,34 @@ html {
 		background-position: 0% 0%;
 	}
 }
+
+.phone-shake {
+	animation: phone-shake-animation 10s ease-in-out infinite;
+}
+
+@keyframes phone-shake-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	94% {
+		transform: rotate(0deg);
+	}
+	95% {
+		transform: rotate(10deg);
+	}
+	96% {
+		transform: rotate(-10deg);
+	}
+	97% {
+		transform: rotate(10deg);
+	}
+	98% {
+		transform: rotate(-10deg);
+	}
+	99% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

@@ -80,6 +80,13 @@
 		<%- jsonld(page, site, config) %>
 	</script>
 
+	<% if (page.path === 'childcare-centre-faqs/index.html' || page.path ===
+	'families-faqs/index.html') { %>
+	<script type="application/ld+json">
+		<%- faqJsonld(page) %>
+	</script>
+	<% } %>
+
 	<script
 		async
 		src="https://www.googletagmanager.com/gtag/js?id=G-F07ZWTFL4X"
