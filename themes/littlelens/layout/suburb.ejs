@@ -19,9 +19,9 @@
 			<section>
 				<p class="lead"><%= page.description %></p>
 				<div class="max-w-xl h-auto">
-					<%- partial('partial/image-slider') %>
+					<%- partial('partial/suburbs/image-slider', {suburb: page.suburb}) %>
 				</div>
-				<%- page.content %>
+				<%- suburbContent(page.content, page.suburb) %>
 			</section>
 			<%- partial('partial/suburbs/contact', {suburb: page.suburb}) %>
 		</article>
