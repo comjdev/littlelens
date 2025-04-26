@@ -12,6 +12,14 @@ longitude: 145.2417
 
 Looking for a fun and natural **childcare photographer** in **Scoresby**? I'm a photographer with a focus on capturing the joy and energy of children in their element – outdoors on the play equipment at their childcare centres and kindergartens. As a photographer who loves to document the vibrant spirit of childhood in areas like **Scoresby**, I focus on creating beautiful, candid images of kids having fun and being themselves.
 
+## Scoresby Childcare Photographer
+
+Looking for a childcare photographer in **Scoresby** who captures happy and genuine photos for your centre? I specialise in natural and fun photography at kindergartens and childcare centres across the eastern suburbs of Melbourne, including Scoresby.
+
+Scoresby, a peaceful and community-minded suburb in Melbourne's east, offers a wonderful environment for young families. My childcare photography services cater to Scoresby's childcare centres and kindergartens, bringing a relaxed and fun approach right to your child's familiar setting.
+
+Focusing on natural outdoor photos amidst the play equipment they love, I aim to capture genuine smiles and joyful moments that Scoresby families will cherish. With a calm and patient style, and a simple, no-obligation process, preserving these precious early years is easy for families in Scoresby.
+
 ### Why choose my outdoor childcare photography in Scoresby?
 
 As a dedicated **childcare photographer** servicing **Scoresby** and surrounding suburbs, I believe the best smiles happen when children are engaged in play. That's why my sessions primarily take place outdoors on the familiar and exciting play equipment at your **Scoresby** childcare centre or kindergarten. This allows me to capture genuine laughter, active exploration, and the unique personalities of each child as they interact with their environment.
@@ -30,8 +38,8 @@ I offer a range of affordable **childcare photography** packages designed to pro
 
 ## Serving Scoresby and nearby suburbs
 
-I am based in Melbourne’s eastern suburbs and regularly photograph at centres in Scoresby, [Ferntree Gully](/childcare-photography/ferntree-gully), Knox, Wantirna, Rowville and [Boronia](/childcare-photography/boronia). If you’re in the area and looking for a trusted childcare photographer — I’d love to hear from you!
+I am based in Melbourne’s eastern suburbs and regularly photograph at centres in Scoresby, [Ferntree Gully](/childcare-photography/ferntree-gully/), [Knoxfield](/childcare-photography/knoxfield/), [Wantirna](/childcare-photography/wantirna), [Rowville](/childcare-photography/rowville), [Bayswater](/childcare-photography/bayswater/) and [Boronia](/childcare-photography/boronia/). If you’re in the area and looking for a trusted childcare photographer — I’d love to hear from you!
 
-### Connect with your local Scoresby childcare photographer today!
+### Connect with your local Scoresby childcare photographer today
 
 If you're a childcare centre or kindergarten in **Scoresby** seeking a **childcare photographer** who specialises in capturing the fun and energy of outdoor play, I'd love to hear from you! Let's discuss how I can document the wonderful world of your little ones in **Scoresby**.
