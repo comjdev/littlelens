@@ -1,103 +1,104 @@
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title><%= seoTitle() %></title>
+  <title><%= seoTitle() %></title>
 
-	<meta name="description" content="<%= seoDescription() %>" />
+  <meta name="description" content="<%= seoDescription() %>" />
 
-	<meta
-		name="author"
-		content="Little Lens - <%= page.author || config.author %>"
-	/>
+  <meta
+    name="author"
+    content="Little Lens - <%= page.author || config.author %>"
+  />
 
-	<% const cleanedPath = url_for(page.path).replace(/index\.html$/,
-	'').replace(/\.html$/, ''); const canonicalUrl = config.url.replace(/\/$/, '')
-	+ cleanedPath; %>
-	<link rel="canonical" href="<%= canonicalUrl %>" />
+  <% const cleanedPath = url_for(page.path).replace(/index\.html$/,
+  '').replace(/\.html$/, ''); const canonicalUrl = config.url.replace(/\/$/, '')
+  + cleanedPath; %>
+  <link rel="canonical" href="<%= canonicalUrl %>" />
 
-	<% let imageUrl = null; %> <% if (page.cover) { imageUrl =
-	config.url.replace(/\/$/, '') + url_for(page.asset_dir + page.cover); } %>
+  <% let imageUrl = null; %> <% if (page.cover) { imageUrl =
+  config.url.replace(/\/$/, '') + url_for(page.asset_dir + page.cover); } %>
 
-	<meta property="og:title" content="<%= seoOgTitle() %>" />
-	<meta property="og:description" content="<%= seoOgDescription() %>" />
+  <meta property="og:title" content="<%= seoOgTitle() %>" />
+  <meta property="og:description" content="<%= seoOgDescription() %>" />
 
-	<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
-	<meta property="og:url" content="<%= canonicalUrl %>" />
+  <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
+  <meta property="og:url" content="<%= canonicalUrl %>" />
+  <meta property="og:logo" content="<%= url_for('img/logos/logo.png') %>" />
 
-	<% if (imageUrl) { %>
-	<meta property="og:image" content="<%= imageUrl %>" />
-	<% } else { %>
-	<meta
-		property="og:image"
-		content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
-	/>
-	<% } %>
+  <% if (imageUrl) { %>
+  <meta property="og:image" content="<%= imageUrl %>" />
+  <% } else { %>
+  <meta
+    property="og:image"
+    content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
+  />
+  <% } %>
 
-	<meta
-		name="twitter:card"
-		content="<%= imageUrl ? 'summary_large_image' : 'summary' %>"
-	/>
-	<meta name="twitter:title" content="<%= seoTwitterTitle() %>" />
-	<meta name="twitter:description" content="<%= seoTwitterDescription() %>" />
+  <meta
+    name="twitter:card"
+    content="<%= imageUrl ? 'summary_large_image' : 'summary' %>"
+  />
+  <meta name="twitter:title" content="<%= seoTwitterTitle() %>" />
+  <meta name="twitter:description" content="<%= seoTwitterDescription() %>" />
 
-	<% if (imageUrl) { %>
-	<meta name="twitter:image" content="<%= imageUrl %>" />
-	<% } else { %>
-	<meta
-		name="twitter:image"
-		content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
-	/>
-	<% } %>
+  <% if (imageUrl) { %>
+  <meta name="twitter:image" content="<%= imageUrl %>" />
+  <% } else { %>
+  <meta
+    name="twitter:image"
+    content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
+  />
+  <% } %>
 
-	<meta name="geo.region" content="AU-VIC" />
-	<meta name="geo.placename" content="<%= page.suburb || 'Melbourne' %>" />
-	<meta
-		name="geo.position"
-		content="<%= page.latitude || '-37.8781' %>;<%= page.longitude || '145.1669' %>"
-	/>
-	<meta
-		name="ICBM"
-		content="<%= page.latitude || '-37.8781' %>, <%= page.longitude || '145.1669' %>"
-	/>
+  <meta name="geo.region" content="AU-VIC" />
+  <meta name="geo.placename" content="<%= page.suburb || 'Melbourne' %>" />
+  <meta
+    name="geo.position"
+    content="<%= page.latitude || '-37.8781' %>;<%= page.longitude || '145.1669' %>"
+  />
+  <meta
+    name="ICBM"
+    content="<%= page.latitude || '-37.8781' %>, <%= page.longitude || '145.1669' %>"
+  />
 
-	<link rel="icon" href="/logos/favicon.png" type="image/png" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&amp;display=swap"
-		rel="stylesheet"
-	/>
+  <link rel="icon" href="/logos/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet"
+  />
 
-	<link rel="stylesheet" href="/css/styles.css" />
-	<link
-		rel="stylesheet"
-		type="text/css"
-		href="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"
-	/>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"
+  />
 
-	<script type="application/ld+json">
-		<%- jsonld(page, site, config) %>
-	</script>
+  <script type="application/ld+json">
+    <%- jsonld(page, site, config) %>
+  </script>
 
-	<% if (page.path === 'childcare-centre-faqs/index.html' || page.path ===
-	'families-faqs/index.html') { %>
-	<script type="application/ld+json">
-		<%- faqJsonld(page) %>
-	</script>
-	<% } %>
+  <% if (page.path === 'childcare-centre-faqs/index.html' || page.path ===
+  'families-faqs/index.html') { %>
+  <script type="application/ld+json">
+    <%- faqJsonld(page) %>
+  </script>
+  <% } %>
 
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-F07ZWTFL4X"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=<%- config.google_tag_manager.id%>"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-		gtag("config", "G-F07ZWTFL4X");
-	</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "<%- config.google_tag_manager.id%>");
+  </script>
 </head>

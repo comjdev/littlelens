@@ -111,3 +111,18 @@ path: sitemap.xml
 addres: { suburb: "Boronia", state: "VIC", postcode: "3155" }
 phone: "0403 188 674"
 tel: "+61 403 188 674"
+
+# Google Tag Manager
+google_tag_manager:
+  id: "G-F07ZWTFL4X" # Replace with your GTM ID
+
+# Custom config for your image processing script
+image_optimiser:
+  jpegQuality: 90 # Adjust quality (0-100)
+  pngQuality: 90 # Adjust quality (0-100), affects compression
+  webpQuality: 90
+  stripMetadata: true # Set to false to keep EXIF etc.
+  imageExtensions: [".jpg", ".jpeg", ".png"] # Default is okay if these are your only types
+  imageSizes: [400, 800, 1200] # Define the widths (in pixels) for resized images
+  defaultSizes: "100vw" # Default sizes attribute for srcset/picture (e.g., '100vw', '(max-width: 600px) 100vw, 50vw')
+
