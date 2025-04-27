@@ -110,7 +110,7 @@ path: sitemap.xml
 # Contact
 addres: { suburb: "Boronia", state: "VIC", postcode: "3155" }
 phone: "0403 188 674"
-tel: "+61 403 188 674"
+tel: "+61403188674"
 
 # Google Tag Manager
 google_tag_manager:

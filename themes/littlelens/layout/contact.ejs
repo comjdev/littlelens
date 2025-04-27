@@ -1,13 +1,150 @@
 <section id="contact" class="">
-	<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-		<h2
-			class="mb-4 text-4xl tracking-tight font-sans font-extrabold text-center text-primary-700"
-		>
-			Contact Me
-		</h2>
-		<p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
-			Do you have any questions about my services? Reach out and I'll get back
-			to you as soon as possible.
-		</p>
-		<%- partial('partial/contact-form') %>
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <h1
+      class="mb-4 text-4xl tracking-tight font-sans font-extrabold text-center text-primary-700"
+    >
+      Get In Touch
+    </h1>
+    <p class="mb-4 lg:mb-8 font-light text-center text-gray-500 sm:text-xl">
+      We'd love to hear from you! Whether you have a question about our
+      photography service or are a childcare centre looking to book a session,
+      you'll find the right way to connect with us below.
+    </p>
+
+    <div class="flex flex-col gap-4 mb-8 lg:mb-16 sm:flex-row justify-center">
+      <button
+        id="childcare-center-btn"
+        class="sm:w-[182px] inline-flex w-full justify-center items-center px-5 py-3 text-base font-medium text-center text-white bg-little-lens-green-900 border rounded-lg shrink-0 focus:outline-none hover:text-little-lens-green-100 hover:bg-little-lens-green-800"
+        role="button"
+      >
+        Childcare Centers
+      </button>
+
+      <button
+        id="general-btn"
+        class="sm:w-[182px] px-5 py-3 w-full text-base font-medium text-center text-white bg-little-lens-light-700 rounded-lg shrink-0 hover:bg-primary-800 hover:bg-little-lens-light-800"
+        role="button"
+      >
+        General / Parents
+      </button>
+    </div>
+
+    <div id="booking-enquiry">
+      <h2 class="mb-4 text-3xl tracking-tight font-extrabold">
+        Childcare Centre Booking Enquiries
+      </h2>
+      <p class="mb-8 font-light text-gray-400 sm:text-xl">
+        For all childcare photography Melbourne, kindergarten photography, and
+        preschool photography Melbourne bookings, please use the dedicated
+        booking enquiry form below or call us directly on
+        <a href="tel:<%- config.tel %>"><%- config.phone %></a>.
+      </p>
+      <p class="mb-16 font-light text-gray-400 sm:text-xl">
+        Using the form helps us understand your needs quickly, as we ask for a
+        few details about your organisation to help us answer your enquiry
+        efficiently. If you prefer to call, please have these details ready.
+      </p>
+      <%- partial('partial/booking-enquiry-form') %>
+    </div>
+    <div id="general-contact" class="hidden">
+      <h2 class="mb-4 text-3xl tracking-tight font-extrabold">
+        General Enquiries
+      </h2>
+      <p class="mb-8 font-light text-gray-400 sm:text-xl">
+        Have a question about our photography service? Perhaps you'd like to
+        discuss a specific project or simply learn more about what we offer.
+        Please feel free to send us an email or give us a call on
+        <a href="tel:<%- config.tel %>"><%- config.phone %></a>.
+      </p>
+      <%- partial('partial/contact-form') %>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-4 mx-auto max-w-screen-xl sm:py-24 lg:px-6">
+  <div
+    class="space-y-8 text-center md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+  >
+    <div>
+      <div
+        class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-little-lens-green-300 rounded-lg lg:h-16 lg:w-16"
+      >
+        <svg
+          class="w-5 h-5 text-little-lens-green-900 lg:w-8 lg:h-8"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+          ></path>
+          <path
+            d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+          ></path>
+        </svg>
+      </div>
+      <p class="mb-2 text-xl font-bold text-little-lens-green-800">Email us:</p>
+      <p class="mb-3 text-gray-500">
+        Email us for general queries, questions about our service and feedback.
+      </p>
+
+      <span
+        id="emailAddress"
+        class="font-semibold text-little-lens-green-800 hover:underline"
+      ></span>
+    </div>
+    <div>
+      <div
+        class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-little-lens-green-300 rounded-lg lg:h-16 lg:w-16"
+      >
+        <svg
+          class="w-5 h-5 text-little-lens-green-900 lg:w-8 lg:h-8"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+          ></path>
+        </svg>
+      </div>
+      <p class="mb-2 text-xl font-bold text-little-lens-green-800">Call us:</p>
+      <p class="mb-3 text-gray-500">
+        Call us to speak to a member of our team. We are always happy to help.
+      </p>
+
+      <a
+        class="font-semibold text-primary-600 dark:text-primary-500"
+        href="tel:<%- config.tel %>"
+        ><%- config.phone %></a
+      >
+    </div>
+    <div>
+      <div
+        class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-little-lens-green-300 rounded-lg lg:h-16 lg:w-16"
+      >
+        <svg
+          class="w-5 h-5 text-little-lens-green-900 lg:w-8 lg:h-8"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+      <p class="mb-2 text-xl font-bold text-little-lens-green-800">Support</p>
+      <p class="mb-3 text-gray-500">
+        Email us for any questions or check our FAQs for quick answers.
+      </p>
+      <a
+        href="/childcare-centre-faqs/"
+        class="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-little-lens-green-600 border-little-lens-green-600 hover:text-little-lens-green-800 hover:bg-little-lens-green-200 focus:ring-4 focus:outline-none focus:little-lens-green-300"
+        >Info / FAQs</a
+      >
+    </div>
+  </div>
 </section>
