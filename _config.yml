@@ -118,7 +118,7 @@ google_tag_manager:
 
 # Custom config for your image processing script
 image_optimiser:
-  jpegQuality: 90 # Adjust quality (0-100)
+  jpegQuality: 95 # Adjust quality (0-100)
   pngQuality: 90 # Adjust quality (0-100), affects compression
   webpQuality: 90
   stripMetadata: true # Set to false to keep EXIF etc.
