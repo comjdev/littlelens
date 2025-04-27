@@ -78,9 +78,14 @@
 					<li class="mb-4">
 						<a class="hover:underline" href="/suburbs"> All Suburbs</a>
 					</li>
+					<li class="mb-4">
+						<a class="hover:underline" href="/childcare-photography/melbourne/">
+							Melbourne
+						</a>
+					</li>
 					<% const suburbPages = site.pages .filter(page => page.layout ===
 					'suburb') .sort((a, b) => (a.suburb || '').localeCompare(b.suburb ||
-					'')) .slice(0, 3); suburbPages.forEach(function(page) { %>
+					'')) .slice(0, 2); suburbPages.forEach(function(page) { %>
 					<li class="mb-4">
 						<a class="hover:underline" href="<%= url_for(page.path) %>">
 							<%= page.suburb %>

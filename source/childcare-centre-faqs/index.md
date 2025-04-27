@@ -3,7 +3,7 @@ title: Childcare Centre FAQs
 layout: faqs
 ---
 
-# Information for Childcare centres
+# FAQs for Childcare centres
 
 I understand that organising photography for your kinder / childcare centre can bring up a few questions, so I’ve put together some answers to help you and your families feel completely at ease. First off, families only invest in the photos they truly love, paying after they have viewed their child’s images. And don’t worry about handling orders - I take care of everything and prints will be delivered directly to your centre.
 To capture those natural smiles, I prefer outdoor sessions, using the children’s familiar play spaces and beautiful natural light.

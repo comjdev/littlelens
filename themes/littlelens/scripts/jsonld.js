@@ -7,10 +7,6 @@ hexo.extend.helper.register("jsonld", function (page, site, config) {
         name: `${page.suburb}, VIC`,
       }
     : [
-        {
-          "@type": "Place",
-          name: `Melbourne, VIC`,
-        },
         ...site.pages
           .filter((p) => p.layout === "suburb")
           .map((p) => ({

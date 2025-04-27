@@ -1,0 +1,105 @@
+<header class="py-12">
+	<div class="px-4 mx-auto w-full max-w-screen-xl text-center">
+		<h1
+			class="mx-auto mb-4 max-w-2xl text-2xl font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl"
+		>
+			<%= page.title %>
+		</h1>
+		<p class="text-lg font-normal text-gray-500"><%= page.subtitle %></p>
+	</div>
+</header>
+
+<section class="">
+	<div
+		class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+	>
+		<div class="font-light text-gray-500 sm:text-lg">
+			<h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+				Little Lens Childcare Photography
+			</h1>
+			<p class="mb-4">
+        We ensure a smooth and easy photography process from start to finish, designed for both your centre and all participating families. Each child receives their own individual online gallery featuring <strong>10-15 beautiful, high-quality photos</strong> capturing their personality. For the centre, we provide professionally created composite group photos for each room, supplying printed copies specifically for your office use. We also support your centre directly by providing posters and flyers with QR codes, making registration simple for families.
+      </p>
+			<p class="mb-4">
+        Understanding the needs of families, we offer a straightforward online ordering system with a variety of print and digital package options designed to fit every budget. Importantly, there are <strong>no upfront payments required</strong>; families only order and pay for the photos they wish to purchase after viewing their galleries. As a token of appreciation for your staff, we also include complimentary, high-quality staff photos, provided as both prints and convenient digital files.      </p>
+	
+		<div>
+			<a
+				href="/how-it-works/"
+				class="text-white bg-little-lens-green-900 hover:bg-little-lens-green-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+			>
+				How it works
+			</a>
+			<a
+				href="/childcare-centre-faqs/"
+				class="text-white bg-little-lens-green-900 hover:bg-little-lens-green-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+			>
+				Childcare FAQs
+			</a>
+		</div>
+		</div>
+		<div class="grid grid-cols-2 gap-4 mt-8">
+			<img
+				class="w-full rounded-lg"
+				src="/img/photo-3.jpg"
+				loading="lazy"
+				alt="Child Care Photographer Melbourne 1"
+				width="400"
+				height="600"
+			/>
+			<img
+				class="mt-4 w-full lg:mt-10 rounded-lg"
+				src="/img/photo-11.jpg"
+				loading="lazy"
+				alt="Child Care Photographer Melbourne 2"
+				width="400"
+				height="600"
+			/>
+		</div>
+	</div>
+</section>
+
+
+<section class="">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="max-w-screen-md mb-8 lg:mb-16">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+        Easy, flexible photography
+      </h2>
+      <p class="text-gray-500 sm:text-xl">
+        We make capturing your precious moments easy and stress-free, providing stunning photography that tells your unique story. What sets us apart is the flexibility we offer families: alongside beautiful prints, digital files are available, giving you the control to share and print your photos however you wish.      </p>
+    </div>
+    <div
+      class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+    >
+      <% site.data.advantages.forEach(function(advantage) { %>
+      <div>
+        <div
+          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-little-lens-green-700 lg:h-12 lg:w-12"
+        >
+        <%- partial('partial/flowbite-icon', { iconName: advantage.icon }) %>
+        </div>
+        <h3 class="mb-2 text-xl font-bold "><%= advantage.heading %></h3>
+        <p class="text-gray-500"><%= advantage.copy %></p>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial  -->
+<%- partial('partial/testimonials') %>
+
+<!-- Contact  -->
+<section id="contact" class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+  <h2
+  class="mb-4 text-4xl tracking-tight font-sans font-extrabold text-center text-primary-700"
+>
+  Get In Touch
+</h2>
+<p class="mb-4 lg:mb-8 font-light text-center text-gray-500 sm:text-xl">
+  We'd love to hear from you! Whether you have a question about our
+  photography service or are looking to book a session, please feel free to send an email or give Gill a call under <a href="tel:<%- config.tel %>"><%- config.phone %></a>.
+</p>
+<%- partial('partial/booking-enquiry-form') %>
+</section>
