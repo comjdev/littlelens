@@ -1,0 +1,15 @@
+<meta property="og:title" content="<%= seoOgTitle() %>" />
+<meta property="og:description" content="<%= seoOgDescription() %>" />
+
+<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
+<meta property="og:url" content="<%= canonicalUrl %>" />
+<meta property="og:logo" content="<%= url_for('img/logos/logo.png') %>" />
+
+<% if (imageUrl) { %>
+<meta property="og:image" content="<%= imageUrl %>" />
+<% } else { %>
+<meta
+  property="og:image"
+  content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
+/>
+<% } %>

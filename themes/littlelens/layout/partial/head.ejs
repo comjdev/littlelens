@@ -1,3 +1,10 @@
+<% const cleanedPath = url_for(page.path).replace(/index\.html$/,
+'').replace(/\.html$/, ''); let canonicalUrl = config.url.replace(/\/$/, '')
++ cleanedPath; %>
+
+<% let imageUrl = null; %> <% if (page.cover) { imageUrl =
+  config.url.replace(/\/$/, '') + url_for(page.asset_dir + page.cover); } %>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,57 +16,6 @@
   <meta
     name="author"
     content="Little Lens - <%= page.author || config.author %>"
-  />
-
-  <% const cleanedPath = url_for(page.path).replace(/index\.html$/,
-  '').replace(/\.html$/, ''); const canonicalUrl = config.url.replace(/\/$/, '')
-  + cleanedPath; %>
-  <link rel="canonical" href="<%= canonicalUrl %>" />
-
-  <% let imageUrl = null; %> <% if (page.cover) { imageUrl =
-  config.url.replace(/\/$/, '') + url_for(page.asset_dir + page.cover); } %>
-
-  <meta property="og:title" content="<%= seoOgTitle() %>" />
-  <meta property="og:description" content="<%= seoOgDescription() %>" />
-
-  <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
-  <meta property="og:url" content="<%= canonicalUrl %>" />
-  <meta property="og:logo" content="<%= url_for('img/logos/logo.png') %>" />
-
-  <% if (imageUrl) { %>
-  <meta property="og:image" content="<%= imageUrl %>" />
-  <% } else { %>
-  <meta
-    property="og:image"
-    content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
-  />
-  <% } %>
-
-  <meta
-    name="twitter:card"
-    content="<%= imageUrl ? 'summary_large_image' : 'summary' %>"
-  />
-  <meta name="twitter:title" content="<%= seoTwitterTitle() %>" />
-  <meta name="twitter:description" content="<%= seoTwitterDescription() %>" />
-
-  <% if (imageUrl) { %>
-  <meta name="twitter:image" content="<%= imageUrl %>" />
-  <% } else { %>
-  <meta
-    name="twitter:image"
-    content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
-  />
-  <% } %>
-
-  <meta name="geo.region" content="AU-VIC" />
-  <meta name="geo.placename" content="<%= page.suburb || 'Melbourne' %>" />
-  <meta
-    name="geo.position"
-    content="<%= page.latitude || '-37.8781' %>;<%= page.longitude || '145.1669' %>"
-  />
-  <meta
-    name="ICBM"
-    content="<%= page.latitude || '-37.8781' %>, <%= page.longitude || '145.1669' %>"
   />
 
   <link rel="icon" href="/logos/favicon.png" type="image/png" />
@@ -77,6 +33,20 @@
     href="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"
   />
 
+  <link rel="canonical" href="<%= canonicalUrl %>" />
+
+
+  <!-- Open Graph  -->
+  <%- partial('partial/head/open-graph', {imageUrl, canonicalUrl}) %>
+
+  <!-- Geo region  -->
+	<%- partial('partial/head/geo-region') %>
+
+  <!-- Twitter  -->
+	<%- partial('partial/head/twitter', {imageUrl}) %>
+
+
+  <!-- Schema.org -->
   <script type="application/ld+json">
     <%- jsonld(page, site, config) %>
   </script>
@@ -88,17 +58,6 @@
   </script>
   <% } %>
 
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=<%- config.google_tag_manager.id%>"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "<%- config.google_tag_manager.id%>");
-  </script>
+  <!-- GTM  -->
+	<%- partial('partial/head/gtm') %>
 </head>

@@ -1,0 +1,15 @@
+<meta
+    name="twitter:card"
+    content="<%= imageUrl ? 'summary_large_image' : 'summary' %>"
+  />
+  <meta name="twitter:title" content="<%= seoTwitterTitle() %>" />
+  <meta name="twitter:description" content="<%= seoTwitterDescription() %>" />
+
+  <% if (imageUrl) { %>
+  <meta name="twitter:image" content="<%= imageUrl %>" />
+  <% } else { %>
+  <meta
+    name="twitter:image"
+    content="<%= config.url.replace(/\/$/, '') + url_for('img/default-cover.jpg') %>"
+  />
+  <% } %>
