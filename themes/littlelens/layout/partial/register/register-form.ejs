@@ -1,4 +1,10 @@
-<form action="" method="POST" id="registerForm" class="space-y-8">
+<form id="registerForm" class="space-y-8">
+  <div class="text-3xl font-bold text-gray-900 mb-1">
+    Register for Photo Day
+  </div>
+  <div id="centre-from-url" class="text-md text-gray-500">
+    for outdoor and portrait photos
+  </div>
   <!-- Child'd name  -->
   <h2>Child's name</h2>
   <div class="grid md:grid-cols-2 md:gap-6">
@@ -12,7 +18,7 @@
       <input
         type="text"
         id="child-firstname"
-        name="child-firstname"
+        name="First Name"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="Child's First Name"
         required
@@ -28,7 +34,7 @@
       <input
         type="text"
         id="child-lastname"
-        name="child-lastname"
+        name="Last Name"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="Child's Last Name"
         required
@@ -48,7 +54,7 @@
       <input
         type="text"
         id="firstname"
-        name="firstname"
+        name="Parent first name"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="Your First Name"
         required
@@ -64,7 +70,7 @@
       <input
         type="text"
         id="lastname"
-        name="lastname"
+        name="Parent last name"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="Your Last Name"
         required
@@ -82,7 +88,7 @@
       <input
         type="email"
         id="email"
-        name="email"
+        name="Email"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="your@email.com"
         required
@@ -95,7 +101,7 @@
       <input
         type="text"
         id="mobile"
-        name="mobile"
+        name="Mobile"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="0412 345 678"
         required
@@ -116,29 +122,28 @@
       class="block mb-2 text-sm font-medium text-gray-900"
       >Name of Centre</label
     >
-    <input
-      type="text"
+    <select
       id="centre-name"
-      name="centre-name"
-      class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-      placeholder="Name of Child Care Centre / Kindergarten"
+      name="Child Care"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
       required
-    />
+    >
+      <option disabled selected>Select a centre</option>
+      <option disabled selected>Loading...</option>
+    </select>
   </div>
 
   <div>
-    <!-- Room  -->
-    <label for="room" class="block mb-2 text-sm font-medium text-gray-900"
+    <!-- Photo Day  -->
+    <label for="photo-day" class="block mb-2 text-sm font-medium text-gray-900"
       >Select Group and Date</label
     >
     <select
-      id="room"
+      id="photo-day"
+      name="Photo Day"
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
     >
-      <option>Group A - Monday 28th May</option>
-      <option>Group B - Tuesday 29th May</option>
-      <option>Group C - Wednesday 30th May</option>
-      <option>Group D - Thursday 31st May</option>
+      <option disabled selected>Select a centre first</option>
     </select>
   </div>
 
@@ -146,14 +151,14 @@
   <div>
     <div class="mt-8">
       <label for="message" class="block mb-2 text-sm font-medium text-gray-900"
-        >Your message (optional)</label
+        >Special Info (optional)</label
       >
       <textarea
         id="message"
-        name="message"
+        name="Comment"
         rows="6"
         class="block p-2.5 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg shadow-sm border border-gray-300 focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-        placeholder="Leave a comment..."
+        placeholder="Do you have any special information you'd like to let us know?"
       ></textarea>
     </div>
   </div>
@@ -188,7 +193,7 @@
       <input
         type="text"
         id="sibling-name"
-        name="sibling-name"
+        name="Sibling Name"
         class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
         placeholder="Full name of your child's sibling"
       />
@@ -223,7 +228,7 @@
       id="media-yes"
       type="radio"
       value=""
-      name="media"
+      name="Permission to share"
       class="w-4 h-4 text-little-lens-green-600 bg-gray-100 border-gray-300 focus:ring-little-lens-green-500 focus:ring-2"
     />
 
@@ -261,6 +266,7 @@
         id="sibling"
         type="checkbox"
         value=""
+        name="Family Photos Info"
         class="w-4 h-4 text-little-lens-green-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-little-lens-green-500"
       />
       <label for="sibling" class="ms-2 text-sm font-medium text-gray-700">
@@ -341,67 +347,206 @@
 </form>
 
 <script>
+  const BOOKINGS_API =
+    "https://script.google.com/macros/s/AKfycbzluzXsnbThx3_nksrCnw8illiZuZXE9VwGAHTEFIM54qNbHpQnwmSaviq8xF81_LvU/exec";
+
+  let bookingsData = [];
+
+  const fetchBookings = async () => {
+    try {
+      const response = await fetch(BOOKINGS_API);
+      if (!response.ok) throw new Error("Network response was not ok");
+
+      bookingsData = await response.json();
+      processBookingsData();
+      populateCentreDropdown();
+
+      // Pre-select centre from URL if present
+      const centreFromUrl = new URLSearchParams(window.location.search).get(
+        "c"
+      );
+
+      if (centreFromUrl) {
+        const centreSelect = document.getElementById("centre-name");
+
+        // Wait until the dropdown is populated
+        const isValidCentre = Array.from(centreSelect.options).some(
+          (option) => option.value === centreFromUrl
+        );
+
+        if (isValidCentre) {
+          // Show selected centre in text
+          const centreFromUrlText = document.getElementById("centre-from-url");
+          if (centreFromUrlText) {
+            centreFromUrlText.textContent = `for ${centreFromUrl}`;
+          }
+
+          // Keep only the matching centre option
+          centreSelect.innerHTML = ""; // clear all options
+          const option = document.createElement("option");
+          option.value = centreFromUrl;
+          option.textContent = centreFromUrl;
+          option.selected = true;
+          centreSelect.appendChild(option);
+
+          // Populate date dropdown for this centre
+          populateDateDropdown(centreFromUrl);
+        } else {
+          console.warn(
+            `Centre "${centreFromUrl}" not found in available options.`
+          );
+        }
+      }
+    } catch (error) {
+      console.error("Error fetching bookings:", error);
+    }
+  };
+
+  const isFutureDate = (dateStr, now) => {
+    const [day, month, year] = dateStr.split("/");
+    const date = new Date(`${year}-${month}-${day}`);
+
+    const isToday = date.toDateString() === now.toDateString();
+    const isAfterCutoff = now.getHours() > 10;
+
+    return date > now || (isToday && !isAfterCutoff);
+  };
+
+  const processBookingsData = () => {
+    const now = new Date();
+
+    bookingsData.forEach((centre) => {
+      centre.Dates = centre.Dates.filter((dateObj) =>
+        isFutureDate(dateObj.Date, now)
+      );
+    });
+
+    bookingsData = bookingsData
+      .filter((centre) => centre.Dates.length > 0)
+      .sort((a, b) => a.Center.localeCompare(b.Center));
+
+    bookingsData.forEach((centre) => {
+      centre.Dates.sort((a, b) => {
+        const [dA, mA, yA] = a.Date.split("/");
+        const [dB, mB, yB] = b.Date.split("/");
+        return new Date(`${yA}-${mA}-${dA}`) - new Date(`${yB}-${mB}-${dB}`);
+      });
+    });
+  };
+
+  const populateCentreDropdown = () => {
+    const select = document.getElementById("centre-name");
+    select.innerHTML = "<option disabled selected>Select a centre</option>";
+
+    bookingsData.forEach((centre) => {
+      const option = document.createElement("option");
+      option.value = centre.Center;
+      option.textContent = centre.Center;
+      select.appendChild(option);
+    });
+  };
+
+  const populateDateDropdown = (selectedCentre) => {
+    const select = document.getElementById("photo-day");
+    select.innerHTML = "<option disabled selected>Select a date</option>";
+
+    const centre = bookingsData.find((c) => c.Center === selectedCentre);
+    if (!centre) return;
+
+    centre.Dates.forEach(({ Date: dateStr, Registrations }) => {
+      const [day, month, year] = dateStr.split("/");
+      const dateObj = new Date(`${year}-${month}-${day}`);
+      const dayOfWeek = dateObj.toLocaleDateString("en-AU", {
+        weekday: "long",
+      });
+
+      const option = document.createElement("option");
+      option.value = dateStr;
+      option.textContent = `${dayOfWeek}, ${dateStr}`;
+
+      if (Registrations >= 25) {
+        option.textContent +=
+          " (fully booked – only select if it's your child's only day at the centre)";
+      } else if (Registrations >= 20) {
+        option.textContent += " (almost full)";
+      }
+
+      select.appendChild(option);
+    });
+  };
+
+  document.getElementById("centre-name").addEventListener("change", (e) => {
+    populateDateDropdown(e.target.value);
+  });
+
+  fetchBookings();
+</script>
+
+<script>
   const form = document.getElementById("registerForm");
-  const formSuccess = document.getElementById("formSuccess");
-  const formError = document.getElementById("formError");
-  const formLoading = document.getElementById("formLoading");
-
-  // Retrieve child's first name
-  const childFirstName = document.getElementById("child-firstname");
-  childFirstName.addEventListener("input", function () {
-    // Submit Btn
-    const registerName = document.getElementById("register-name");
-    registerName.textContent = this.value || "your child";
-
-    // Sibling name input
-    const siblingNameInput = document.getElementById("sibling-name");
-    siblingNameInput.placeholder =
-      `Full name of ${this.value}'s sibling` ||
-      "Full name of you child's sibling";
-  });
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    formLoading.classList.remove("hidden");
-    formSuccess.classList.add("hidden");
-    formError.classList.add("hidden");
-
-    // Simulate a successful submission
-    setTimeout(() => {
-      formLoading.classList.add("hidden");
-      formSuccess.classList.remove("hidden");
-    }, 2000);
-  });
-
-  // Show sibling name input if sibling checkbox is checked
+  const childFirstNameInput = document.getElementById("child-firstname");
+  const registerName = document.getElementById("register-name");
   const siblingCheckbox = document.getElementById("sibling");
   const siblingNameContainer = document.getElementById(
     "sibling-name-container"
   );
   const siblingNameInput = document.getElementById("sibling-name");
 
-  siblingCheckbox.addEventListener("change", function () {
-    siblingNameContainer.classList.toggle("hidden", !this.checked);
-    siblingNameInput.required = this.checked;
-  });
+  const showLoadingState = () => {
+    document.getElementById("formLoading").classList.remove("hidden");
+    document.getElementById("formSuccess").classList.add("hidden");
+    document.getElementById("formError").classList.add("hidden");
+  };
 
-  // Fetch bookings
-  const bookingsApi =
-    "https://script.google.com/macros/s/AKfycbyYEoUigecPpsNS_4Sv8nRKEJjo7bib2GEdzhd-12anw_lZi5oNkf9Wlzk278919cZs/exec";
+  const handleFormSuccess = () => {
+    document.getElementById("formLoading").classList.add("hidden");
+    document.getElementById("formSuccess").classList.remove("hidden");
+  };
 
-  const fetchBookings = async () => {
+  const handleFormError = () => {
+    document.getElementById("formLoading").classList.add("hidden");
+    document.getElementById("formError").classList.remove("hidden");
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    showLoadingState();
+
+    const formData = new FormData(form);
+    const jsonData = Object.fromEntries(formData.entries());
+
     try {
-      const response = await fetch(bookingsApi);
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      const data = await response.json();
-      console.log(data);
+      const response = await fetch(BOOKINGS_API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(jsonData),
+      });
+
+      const result = await response.json();
+      alert(result.message || "Registration successful!");
+      form.reset();
+      handleFormSuccess();
     } catch (error) {
-      console.error("Error fetching bookings:", error);
+      console.error("Submission error:", error);
+      alert("There was a problem submitting your form.");
+      handleFormError();
     }
   };
 
-  // Call the function to fetch bookings
-  fetchBookings();
+  const handleNameInput = () => {
+    const childName = childFirstNameInput.value || "your child";
+    registerName.textContent = childName;
+    siblingNameInput.placeholder = `Full name of ${childName}'s sibling`;
+  };
+
+  const handleSiblingToggle = () => {
+    const show = siblingCheckbox.checked;
+    siblingNameContainer.classList.toggle("hidden", !show);
+    siblingNameInput.required = show;
+  };
+
+  // Event listeners
+  childFirstNameInput.addEventListener("input", handleNameInput);
+  siblingCheckbox.addEventListener("change", handleSiblingToggle);
+  form.addEventListener("submit", handleFormSubmit);
 </script>

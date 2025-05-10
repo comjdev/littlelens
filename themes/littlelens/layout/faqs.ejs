@@ -1,36 +1,43 @@
 <main>
-	<section class="">
-		<div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
-			<%- getFaqTitle(page._content) || ' Frequently asked questions ' %>
+  <section class="">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
+      <%- getFaqTitle(page._content) || ' Frequently asked questions ' %>
 
-			<div class="mb-3 font-light text-gray-500 sm:text-xl">
-				<%- getFaqIntro(page._content)%>
-			</div>
+      <div class="mb-3 font-light text-gray-500 sm:text-xl">
+        <%- getFaqIntro(page._content)%>
+      </div>
 
-			<% if (page.title === 'Childcare Centre FAQs') { %>
-			<div class="mt-8">
-				<a
-					href="/how-it-works/"
-					class="text-white bg-little-lens-green-900 hover:bg-little-lens-green-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-5"
-				>
-					Read more about my process
-				</a>
-			</div>
-			<% } %>
-		</div>
-	</section>
+      <% if (page.title === 'Childcare Centre FAQs') { %>
+      <div class="mt-8">
+        <a
+          href="/how-it-works/"
+          class="text-white bg-little-lens-green-900 hover:bg-little-lens-green-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-5"
+        >
+          Read more about my process
+        </a>
+      </div>
+      <% } %>
 
-	<section class="">
-		<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-			<h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900">
-				Frequently asked questions
-			</h2>
+      <a
+        href="/register/"
+        class="sm:w-[182px] inline-flex w-full justify-center items-center px-5 py-3 text-base font-medium text-center text-white bg-little-lens-green-900 border rounded-lg shrink-0 focus:outline-none hover:text-little-lens-green-100 hover:bg-little-lens-green-800"
+      >
+        Register your child
+      </a>
+    </div>
+  </section>
 
-			<div
-				class="grid pt-8 text-left border-t border-gray-200 md:gap-16 md:grid-cols-2"
-			>
-				<%- renderFaqs(page._content) %>
-			</div>
-		</div>
-	</section>
+  <section class="">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900">
+        Frequently asked questions
+      </h2>
+
+      <div
+        class="grid pt-8 text-left border-t border-gray-200 md:gap-16 md:grid-cols-2"
+      >
+        <%- renderFaqs(page._content) %>
+      </div>
+    </div>
+  </section>
 </main>
