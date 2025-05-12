@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Day Registration Confirmation</title>
+  </head>
+  <body
+    style="font-family: Arial, sans-serif; font-size: 16px; color: #6b7280; line-height: 1.5; background-color: #E9F9EE;"
+  >
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+      <p>
+        Hi
+        {{parentFirstName}},
+      </p>
+
+      <p>
+        Thank you for registering
+        {{childFirstName}}
+        for photo day at
+        <br />
+        <span style="color: #111827; font-weight: bold;">{{centreName}}</span>.
+      </p>
+
+      <p>
+        We’re so happy you’re interested in our photos — we can’t wait to
+        capture some beautiful memories of
+        {{childFirstName}}!
+      </p>
+
+      <h3 style="color: #111827">Registration Details:</h3>
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr><td style="padding: 4px 0;"><strong>Child's Name:</strong></td><td
+          >{{childFirstName}} {{childLastName}}</td></tr>
+        <tr><td style="padding: 4px 0;"><strong>Date:</strong></td><td
+          >{{photoDay}}</td></tr>
+        <tr><td style="padding: 4px 0;"><strong>Parent's Name:</strong></td><td
+          >{{parentFirstName}} {{parentLastName}}</td></tr>
+        <tr><td style="padding: 4px 0;"><strong>Email:</strong></td><td
+          >{{parentEmail}}</td></tr>
+        <tr><td style="padding: 4px 0;"><strong>Phone:</strong></td><td
+          >{{parentPhone}}</td></tr>
+
+        {{#if siblingFirstName}}
+          <tr><td style="padding: 4px 0;"><strong>Sibling's Name:</strong></td><td
+            >{{siblingFirstName}} {{siblingLastName}}</td></tr>
+        {{/if}}
+
+        {{#if message}}
+          <tr><td style="padding: 4px 0;"><strong>Message:</strong></td><td
+            >{{message}}</td></tr>
+        {{/if}}
+
+        <tr><td style="padding: 4px 0;"><strong>Permission to Share:</strong></td><td
+          >{{permissionToShare}}</td></tr>
+        <tr><td style="padding: 4px 0;"><strong>Family Photos:</strong></td><td
+          >{{familyPhotos}}</td></tr>
+      </table>
+
+      {{#if siblingFirstName}}
+        <p style="margin-top: 20px;">
+          Please note that sibling shoots are separate to individual portraits
+          of your children. You’ll receive an additional gallery and package
+          options for these.
+        </p>
+      {{/if}}
+
+      {{#if (eq familyPhotos "yes")}}
+        <p>
+          Thank you for expressing interest in family photos! We’ll send you
+          some more information shortly about our family photography options.
+        </p>
+      {{/if}}
+
+      <p style="margin-top: 20px;">
+        We'll be in touch if we need anything else. Looking forward to photo day
+        at
+        <span style="color: #111827; font-weight: bold;">{{centreName}}</span>
+        on
+        <span style="color: #111827; font-weight: bold;">{{photoDay}}</span>!
+      </p>
+
+      <p>
+        Warm regards,<br />The Little Lens Team
+      </p>
+
+      <img
+        src="https://littlelens.com.au/logos/logo.png"
+        alt="Little Lens Logo"
+        style="max-width: 200px; margin-top: 16px; margin-bottom: 20px;"
+      />
+    </div>
+  </body>
+</html>

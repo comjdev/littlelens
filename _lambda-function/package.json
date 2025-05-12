@@ -1,0 +1,10 @@
+{
+  "name": "form-handler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.806.0",
+    "googleapis": "^105.0.0",
+    "handlebars": "^4.7.8"
+  }
+}
