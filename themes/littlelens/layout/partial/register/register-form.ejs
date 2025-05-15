@@ -115,7 +115,7 @@
   <hr class="h-px my-8 bg-gray-200 border-0" />
 
   <!-- Childcare Center  -->
-  <h2>Child Care Centre / Kindergarten</h2>
+  <h2>Childcare Centre / Kindergarten</h2>
   <div>
     <label
       for="centre-name"
@@ -128,7 +128,7 @@
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
       required
     >
-      <option disabled selected>Select a centre</option>
+      <option disabled selected>Select your centre</option>
       <option disabled selected>Loading...</option>
     </select>
   </div>
@@ -136,14 +136,14 @@
   <div>
     <!-- Photo Day  -->
     <label for="photo-day" class="block mb-2 text-sm font-medium text-gray-900"
-      >Select Group and Date</label
+      >Select Date</label
     >
     <select
       id="photo-day"
       name="photo-day"
       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
     >
-      <option disabled selected>Select a centre first</option>
+      <option disabled selected>Select your centre first</option>
     </select>
   </div>
 
@@ -294,26 +294,11 @@
     </div>
   </div>
 
-  <hr class="h-px my-8 bg-gray-200 border-0" />
-
-  <h2>Pricing</h2>
-
-  <div
-    class="p-4 mb-4 text-sm text-little-lens-green-800 rounded-lg bg-little-lens-green-100"
-  >
-    <span class="font-medium">There is NO upfront fee!</span> You get to view
-    and then purchase if you wish.
-  </div>
-
-  <div
-    class="p-4 mb-4 text-sm text-little-lens-green-800 rounded-lg bg-little-lens-green-100"
-  >
-    There is NO minimum spend and a variety of packages to choose from.
-  </div>
+  
 
   <button
     type="submit"
-    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-little-lens-green-700 sm:w-fit hover:bg-little-lens-green-800 focus:ring-4 focus:outline-none focus:ring-little-lens-green-300"
+    class="py-3 px-5 mt-5 text-sm font-medium text-center text-white rounded-lg bg-little-lens-green-800 sm:w-fit hover:bg-little-lens-green-700 focus:ring-4 focus:outline-none focus:ring-little-lens-green-300"
   >
     Register <span id="register-name">your child</span>
   </button>
@@ -364,6 +349,10 @@
     </div>
   </div>
 </form>
+
+<hr class="h-px my-8 bg-gray-200 border-0" />
+
+<%- partial('partial/register/pricelist') %>
 
 <script>
   const BOOKINGS_API =
@@ -455,7 +444,7 @@
 
   const populateCentreDropdown = () => {
     const select = document.getElementById("centre-name");
-    select.innerHTML = "<option disabled selected>Select a centre</option>";
+    select.innerHTML = "<option disabled selected>Select your centre</option>";
 
     bookingsData.forEach((centre) => {
       const option = document.createElement("option");

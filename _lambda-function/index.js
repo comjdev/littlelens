@@ -131,7 +131,7 @@ async function writeToGoogleSheet(data) {
 
 async function sendEmail(data) {
   try {
-    const ses = new SESClient({ region: "us-east-1" });
+    const ses = new SESClient({ region: "ap-southeast-2" });
 
     // Load and compile template
     const templatePath = path.join(__dirname, "confirmation-email.hbs");

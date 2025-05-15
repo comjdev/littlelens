@@ -1,0 +1,140 @@
+<h2 class="!mt-12">Pricing</h2>
+
+<div class="mb-10">
+  <div
+    class="p-4 mb-4 text-sm text-little-lens-green-800 rounded-lg bg-little-lens-green-100"
+  >
+    <span class="font-bold">There is NO upfront fee!</span> You get to view and
+    then purchase if you wish.
+  </div>
+
+  <div
+    class="p-4 mb-4 text-sm text-little-lens-green-800 rounded-lg bg-little-lens-green-100"
+  >
+    <span class="font-bold">There is NO minimum spend</span> and a variety of
+    packages to choose from.
+  </div>
+</div>
+
+<% site.data.prices.photopackages.forEach(pkg => { %>
+<div class="flex justify-between w-full">
+  <h3 class="uppercase"><%- pkg.name %></h3>
+  <div
+    class="bg-little-lens-green-800 text-white text-2xl font-bold p-5 rounded-full"
+  >
+    $<%= pkg.price %>
+  </div>
+</div>
+
+<% if (pkg.text) { %>
+<p class="font-bold"><%= pkg.text %></p>
+<% } %>
+
+<ul class="max-w-md space-y-1 text-gray-500 list-inside">
+  <% pkg.features.forEach(feature => { %>
+  <li class="flex items-center">
+    <svg
+      class="w-3.5 h-3.5 me-2 text-little-lens-green-700 shrink-0"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+      />
+    </svg>
+    <%= feature %>
+  </li>
+  <% }); %>
+</ul>
+<div class="hr-dotted"></div>
+<% }); %>
+
+<h3 class="uppercase">Digital Packs</h3>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- Left Column: Smaller Packages -->
+  <div class="space-y-8">
+    <ul class="max-w-md space-y-1 text-gray-500 list-inside">
+      <% site.data.prices.digitalpacks.forEach(pkg => { %> <% if (!pkg.features)
+      { %>
+      <li class="flex items-center">
+        <svg
+          class="w-3.5 h-3.5 me-2 text-little-lens-green-700 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+          />
+        </svg>
+        <%- pkg.name %> - $<%= pkg.price %>
+      </li>
+      <% } %> <% }); %>
+    </ul>
+  </div>
+
+  <!-- Right Column: Big Package -->
+  <div>
+    <% site.data.prices.digitalpacks.forEach(pkg => { %> <% if (pkg.features) {
+    %>
+    <ul>
+      <li class="flex items-center">
+        <svg
+          class="w-3.5 h-3.5 me-2 text-little-lens-green-700 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+          />
+        </svg>
+        <%- pkg.name %> - $<%= pkg.price %>
+      </li>
+
+      <li class="flex items-center">
+        <ul class="space-y-1 !mt-0 list-disc list-inside">
+          <% pkg.features.forEach(feature => { %>
+          <li><%= feature %></li>
+          <% }); %>
+        </ul>
+      </li>
+      <% } %> <% }); %>
+    </ul>
+  </div>
+</div>
+
+<div class="hr-dotted"></div>
+
+<h3 class="uppercase">Keepsake Albums</h3>
+<% site.data.prices.keepsake.forEach(pkg => { %>
+<div class="package">
+  <% if (pkg.text) { %>
+  <p class="font-bold"><%= pkg.text %> - $<%= pkg.price %></p>
+  <% } %> <% if (pkg.features) { %>
+  <ul>
+    <% pkg.features.forEach(feature => { %>
+    <li class="flex items-center">
+      <svg
+        class="w-3.5 h-3.5 me-2 text-little-lens-green-700 shrink-0"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+        />
+      </svg>
+      <%= feature %>
+    </li>
+    <% }); %>
+  </ul>
+  <% } %>
+</div>
+<% }); %>

@@ -1,0 +1,54 @@
+photopackages:
+  - name: Basic<br>Package 1
+    price: 30
+    text: Choose 1 photo from the gallery
+    features:
+      - One 6x8 inch print
+      - Two 5x7 inch prints
+      - Matching digital file
+
+  - name: Basic<br>Package 2
+    price: 45
+    text: Choose 1 photo from the gallery
+    features:
+      - One 6x8 inch print
+      - Two 5x7 inch prints
+      - Matching digital file
+      - Class photo 8x10 inch print
+
+  - name: Multi Image<br>Package 1
+    price: 60
+    features:
+      - 3 ditigal files
+      - matching prints 5x7 inch
+
+  - name: Multi Image<br>Package 2
+    price: 80
+    features:
+      - 6 ditigal files
+      - matching prints 5x7 inch
+
+digitalpacks:
+  - name: 1 digital file
+    price: 20
+  - name: 5 digital files
+    price: 70
+  - name: 10 digital files
+    price: 110
+  - name: all digital files
+    price: 130
+  - name: Big Package
+    price: 160
+    features:
+      - all digital files
+      - one enlarged 8x10 print
+      - class photo 8x10 print
+
+keepsake:
+  - name: Keepsake Albums
+    price: 150
+    text: Choose 12 photos from the gallery
+    features:
+      - 2 prints 5x7 inch
+      - matching digital files
+      - class photo print

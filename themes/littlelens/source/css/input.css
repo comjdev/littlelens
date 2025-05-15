@@ -4,68 +4,68 @@
 @source "../../../../node_modules/flowbite";
 
 @theme {
-	--color-little-lens-green-50: #f7fcfb;
-	--color-little-lens-green-100: #f5fcfa;
-	--color-little-lens-green-200: #e1f7ee;
-	--color-little-lens-green-300: #d3f5e5;
-	--color-little-lens-green-400: #b2ebcc;
-	--color-little-lens-green-500: #93e2ae;
-	--color-little-lens-green-600: #78cc94;
-	--color-little-lens-green-700: #54ab6e;
-	--color-little-lens-green-800: #35874c;
-	--color-little-lens-green-900: #1e6630;
-	--color-little-lens-green-950: #0d4219;
+  --color-little-lens-green-50: #f7fcfb;
+  --color-little-lens-green-100: #f5fcfa;
+  --color-little-lens-green-200: #e1f7ee;
+  --color-little-lens-green-300: #d3f5e5;
+  --color-little-lens-green-400: #b2ebcc;
+  --color-little-lens-green-500: #93e2ae;
+  --color-little-lens-green-600: #78cc94;
+  --color-little-lens-green-700: #54ab6e;
+  --color-little-lens-green-800: #35874c;
+  --color-little-lens-green-900: #1e6630;
+  --color-little-lens-green-950: #0d4219;
 
-	--color-little-lens-light-50: #ffffff;
-	--color-little-lens-light-100: #fcfffe;
-	--color-little-lens-light-200: #fcfffe;
-	--color-little-lens-light-300: #f7fcfa;
-	--color-little-lens-light-400: #f2fcf7;
-	--color-little-lens-light-500: #e9f9ee;
-	--color-little-lens-light-600: #bfe0c9;
-	--color-little-lens-light-700: #82ba92;
-	--color-little-lens-light-800: #549665;
-	--color-little-lens-light-900: #2f703e;
-	--color-little-lens-light-950: #13471e;
+  --color-little-lens-light-50: #ffffff;
+  --color-little-lens-light-100: #fcfffe;
+  --color-little-lens-light-200: #fcfffe;
+  --color-little-lens-light-300: #f7fcfa;
+  --color-little-lens-light-400: #f2fcf7;
+  --color-little-lens-light-500: #e9f9ee;
+  --color-little-lens-light-600: #bfe0c9;
+  --color-little-lens-light-700: #82ba92;
+  --color-little-lens-light-800: #549665;
+  --color-little-lens-light-900: #2f703e;
+  --color-little-lens-light-950: #13471e;
 
-	--color-gray-50: #f7f7f7;
-	--color-gray-100: #ededed;
-	--color-gray-200: #d4d4d4;
-	--color-gray-300: #b8b8b8;
-	--color-gray-400: #828282;
-	--color-gray-500: #4d4d4d;
-	--color-gray-600: #453e3e;
-	--color-gray-700: #382a2a;
-	--color-gray-800: #2e1c1c;
-	--color-gray-900: #210f0f;
-	--color-gray-950: #170707;
+  --color-gray-50: #f7f7f7;
+  --color-gray-100: #ededed;
+  --color-gray-200: #d4d4d4;
+  --color-gray-300: #b8b8b8;
+  --color-gray-400: #828282;
+  --color-gray-500: #4d4d4d;
+  --color-gray-600: #453e3e;
+  --color-gray-700: #382a2a;
+  --color-gray-800: #2e1c1c;
+  --color-gray-900: #210f0f;
+  --color-gray-950: #170707;
 
-	--color-little-lens-blue-50: #f5fbff;
-	--color-little-lens-blue-100: #e8f5fc;
-	--color-little-lens-blue-200: #c5e3fa;
-	--color-little-lens-blue-300: #a3cff7;
-	--color-little-lens-blue-400: #629df0;
-	--color-little-lens-blue-500: #2463eb;
-	--color-little-lens-blue-600: #1e54d4;
-	--color-little-lens-blue-700: #1340b0;
-	--color-little-lens-blue-800: #0d2d8c;
-	--color-little-lens-blue-900: #071e69;
-	--color-little-lens-blue-950: #031045;
+  --color-little-lens-blue-50: #f5fbff;
+  --color-little-lens-blue-100: #e8f5fc;
+  --color-little-lens-blue-200: #c5e3fa;
+  --color-little-lens-blue-300: #a3cff7;
+  --color-little-lens-blue-400: #629df0;
+  --color-little-lens-blue-500: #2463eb;
+  --color-little-lens-blue-600: #1e54d4;
+  --color-little-lens-blue-700: #1340b0;
+  --color-little-lens-blue-800: #0d2d8c;
+  --color-little-lens-blue-900: #071e69;
+  --color-little-lens-blue-950: #031045;
 
-	--font-sans: "Alegreya Sans", serif;
-	--font-body: "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
+  --font-sans: "Alegreya Sans", serif;
+  --font-body: "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .show-nav {
-	@apply visible opacity-100;
+  @apply visible opacity-100;
 }
 
 .mobile-hamburger {
-	animation: rotate 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* .mobile-hamburger i {
@@ -73,77 +73,92 @@ html {
 } */
 
 @keyframes rotate {
-	0% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(270deg);
-	}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
 }
 
 .format {
-	max-width: 100% !important;
-	width: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
 
-	img {
-		@apply rounded-lg;
-		max-width: 600px;
-		width: 100%;
-		height: auto;
-	}
+  img {
+    @apply rounded-lg;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .gradient {
-	background: radial-gradient(
-		circle,
-		var(--color-blue-700),
-		var(--color-yellow-100)
-	);
-	background-clip: text;
-	color: transparent;
-	animation: gradient 15s linear infinite;
-	background-size: 200% 200%;
+  background: radial-gradient(
+    circle,
+    var(--color-blue-700),
+    var(--color-yellow-100)
+  );
+  background-clip: text;
+  color: transparent;
+  animation: gradient 15s linear infinite;
+  background-size: 200% 200%;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 100% 100%;
-	}
-	100% {
-		background-position: 0% 0%;
-	}
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .phone-shake {
-	animation: phone-shake-animation 10s ease-in-out infinite;
+  animation: phone-shake-animation 10s ease-in-out infinite;
 }
 
 @keyframes phone-shake-animation {
-	0% {
-		transform: rotate(0deg);
-	}
-	94% {
-		transform: rotate(0deg);
-	}
-	95% {
-		transform: rotate(10deg);
-	}
-	96% {
-		transform: rotate(-10deg);
-	}
-	97% {
-		transform: rotate(10deg);
-	}
-	98% {
-		transform: rotate(-10deg);
-	}
-	99% {
-		transform: rotate(10deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  94% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(10deg);
+  }
+  96% {
+    transform: rotate(-10deg);
+  }
+  97% {
+    transform: rotate(10deg);
+  }
+  98% {
+    transform: rotate(-10deg);
+  }
+  99% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hr-dotted {
+  width: 100%;
+  height: 0.5rem; /* or use 2 for thicker dots */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: radial-gradient(
+    circle,
+    var(--color-little-lens-green-900) 2px,
+    transparent 2px
+  );
+  background-size: 10px 4px;
+  background-position: center;
+  background-repeat: repeat-x;
 }
