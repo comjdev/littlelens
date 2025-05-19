@@ -1,0 +1,52 @@
+function doGet() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var bookingsSheet = ss.getSheetByName("Upcoming Bookings");
+  var registrationsSheet = ss.getSheetByName("Registrations");
+
+  var bookingsData = bookingsSheet.getDataRange().getValues(); // headers + rows
+  var registrationsData = registrationsSheet.getDataRange().getValues(); // headers + rows
+
+  // Parse registrations into a map: { "Center|Date" => count }
+  var registrationMap = {};
+  for (var i = 1; i < registrationsData.length; i++) {
+    var center = registrationsData[i][0];
+    var date = registrationsData[i][1];
+    var key = center + "|" + date;
+    registrationMap[key] = (registrationMap[key] || 0) + 1;
+  }
+
+  // Group upcoming bookings by center with date + registration count
+  var resultMap = {}; // { Center => [ {Date, Registrations}, ... ] }
+  for (var i = 1; i < bookingsData.length; i++) {
+    var date = bookingsData[i][0];
+    var center = bookingsData[i][1];
+    var key = center + "|" + date;
+    var count = registrationMap[key] || 0;
+
+    if (!resultMap[center]) {
+      resultMap[center] = [];
+    }
+
+    resultMap[center].push({
+      Date: Utilities.formatDate(
+        new Date(date),
+        Session.getScriptTimeZone(),
+        "dd/MM/yyyy"
+      ),
+      Registrations: count,
+    });
+  }
+
+  // Convert resultMap to plain array of objects
+  var output = [];
+  for (var centerName in resultMap) {
+    output.push({
+      Center: centerName,
+      Dates: resultMap[centerName],
+    });
+  }
+
+  return ContentService.createTextOutput(JSON.stringify(output)).setMimeType(
+    ContentService.MimeType.JSON
+  );
+}

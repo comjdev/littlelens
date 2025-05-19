@@ -134,6 +134,20 @@
   </div>
 
   <div>
+    <!-- Group / Room  -->
+    <label for="room" class="block mb-2 text-sm font-medium text-gray-900"
+      >Select Group/Room</label
+    >
+    <select
+      id="room"
+      name="room"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
+    >
+      <option disabled selected>Select your centre first</option>
+    </select>
+  </div>
+
+  <div>
     <!-- Photo Day  -->
     <label for="photo-day" class="block mb-2 text-sm font-medium text-gray-900"
       >Select Date</label
@@ -397,6 +411,9 @@
           option.selected = true;
           centreSelect.appendChild(option);
 
+          // Populate room dropdown for this centre
+          populateRoomDropdown(centreFromUrl);
+
           // Populate date dropdown for this centre
           populateDateDropdown(centreFromUrl);
         } else {
@@ -454,6 +471,24 @@
     });
   };
 
+  const populateRoomDropdown = (selectedCentre) => {
+    const select = document.getElementById("room");
+    select.innerHTML = "<option disabled selected>Select your child's Group/Room</option>";
+    console.log("populateRoomDropdown", selectedCentre);
+    console.log("bookingsData", bookingsData);
+
+
+    const centre = bookingsData.find((c) => c.Center === selectedCentre);
+    if (!centre) return;
+
+    centre.Rooms.forEach((room) => {
+      const option = document.createElement("option");
+      option.value = room;
+      option.textContent = room;
+      select.appendChild(option);
+    });
+  };
+
   const populateDateDropdown = (selectedCentre) => {
     const select = document.getElementById("photo-day");
     select.innerHTML = "<option disabled selected>Select a date</option>";
@@ -485,6 +520,7 @@
 
   document.getElementById("centre-name").addEventListener("change", (e) => {
     populateDateDropdown(e.target.value);
+    populateRoomDropdown(e.target.value);
   });
 
   fetchBookings();
@@ -527,6 +563,7 @@
 
     const formData = new FormData(form);
     const jsonData = Object.fromEntries(formData.entries());
+    console.log("Form data:", jsonData);
 
     try {
       const response = await fetch(REGISTRATION_API, {

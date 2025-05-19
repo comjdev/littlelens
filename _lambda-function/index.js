@@ -10,6 +10,7 @@ const ALLOWED_ORIGINS = ["http://localhost:4000", "https://littlelens.com.au"];
 const REQUIRED_FIELDS = [
   "centre-name",
   "photo-day",
+  "room",
   "child-firstname",
   "child-lastname",
   "parent-firstname",
@@ -102,6 +103,7 @@ async function writeToGoogleSheet(data) {
         data["photo-day"],
         data["child-firstname"],
         data["child-lastname"],
+        data["room"],
         data["parent-firstname"],
         data["parent-lastname"],
         data["parent-email"],
@@ -146,6 +148,7 @@ async function sendEmail(data) {
       parentPhone: data["parent-phone"],
       childFirstName: data["child-firstname"],
       childLastName: data["child-lastname"],
+      room: data["room"],
       siblingFirstName: data["sibling-firstname"],
       siblingLastName: data["sibling-lastname"],
       centreName: data["centre-name"],
