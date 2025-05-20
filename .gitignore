@@ -7,6 +7,4 @@ public/
 .deploy*/
 _multiconfig.yml
 .qodo
-
-// credentials
 _lambda-function/credentials.json
