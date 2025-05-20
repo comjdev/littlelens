@@ -173,7 +173,7 @@ The Little Lens Team`;
       },
       Message: {
         Subject: {
-          Data: "Photo Day Registration Confirmation",
+          Data: "Registration Confirmed – We’re Excited for Photo Day!",
           Charset: "UTF-8",
         },
         Body: {
