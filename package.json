@@ -29,7 +29,7 @@
 		"hexo-renderer-marked": "^7.0.0",
 		"hexo-renderer-stylus": "^3.0.1",
 		"hexo-server": "^3.0.0",
-		"sharp": "^0.34.1"
+		"sharp": "^0.34.2"
 	},
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.16",
