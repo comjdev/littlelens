@@ -1,171 +1,180 @@
 <footer class="bg-little-lens-light-900 antialiased">
-	<div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
-		<div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
-			<div>
-				<h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">
-					Little Lens
-				</h2>
-				<ul class="text-little-lens-light-400">
-					<li class="mb-4">
-						<a href="/about/" class="hover:underline">About</a>
-					</li>
-					<li class="mb-4">
-						<a href="/childcare-photographer-melbourne/" class="hover:underline">Childcare Info</a>
-					</li>
-					<li class="mb-4">
-						<a href="/how-it-works/" class="hover:underline">How it works</a>
-					</li>
-					<li class="mb-4">
-						<a href="/blog/" class="hover:underline">Blog</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">Help</h2>
-				<ul class="text-little-lens-light-400">
-					<li class="mb-4">
-						<a href="/childcare-centre-faqs/" class="hover:underline"
-							>FAQs for Centres</a
-						>
-					</li>
-					<li class="mb-4">
-						<a href="/families-faqs/" class="hover:underline"
-							>FAQs for Parents</a
-						>
-					</li>
-					<li class="mb-4">
-						<a
-							href="https://www.facebook.com/Gillian.Juergens.Photography/"
-							target="_blank"
-							class="hover:underline"
-							>Facebook</a
-						>
-					</li>
-					<li class="mb-4">
-						<a href="/contact/" class="hover:underline">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">Blog</h2>
-				<ul class="text-little-lens-light-400">
-					<% site.posts.sort('date', -1).limit(3).forEach(function(post) { %>
-					<li class="mb-4">
-						<a href="/<%= post.path %>" class="hover:underline"
-							><%= post.title %></a
-						>
-					</li>
-					<% }) %>
-				</ul>
-			</div>
-			<div>
-				<h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">
-					Legal
-				</h2>
-				<ul class="text-little-lens-light-400">
-					<li class="mb-4">
-						<a href="/privacy-policy/" class="hover:underline">Privacy Policy</a>
-					</li>
-					<li class="mb-4">
-						<a href="/terms-and-conditions/" class="hover:underline">Terms</a>
-					</li>
-				</ul>
-			</div>
+  <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+      <div>
+        <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">
+          Little Lens
+        </h2>
+        <ul class="text-little-lens-light-400">
+          <li class="mb-4">
+            <a href="/about/" class="hover:underline">About</a>
+          </li>
+          <li class="mb-4">
+            <a href="/childcare-photographer-melbourne/" class="hover:underline"
+              >Childcare Info</a
+            >
+          </li>
+          <li class="mb-4">
+            <a href="/how-it-works/" class="hover:underline">How it works</a>
+          </li>
+          <li class="mb-4">
+            <a href="/blog/" class="hover:underline">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">Help</h2>
+        <ul class="text-little-lens-light-400">
+          <li class="mb-4">
+            <a href="/childcare-centre-faqs/" class="hover:underline"
+              >FAQs for Centres</a
+            >
+          </li>
+          <li class="mb-4">
+            <a href="/families-faqs/" class="hover:underline"
+              >FAQs for Parents</a
+            >
+          </li>
+          <li class="mb-4">
+            <a
+              href="https://www.facebook.com/Gillian.Juergens.Photography/"
+              target="_blank"
+              class="hover:underline"
+              >Facebook</a
+            >
+          </li>
+          <li class="mb-4">
+            <a href="/contact/" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">Blog</h2>
+        <ul class="text-little-lens-light-400">
+          <% site.posts.sort('date', -1).limit(3).forEach(function(post) { %>
+          <li class="mb-4">
+            <a href="/<%= post.path %>" class="hover:underline"
+              ><%= post.title %></a
+            >
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">
+          Legal
+        </h2>
+        <ul class="text-little-lens-light-400">
+          <li class="mb-4">
+            <a href="/privacy-policy/" class="hover:underline"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="mb-4">
+            <a href="/terms-and-conditions/" class="hover:underline">Terms</a>
+          </li>
+          <li class="mb-4">
+            <a href="/Child-Safety-Policy/" class="hover:underline"
+              >Child Safety Policy</a
+            >
+          </li>
+        </ul>
+      </div>
 
-			<div>
-				<h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">
-					Suburbs
-				</h2>
+      <div>
+        <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase">
+          Suburbs
+        </h2>
 
-				<ul class="text-little-lens-light-400">
-					<li class="mb-4">
-						<a class="hover:underline" href="/suburbs/"> All Suburbs</a>
-					</li>
-					<li class="mb-4">
-						<a class="hover:underline" href="/childcare-photography/melbourne/">
-							Melbourne
-						</a>
-					</li>
-					<% const suburbPages = site.pages .filter(page => page.layout ===
-					'suburb') .sort((a, b) => (a.suburb || '').localeCompare(b.suburb ||
-					'')) .slice(0, 2); suburbPages.forEach(function(page) { %>
-					<li class="mb-4">
-						<a class="hover:underline" href="<%= url_for(page.path) %>">
-							<%= page.suburb %>
-						</a>
-					</li>
-					<% }); %>
-				</ul>
-			</div>
-		</div>
-		<hr class="my-6 sm:mx-auto lg:my-8" />
-		<div class="text-center">
-			<a
-				href="<%= config.url %>"
-				class="flex justify-center items-center mb-5 text-2xl font-semibold text-little-lens-blue-400 hover:text-little-lens-blue-600 fill-little-lens-blue-400 hover:fill-little-lens-blue-600"
-			>
-				<div class="mr-3 h-6 sm:h-8 l0:h-12 mb-1">
-					<%- getSvg('logos/logo.svg') %>
-				</div>
-				<div class="text-2xl lg:text-3xl font-bold">Little Lens</div>
-			</a>
-			<span class="block text-sm text-center text-little-lens-light-400">
-				Kindergarten Photography, Kinder Preschool Photography, Child Care
-				Photography, Childcare Photography, Melbourne, Australia
-			</span>
-			<span class="block text-sm text-center text-little-lens-light-400"
-				>© 2025
-				<a href="<%= config.url %>" class="hover:underline"
-					>Little Lens Childcare Photography Melbourne</a
-				>. All Rights Reserved.
-			</span>
-			<ul class="flex justify-center mt-5 space-x-5">
-				<li>
-					<a
-						href="https://www.facebook.com/Gillian.Juergens.Photography/"
-						target="_blank"
-						class="text-little-lens-light-400 hover:text-little-lens-light-800"
-					>
-						<svg
-							class="h-4 w-4"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="currentColor"
-							viewBox="0 0 8 19"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.instagram.com/gilljuergensphotography/"
-						target="_blank"
-						class="text-little-lens-light-400 hover:text-little-lens-light-800"
-					>
-						<svg
-							class="h-5 w-5"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="none"
-							viewBox="0 0 24 24"
-						>
-							<path
-								fill="currentColor"
-								fill-rule="evenodd"
-								d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+        <ul class="text-little-lens-light-400">
+          <li class="mb-4">
+            <a class="hover:underline" href="/suburbs/"> All Suburbs</a>
+          </li>
+          <li class="mb-4">
+            <a class="hover:underline" href="/childcare-photography/melbourne/">
+              Melbourne
+            </a>
+          </li>
+          <% const suburbPages = site.pages .filter(page => page.layout ===
+          'suburb') .sort((a, b) => (a.suburb || '').localeCompare(b.suburb ||
+          '')) .slice(0, 2); suburbPages.forEach(function(page) { %>
+          <li class="mb-4">
+            <a class="hover:underline" href="<%= url_for(page.path) %>">
+              <%= page.suburb %>
+            </a>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-6 sm:mx-auto lg:my-8" />
+    <div class="text-center">
+      <a
+        href="<%= config.url %>"
+        class="flex justify-center items-center mb-5 text-2xl font-semibold text-little-lens-blue-400 hover:text-little-lens-blue-600 fill-little-lens-blue-400 hover:fill-little-lens-blue-600"
+      >
+        <div class="mr-3 h-6 sm:h-8 l0:h-12 mb-1">
+          <%- getSvg('logos/logo.svg') %>
+        </div>
+        <div class="text-2xl lg:text-3xl font-bold">Little Lens</div>
+      </a>
+      <span class="block text-sm text-center text-little-lens-light-400">
+        Kindergarten Photography, Kinder Preschool Photography, Child Care
+        Photography, Childcare Photography, Melbourne, Australia
+      </span>
+      <span class="block text-sm text-center text-little-lens-light-400"
+        >© 2025
+        <a href="<%= config.url %>" class="hover:underline"
+          >Little Lens Childcare Photography Melbourne</a
+        >. All Rights Reserved.
+      </span>
+      <ul class="flex justify-center mt-5 space-x-5">
+        <li>
+          <a
+            href="https://www.facebook.com/Gillian.Juergens.Photography/"
+            target="_blank"
+            class="text-little-lens-light-400 hover:text-little-lens-light-800"
+          >
+            <svg
+              class="h-4 w-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 8 19"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/gilljuergensphotography/"
+            target="_blank"
+            class="text-little-lens-light-400 hover:text-little-lens-light-800"
+          >
+            <svg
+              class="h-5 w-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </footer>
