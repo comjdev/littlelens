@@ -97,25 +97,74 @@ async function writeToGoogleSheet(data) {
     const spreadsheetId = "1ehUmTJyxkOS9F2fLIkgrdpuMbM0VIsNxvfmCB_kX-B4";
     const range = "Registrations";
 
-    const values = [
-      [
-        data["centre-name"],
-        data["photo-day"],
-        data["child-firstname"],
-        data["child-lastname"],
-        data["room"],
-        data["parent-firstname"],
-        data["parent-lastname"],
-        data["parent-email"],
-        data["parent-phone"],
-        data["message"] || "",
-        data["sibling-firstname"] || "",
-        data["sibling-lastname"] || "",
-        data["permission-to-share"] || "",
-        data["family-photos"] || "no",
-        new Date().toLocaleString("en-AU", { timeZone: "Australia/Melbourne" }),
-      ],
+    // Prepare base data that will be reused
+    const baseData = [
+      data["centre-name"],
+      data["photo-day"],
+      data["parent-firstname"],
+      data["parent-lastname"],
+      data["parent-email"],
+      data["parent-phone"],
+      data["message"] || "",
+      data["permission-to-share"] || "",
+      data["family-photos"] || "no",
+      new Date().toLocaleString("en-AU", { timeZone: "Australia/Melbourne" }),
     ];
+
+    const values = [];
+
+    // 1. Main child row
+    const mainChildRow = [
+      ...baseData.slice(0, 2), // centre-name, photo-day
+      data["child-firstname"], // child-firstname
+      data["child-lastname"], // child-lastname
+      data["room"], // room
+      ...baseData.slice(2, 4), // parent-firstname, parent-lastname
+      ...baseData.slice(4, 6), // parent-email, parent-phone
+      ...baseData.slice(6, 7), // message
+      data["siblings"] && data["siblings"].length > 0
+        ? data["siblings"][0].firstname
+        : "", // sibling-firstname (first sibling if exists)
+      data["siblings"] && data["siblings"].length > 0
+        ? data["siblings"][0].lastname
+        : "", // sibling-lastname (first sibling if exists)
+      ...baseData.slice(7), // permission-to-share, family-photos, timestamp
+    ];
+    values.push(mainChildRow);
+
+    // 2. Individual sibling rows (if any)
+    if (data["siblings"] && data["siblings"].length > 0) {
+      data["siblings"].forEach((sibling) => {
+        const siblingRow = [
+          ...baseData.slice(0, 2), // centre-name, photo-day
+          sibling.firstname, // child-firstname (sibling's name)
+          sibling.lastname, // child-lastname (sibling's name)
+          sibling.room, // room (sibling's room)
+          ...baseData.slice(2, 4), // parent-firstname, parent-lastname
+          ...baseData.slice(4, 6), // parent-email, parent-phone
+          ...baseData.slice(6, 7), // message
+          data["child-firstname"], // sibling-firstname (main child's name)
+          data["child-lastname"], // sibling-lastname (main child's name)
+          ...baseData.slice(7), // permission-to-share, family-photos, timestamp
+        ];
+        values.push(siblingRow);
+      });
+
+      // 3. Family row (if there are siblings)
+      const familyRow = [
+        ...baseData.slice(0, 2), // centre-name, photo-day
+        "Family", // child-firstname
+        data["child-lastname"], // child-lastname (main child's lastname)
+        data["room"], // room (main child's room)
+        ...baseData.slice(2, 4), // parent-firstname, parent-lastname
+        ...baseData.slice(4, 6), // parent-email, parent-phone
+        ...baseData.slice(6, 7), // message
+        data["child-firstname"], // sibling-firstname (main child's name)
+        data["child-lastname"], // sibling-lastname (main child's name)
+        ...baseData.slice(7), // permission-to-share, family-photos, timestamp
+      ];
+      values.push(familyRow);
+    }
 
     await sheets.spreadsheets.values.append({
       spreadsheetId,
@@ -124,7 +173,7 @@ async function writeToGoogleSheet(data) {
       resource: { values },
     });
 
-    console.log("Data appended to Google Sheet");
+    console.log(`Data appended to Google Sheet: ${values.length} rows created`);
   } catch (error) {
     console.error("Error writing to Google Sheets:", error);
     throw new Error("Failed to write to Google Sheets");
@@ -134,6 +183,15 @@ async function writeToGoogleSheet(data) {
 async function sendEmail(data) {
   try {
     const ses = new SESClient({ region: "ap-southeast-2" });
+
+    // Build children list for email
+    let childrenList = data["child-firstname"];
+    if (data["siblings"] && data["siblings"].length > 0) {
+      const siblingNames = data["siblings"]
+        .map((sibling) => sibling.firstname)
+        .join(", ");
+      childrenList += ` and ${siblingNames}`;
+    }
 
     // Load and compile template
     const templatePath = path.join(__dirname, "confirmation-email.hbs");
@@ -156,11 +214,13 @@ async function sendEmail(data) {
       message: data["message"],
       permissionToShare: data["permission-to-share"],
       familyPhotos: data["family-photos"],
+      siblings: data["siblings"] || [],
+      childrenList: childrenList, // Use the same childrenList we built for textBody
     });
 
     const textBody = `Hi ${data["parent-firstname"]},
 
-You've registered ${data["child-firstname"]} for photo day at ${data["centre-name"]} on ${data["photo-day"]}.
+You've registered ${childrenList} for photo day at ${data["centre-name"]} on ${data["photo-day"]}.
 
 Thank you!
 The Little Lens Team`;
@@ -202,4 +262,9 @@ The Little Lens Team`;
 // Register equality helper once (ideally at the top of your file)
 handlebars.registerHelper("eq", function (a, b) {
   return a === b;
+});
+
+// Register add helper for child numbering
+handlebars.registerHelper("add", function (a, b) {
+  return a + b;
 });

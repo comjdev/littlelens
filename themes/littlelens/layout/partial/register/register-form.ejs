@@ -199,12 +199,11 @@
       </label>
     </div>
 
-    <p>If you have more children attend the centre and would like
-        individual and sibling photos of them, please book their photo day on
-        the <strong>same day</strong>.</p>
+    <p>If you have more than one child at the centre, simply add all their names when booking. We’ll make sure to capture lovely individual photos as well as sibling photos on <span id="same-day-text"><strong>same day</strong></span>.</p>
 
     <div class="hidden" id="sibling-name-container">
-      <div class="grid md:grid-cols-2 md:gap-6">
+      <div id="siblings-container">
+      <div class="sibling-block grid md:grid-cols-2 md:gap-6">
     <div>
       <label
         for="sibling-firstname"
@@ -234,11 +233,112 @@
         placeholder="Sibling's Last Name"
       />
     </div>
+
+    <div>
+      <!-- Group / Room  -->
+      <label for="sibling-room" class="block mb-2 text-sm font-medium text-gray-900"
+        >Select Group/Room</label
+      >
+      <select
+        id="sibling-room"
+        name="sibling-room"
+        class="sibling-room bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
+      >
+        <option disabled selected>Sibling's Group/Room</option>
+      </select>
+    </div>
+
+    <div>
+      <label
+        for="sibling-date"
+        class="block mb-2 text-sm font-medium text-gray-900"
+      >
+      Date</label
+      >
+      <input
+        type="text"
+        id="sibling-date"
+        name="sibling-date"
+        class="sibling-date block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+        placeholder="Please select a date for the first child"
+        disabled
+      />
+    </div>
+
+    <div class="flex md:col-span-2 justify-end">
+      <button type="button" class="remove-sibling text-sm text-gray-600 hover:text-gray-800 hidden">Remove</button>
+    </div>
+
+    </div>
+
+    <div class="md:col-span-2 mt-4">
+      <button
+        type="button"
+        id="add-sibling"
+        class="py-2 px-3 text-sm font-medium text-center text-white rounded-lg bg-little-lens-green-700 hover:bg-little-lens-green-600 focus:ring-4 focus:outline-none focus:ring-little-lens-green-300 hidden"
+      >
+        Add another sibling
+      </button>
+    </div>
+
+    <template id="sibling-template">
+      <div class="sibling-block grid md:grid-cols-2 md:gap-6 mt-6">
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-900">Sibling's First Name</label>
+          <input
+            type="text"
+            name="sibling-firstname"
+            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+            placeholder="Sibling's First Name"
+            required
+          />
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-900">Sibling's Last Name</label>
+          <input
+            type="text"
+            name="sibling-lastname"
+            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+            placeholder="Sibling's Last Name"
+            required
+          />
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-900">Select Group/Room</label>
+          <select
+            name="sibling-room"
+            class="sibling-room bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
+            required
+          >
+            <option disabled selected>Sibling's Group/Room</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-900">Date</label>
+          <input
+            type="text"
+            name="sibling-date"
+            class="sibling-date block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+            placeholder="Please select a date for the first child"
+            disabled
+          />
+        </div>
+        <div class="flex md:col-span-2 justify-end">
+          <button type="button" class="remove-sibling text-sm text-gray-600 hover:text-gray-800">Remove</button>
+        </div>
+      </div>
+    </template>
+
   </div>
   </div>
+
+  <!-- Removed fixed second sibling block in favor of dynamic template -->
 
   <hr class="h-px my-8 bg-gray-200 border-0" />
 
+  <h3 class="block mb-1 text-sm font-medium text-gray-900">
+    Outfit
+  </h3>
   <div
     class="p-4 mb-8 text-sm text-little-lens-green-800 rounded-lg bg-little-lens-green-100"
   >
@@ -311,6 +411,65 @@
       <label for="sibling" class="ms-2 text-sm font-medium text-gray-700">
         Yes, please send me information about family photos
       </label>
+    </div>
+    <!-- Second sibling fields -->
+    <div class="hidden mt-6" id="sibling2-name-container">
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div>
+          <label
+            for="sibling2-firstname"
+            class="block mb-2 text-sm font-medium text-gray-900"
+          >Second sibling's First Name</label>
+          <input
+            type="text"
+            id="sibling2-firstname"
+            name="sibling2-firstname"
+            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+            placeholder="Second sibling's First Name"
+          />
+        </div>
+        <div>
+          <label
+            for="sibling2-lastname"
+            class="block mb-2 text-sm font-medium text-gray-900"
+          >Second sibling's Last Name</label>
+          <input
+            type="text"
+            id="sibling2-lastname"
+            name="sibling2-lastname"
+            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+            placeholder="Second sibling's Last Name"
+          />
+        </div>
+
+        <div>
+          <label for="sibling2-room" class="block mb-2 text-sm font-medium text-gray-900"
+          >Select Group/Room</label>
+          <select
+            id="sibling2-room"
+            name="sibling2-room"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
+          >
+            <option disabled selected>Second sibling's Group/Room</option>
+          </select>
+        </div>
+
+        <div>
+          <label
+            for="sibling2-date"
+            class="block mb-2 text-sm font-medium text-gray-900"
+          >
+          Date</label>
+          <input
+            type="text"
+            id="sibling2-date"
+            name="sibling2-date"
+            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+            placeholder="Please select a date for the first child"
+            disabled
+          />
+        </div>
+      </div>
     </div>
   </div>
 
@@ -419,6 +578,7 @@
 
           // Populate room dropdown for this centre
           populateRoomDropdown(centreFromUrl);
+          populateSiblingRoomDropdowns(centreFromUrl);
 
           // Populate date dropdown for this centre
           populateDateDropdown(centreFromUrl);
@@ -495,6 +655,29 @@
     });
   };
 
+  const populateSiblingRoomDropdowns = (selectedCentre) => {
+    const siblingRoomSelect = document.getElementById("sibling-room");
+    const centre = bookingsData.find((c) => c.Center === selectedCentre);
+    if (!centre) return;
+
+    const applyRooms = (selectEl, placeholder) => {
+      if (!selectEl) return;
+      selectEl.innerHTML = `<option disabled selected>${placeholder}</option>`;
+      centre.Rooms.forEach((room) => {
+        const option = document.createElement("option");
+        option.value = room;
+        option.textContent = room;
+        selectEl.appendChild(option);
+      });
+    };
+
+    applyRooms(siblingRoomSelect, "Sibling's Group/Room");
+    // Apply to all dynamic sibling blocks
+    document.querySelectorAll("#siblings-container .sibling-room").forEach((selectEl) => {
+      applyRooms(selectEl, "Sibling's Group/Room");
+    });
+  };
+
   const populateDateDropdown = (selectedCentre) => {
     const select = document.getElementById("photo-day");
     select.innerHTML = "<option disabled selected>Select a date</option>";
@@ -524,9 +707,33 @@
     });
   };
 
+  const syncSiblingDateWithPhotoDay = () => {
+    const photoDaySelect = document.getElementById("photo-day");
+    const sameDayText = document.getElementById("same-day-text");
+    if (!photoDaySelect) return;
+    const selectedValue = photoDaySelect.value || "";
+    // Set on the first sibling date input if it exists
+    const firstSiblingDate = document.getElementById("sibling-date");
+    if (firstSiblingDate) firstSiblingDate.value = selectedValue;
+    // Apply to all dynamic sibling blocks
+    document.querySelectorAll('#siblings-container .sibling-date').forEach((input) => {
+      input.value = selectedValue;
+    });
+
+    if (sameDayText) {
+      const selectedText = photoDaySelect.options[photoDaySelect.selectedIndex]?.textContent || "same day";
+      sameDayText.innerHTML = `<strong>${selectedText}</strong>`;
+    }
+  };
+
   document.getElementById("centre-name").addEventListener("change", (e) => {
     populateDateDropdown(e.target.value);
     populateRoomDropdown(e.target.value);
+    populateSiblingRoomDropdowns(e.target.value);
+  });
+
+  document.getElementById("photo-day").addEventListener("change", () => {
+    syncSiblingDateWithPhotoDay();
   });
 
   fetchBookings();
@@ -546,6 +753,9 @@
   );
   const siblingFirstNameInput = document.getElementById("sibling-firstname");
   const siblingLastNameInput = document.getElementById("sibling-lastname");
+  const siblingLasRoomInput = document.getElementById("sibling-room");
+  const addSiblingBtn = document.getElementById("add-sibling");
+  const siblingsContainer = document.getElementById("siblings-container");
 
   const showLoadingState = () => {
     document.getElementById("formLoading").classList.remove("hidden");
@@ -569,6 +779,34 @@
 
     const formData = new FormData(form);
     const jsonData = Object.fromEntries(formData.entries());
+    
+    // Collect siblings into an array
+    const siblings = [];
+    const siblingBlocks = document.querySelectorAll('#siblings-container .sibling-block');
+    
+    siblingBlocks.forEach((block) => {
+      const firstname = block.querySelector('input[name="sibling-firstname"]')?.value?.trim();
+      const lastname = block.querySelector('input[name="sibling-lastname"]')?.value?.trim();
+      const room = block.querySelector('select[name="sibling-room"]')?.value?.trim();
+      
+      // Only add sibling if at least firstname is provided
+      if (firstname) {
+        siblings.push({
+          firstname: firstname,
+          lastname: lastname || '',
+          room: room || ''
+        });
+      }
+    });
+    
+    // Remove individual sibling fields from jsonData and add siblings array
+    delete jsonData['sibling-firstname'];
+    delete jsonData['sibling-lastname'];
+    delete jsonData['sibling-room'];
+    delete jsonData['sibling-date'];
+    
+    jsonData.siblings = siblings;
+    
     console.log("Form data:", jsonData);
 
     try {
@@ -587,12 +825,39 @@
     }
   };
 
-  const handleNameInput = () => {
+  const updateChildrenNames = () => {
     const childName = childFirstNameInput.value || "your child";
-    registerName.textContent = childName;
-    thankYouName.textContent = childName;
-    siblingFirstNameInput.placeholder = `First name of ${childName}'s sibling`;
-    siblingLastNameInput.placeholder = `Last name of ${childName}'s sibling`;
+    
+    // Build children list for button and success message
+    let childrenList = childName;
+    const siblingBlocks = document.querySelectorAll('#siblings-container .sibling-block');
+    const siblingNames = [];
+    
+    siblingBlocks.forEach((block) => {
+      const siblingFirst = block.querySelector('input[name="sibling-firstname"]');
+      if (siblingFirst && siblingFirst.value.trim()) {
+        siblingNames.push(siblingFirst.value.trim());
+      }
+    });
+    
+    if (siblingNames.length > 0) {
+      childrenList += ` & ${siblingNames.join(' & ')}`;
+    }
+    
+    registerName.textContent = childrenList;
+    thankYouName.textContent = childrenList;
+    
+    // Update placeholders for dynamic blocks
+    siblingBlocks.forEach((block, index) => {
+      const first = block.querySelector('input[name="sibling-firstname"]');
+      const last = block.querySelector('input[name="sibling-lastname"]');
+      if (first) first.placeholder = `First name of ${childName}'s sibling`;
+      if (last) last.placeholder = `Last name of ${childName}'s sibling`;
+    });
+  };
+
+  const handleNameInput = () => {
+    updateChildrenNames();
   };
 
   const handleSiblingToggle = () => {
@@ -600,10 +865,78 @@
     siblingNameContainer.classList.toggle("hidden", !show);
     siblingFirstNameInput.required = show;
     siblingLastNameInput.required = show;
+    siblingLasRoomInput.required = show;
+    if (addSiblingBtn) {
+      addSiblingBtn.classList.toggle("hidden", !show);
+    }
+    if (!show) {
+      // Remove all dynamic siblings
+      document.querySelectorAll('#siblings-container .sibling-block').forEach((block, idx) => {
+        if (idx > 0) block.remove();
+      });
+      // Hide remove button on the initial block
+      const firstRemove = document.querySelector('#siblings-container .sibling-block .remove-sibling');
+      if (firstRemove) firstRemove.classList.add('hidden');
+      // Reset inputs in the first block
+      const firstBlock = document.querySelector('#siblings-container .sibling-block');
+      if (firstBlock) {
+        firstBlock.querySelectorAll('input').forEach((i) => { i.value = ''; i.required = false; });
+        const room = firstBlock.querySelector('.sibling-room');
+        if (room) room.selectedIndex = 0;
+      }
+      if (addSiblingBtn) addSiblingBtn.classList.add("hidden");
+    }
   };
 
   // Event listeners
   childFirstNameInput.addEventListener("input", handleNameInput);
+  siblingFirstNameInput.addEventListener("input", updateChildrenNames);
   siblingCheckbox.addEventListener("change", handleSiblingToggle);
   form.addEventListener("submit", handleFormSubmit);
+
+  const addSiblingFromTemplate = () => {
+    const template = document.getElementById('sibling-template');
+    if (!template || !siblingsContainer) return;
+    const clone = template.content.cloneNode(true);
+    siblingsContainer.appendChild(clone);
+    
+    // Add event listeners to new sibling inputs
+    const newBlock = siblingsContainer.lastElementChild;
+    const siblingFirstInput = newBlock.querySelector('input[name="sibling-firstname"]');
+    if (siblingFirstInput) {
+      siblingFirstInput.addEventListener('input', updateChildrenNames);
+    }
+    
+    // Populate rooms for the new block
+    const centreSelect = document.getElementById('centre-name');
+    if (centreSelect && centreSelect.value) {
+      populateSiblingRoomDropdowns(centreSelect.value);
+    }
+    // Sync date immediately
+    syncSiblingDateWithPhotoDay();
+  };
+
+  if (addSiblingBtn) {
+    addSiblingBtn.addEventListener('click', addSiblingFromTemplate);
+  }
+
+  // Delegate remove button clicks
+  if (siblingsContainer) {
+    siblingsContainer.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && target.classList && target.classList.contains('remove-sibling')) {
+        const block = target.closest('.sibling-block');
+        if (!block) return;
+        const allBlocks = siblingsContainer.querySelectorAll('.sibling-block');
+        if (allBlocks.length > 1) {
+          block.remove();
+        } else {
+          // On the first block, just clear inputs
+          block.querySelectorAll('input').forEach((i) => { i.value = ''; });
+          const room = block.querySelector('.sibling-room');
+          if (room) room.selectedIndex = 0;
+        }
+      }
+    });
+  }
 </script>

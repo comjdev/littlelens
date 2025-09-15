@@ -14,37 +14,43 @@
 
       <p>
         Thank you for registering
-        {{childFirstName}}
+        {{childrenList}}
         for photo day at
         <br />
         <span style="color: #111827; font-weight: bold;">{{centreName}}</span>.
       </p>
 
       <p>
-        We’re so happy you’re interested in our photos — we can’t wait to
+        We're so happy you're interested in our photos — we can't wait to
         capture some beautiful memories of
-        {{childFirstName}}!
+        {{childrenList}}!
       </p>
 
       <h3 style="color: #111827">Registration Details:</h3>
       <table style="width: 100%; border-collapse: collapse;">
-        <tr><td style="padding: 4px 0;"><strong>Child's Name:</strong></td><td
+        <tr><td style="padding: 4px 0;"><strong>Child 1 Name:</strong></td><td
           >{{childFirstName}} {{childLastName}}</td></tr>
+        <tr><td style="padding: 4px 0;"><strong>Child 1 Room:</strong></td><td
+          >{{room}}</td></tr>
+
+        {{#each siblings}}
+          <tr><td style="padding: 4px 0;"><strong>Child
+                {{add @index 2}}
+                Name:</strong></td><td>{{this.firstname}}
+              {{this.lastname}}</td></tr>
+          <tr><td style="padding: 4px 0;"><strong>Child
+                {{add @index 2}}
+                Room:</strong></td><td>{{this.room}}</td></tr>
+        {{/each}}
+
         <tr><td style="padding: 4px 0;"><strong>Date:</strong></td><td
           >{{photoDay}}</td></tr>
-        <tr><td style="padding: 4px 0;"><strong>Room:</strong></td><td
-          >{{room}}</td></tr>
         <tr><td style="padding: 4px 0;"><strong>Parent's Name:</strong></td><td
           >{{parentFirstName}} {{parentLastName}}</td></tr>
         <tr><td style="padding: 4px 0;"><strong>Email:</strong></td><td
           >{{parentEmail}}</td></tr>
         <tr><td style="padding: 4px 0;"><strong>Phone:</strong></td><td
           >{{parentPhone}}</td></tr>
-
-        {{#if siblingFirstName}}
-          <tr><td style="padding: 4px 0;"><strong>Sibling's Name:</strong></td><td
-            >{{siblingFirstName}} {{siblingLastName}}</td></tr>
-        {{/if}}
 
         {{#if message}}
           <tr><td style="padding: 4px 0;"><strong>Message:</strong></td><td
@@ -57,14 +63,14 @@
           >{{familyPhotos}}</td></tr>
       </table>
 
-      {{#if siblingFirstName}}
+      {{#if siblings.length}}
         <p style="margin-top: 20px; color: #111827; font-weight: bold;">
           Just a heads-up about sibling photos</p>
         <p style="margin-top: 14px;">
-          Sibling sessions are photographed separately from your child’s
-          individual portraits, so they’ll come in their own gallery with
+          Sibling sessions are photographed separately from your child's
+          individual portraits, so they'll come in their own gallery with
           different package options. This helps keep everything neat and easy to
-          navigate when you’re choosing your photos!
+          navigate when you're choosing your photos!
         </p>
       {{/if}}
 
