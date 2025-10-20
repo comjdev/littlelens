@@ -761,6 +761,13 @@
     document.getElementById("formLoading").classList.remove("hidden");
     document.getElementById("formSuccess").classList.add("hidden");
     document.getElementById("formError").classList.add("hidden");
+    
+    // Disable submit button to prevent multiple submissions
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Submitting...";
+    }
   };
 
   const handleFormSuccess = () => {
@@ -771,6 +778,13 @@
   const handleFormError = () => {
     document.getElementById("formLoading").classList.add("hidden");
     document.getElementById("formError").classList.remove("hidden");
+    
+    // Re-enable submit button on error
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Register <span id="register-name">your child</span>';
+    }
   };
 
   const handleFormSubmit = async (e) => {
@@ -779,6 +793,14 @@
 
     const formData = new FormData(form);
     const jsonData = Object.fromEntries(formData.entries());
+    
+    // Generate idempotency key to prevent duplicate submissions
+    // Check if we already have a key for this form session
+    let idempotencyKey = sessionStorage.getItem('form-idempotency-key');
+    if (!idempotencyKey) {
+      idempotencyKey = crypto.randomUUID();
+      sessionStorage.setItem('form-idempotency-key', idempotencyKey);
+    }
     
     // Collect siblings into an array
     const siblings = [];
@@ -812,12 +834,19 @@
     try {
       const response = await fetch(REGISTRATION_API, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "x-idempotency-key": idempotencyKey
+        },
         body: JSON.stringify(jsonData),
       });
 
       const result = await response.json();
       form.reset();
+      
+      // Clear the idempotency key on successful submission
+      sessionStorage.removeItem('form-idempotency-key');
+      
       handleFormSuccess();
     } catch (error) {
       console.error("Submission error:", error);

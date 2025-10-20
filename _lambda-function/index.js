@@ -1,5 +1,6 @@
 const { google } = require("googleapis");
 const credentials = require("./credentials.json");
+const crypto = require("crypto");
 
 const fs = require("fs");
 const path = require("path");
@@ -42,6 +43,24 @@ exports.handler = async (event) => {
 
     const data = JSON.parse(event.body);
 
+    // Generate or use provided idempotency key
+    const idempotencyKey =
+      event.headers["x-idempotency-key"] || crypto.randomUUID();
+    console.log("Processing request with idempotency key:", idempotencyKey);
+
+    // Check if this idempotency key has already been processed
+    const isDuplicate = await checkDuplicateSubmission(idempotencyKey);
+    if (isDuplicate) {
+      console.log("Duplicate submission detected for key:", idempotencyKey);
+      return {
+        statusCode: 200,
+        headers: getCorsHeaders(origin),
+        body: JSON.stringify({
+          message: "Form already submitted successfully!",
+        }),
+      };
+    }
+
     const missingFields = REQUIRED_FIELDS.filter((field) => !data[field]);
     if (missingFields.length > 0) {
       console.warn("Missing required fields:", missingFields);
@@ -56,7 +75,10 @@ exports.handler = async (event) => {
 
     // Write to Google Sheets and send email
     console.log("Writing to Google Sheets and sending email...");
-    await Promise.all([writeToGoogleSheet(data), sendEmail(data)]);
+    await Promise.all([
+      writeToGoogleSheet(data, idempotencyKey),
+      sendEmail(data),
+    ]);
 
     console.log("Form submission and Google Sheet successful");
     return {
@@ -83,7 +105,38 @@ function getCorsHeaders(origin) {
   };
 }
 
-async function writeToGoogleSheet(data) {
+async function checkDuplicateSubmission(idempotencyKey) {
+  try {
+    const auth = new google.auth.GoogleAuth({
+      credentials,
+      scopes: "https://www.googleapis.com/auth/spreadsheets",
+    });
+
+    const sheets = google.sheets({
+      version: "v4",
+      auth: await auth.getClient(),
+    });
+
+    const spreadsheetId = "1ehUmTJyxkOS9F2fLIkgrdpuMbM0VIsNxvfmCB_kX-B4";
+    const range = "Registrations!Q:Q"; // Check column Q for idempotency keys
+
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId,
+      range,
+    });
+
+    const values = response.data.values || [];
+
+    // Check if any row in column Q matches our idempotency key
+    return values.some((row) => row[0] === idempotencyKey);
+  } catch (error) {
+    console.error("Error checking for duplicate submission:", error);
+    // If we can't check, assume it's not a duplicate to avoid blocking legitimate submissions
+    return false;
+  }
+}
+
+async function writeToGoogleSheet(data, idempotencyKey) {
   try {
     const auth = new google.auth.GoogleAuth({
       credentials,
@@ -109,6 +162,7 @@ async function writeToGoogleSheet(data) {
       data["permission-to-share"] || "",
       data["family-photos"] || "no",
       new Date().toLocaleString("en-AU", { timeZone: "Australia/Melbourne" }),
+      idempotencyKey, // Column Q: idempotency key
     ];
 
     const values = [];
@@ -128,7 +182,7 @@ async function writeToGoogleSheet(data) {
       data["siblings"] && data["siblings"].length > 0
         ? data["siblings"][0].lastname
         : "", // sibling-lastname (first sibling if exists)
-      ...baseData.slice(7), // permission-to-share, family-photos, timestamp
+      ...baseData.slice(7), // permission-to-share, family-photos, timestamp, idempotency-key
     ];
     values.push(mainChildRow);
 
@@ -145,7 +199,7 @@ async function writeToGoogleSheet(data) {
           ...baseData.slice(6, 7), // message
           data["child-firstname"], // sibling-firstname (main child's name)
           data["child-lastname"], // sibling-lastname (main child's name)
-          ...baseData.slice(7), // permission-to-share, family-photos, timestamp
+          ...baseData.slice(7), // permission-to-share, family-photos, timestamp, idempotency-key
         ];
         values.push(siblingRow);
       });
@@ -161,7 +215,7 @@ async function writeToGoogleSheet(data) {
         ...baseData.slice(6, 7), // message
         data["child-firstname"], // sibling-firstname (main child's name)
         data["child-lastname"], // sibling-lastname (main child's name)
-        ...baseData.slice(7), // permission-to-share, family-photos, timestamp
+        ...baseData.slice(7), // permission-to-share, family-photos, timestamp, idempotency-key
       ];
       values.push(familyRow);
     }
