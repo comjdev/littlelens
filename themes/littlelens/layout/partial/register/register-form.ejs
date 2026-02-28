@@ -535,7 +535,12 @@
 
 <hr class="h-px my-8 bg-gray-200 border-0" />
 
-<%- partial('partial/register/pricelist') %>
+<div id="single-pricelist-container">
+  <%- partial('partial/register/pricelist') %>
+</div>
+<div id="family-pricelist-container" class="hidden">
+  <%- partial('partial/register/family-pricelist') %>
+</div>
 
 <script>
   const BOOKINGS_API =
@@ -761,6 +766,8 @@
   const childNameSpan = document.getElementById("child-name");
   const depositAmountSpan = document.getElementById("deposit-amount");
   const siblingSessionNote = document.getElementById("sibling-session-note");
+  const singlePricelistContainer = document.getElementById("single-pricelist-container");
+  const familyPricelistContainer = document.getElementById("family-pricelist-container");
   const siblingCheckbox = document.getElementById("sibling");
   const siblingNameContainer = document.getElementById(
     "sibling-name-container",
@@ -915,6 +922,9 @@
     if (childNameSpan) childNameSpan.textContent = childrenList;
     if (depositAmountSpan) depositAmountSpan.textContent = `$${totalDeposit}`;
     if (siblingSessionNote) siblingSessionNote.classList.toggle("hidden", siblingNames.length === 0);
+    const hasSiblings = siblingNames.length > 0;
+    if (singlePricelistContainer) singlePricelistContainer.classList.toggle("hidden", hasSiblings);
+    if (familyPricelistContainer) familyPricelistContainer.classList.toggle("hidden", !hasSiblings);
 
     // Update placeholders for dynamic blocks
     siblingBlocks.forEach((block, index) => {
