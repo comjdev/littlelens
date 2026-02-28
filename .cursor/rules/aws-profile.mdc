@@ -1,0 +1,12 @@
+---
+description: Use AWS profile gill for all AWS operations in this project
+alwaysApply: true
+---
+
+# AWS Profile
+
+This project always uses the **gill** AWS profile for Lambda, S3, and other AWS operations.
+
+- When running AWS CLI commands, use `--profile gill` or set `AWS_PROFILE=gill`
+- The integrated terminal is configured to set `AWS_PROFILE=gill` automatically
+- For Lambda deployments and AWS SDK calls from scripts, ensure the gill profile credentials are used

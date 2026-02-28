@@ -5,6 +5,26 @@
   <div id="centre-from-url" class="text-md text-gray-500">
     for outdoor and portrait photos
   </div>
+
+  <div class="">
+    <p class="block m-0! p-0 text-gray-600">
+      To ensure we can dedicate time and care to every child, a $25 booking
+      deposit per child is required when registering.
+    </p>
+    <p class="block m-0! p-0 text-gray-600">
+      This deposit is <strong>fully credited towards your photo order</strong>, so you won’t pay
+      anything extra when purchasing your photo packages.
+    </p>
+    <p class="block m-0! p-0 text-gray-600">
+      If no photo package is ordered, the deposit is retained as a booking
+      commitment.
+    </p>
+    <p class="block m-0! p-0 text-gray-600">
+      This approach allows us to plan photo day efficiently and give every child
+      the attention they deserve.
+    </p>
+  </div>
+
   <!-- Child'd name  -->
   <h2>Child's name</h2>
   <div class="grid md:grid-cols-2 md:gap-6">
@@ -186,7 +206,7 @@
     <p class="block mb-1 text-sm font-medium text-gray-900">
       Would you like us to take sibling photos for children who are all enrolled
       at the centre?
-    </>
+    </p>
     <div class="flex items-center mb-4">
       <input
         id="sibling"
@@ -195,139 +215,103 @@
         class="w-4 h-4 text-little-lens-green-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-little-lens-green-500"
       />
       <label for="sibling" class="ms-2 text-sm font-medium text-gray-700">
-        Yes, please! 
+        Yes, please!
       </label>
     </div>
 
-    <p>If you have more than one child at the centre, simply add all their names when booking. We’ll make sure to capture lovely individual photos as well as sibling photos on <span id="same-day-text"><strong>same day</strong></span>.</p>
+    <p>
+      If you have more than one child at the centre, simply add all their names
+      when booking. We’ll make sure to capture lovely individual photos as well
+      as sibling photos on
+      <span id="same-day-text"><strong>same day</strong></span
+      >.
+    </p>
 
     <div class="hidden" id="sibling-name-container">
       <div id="siblings-container">
-      <div class="sibling-block grid md:grid-cols-2 md:gap-6">
-    <div>
-      <label
-        for="sibling-firstname"
-        class="block mb-2 text-sm font-medium text-gray-900"
-        >Sibling's First Name</label
-      >
-      <input
-        type="text"
-        id="sibling-firstname"
-        name="sibling-firstname"
-        class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-        placeholder="Sibling's First Name"
-      />
-    </div>
-    <div>
-      <label
-        for="sibling-lastname"
-        class="block mb-2 text-sm font-medium text-gray-900"
-      >
-        Sibling's Last Name</label
-      >
-      <input
-        type="text"
-        id="sibling-lastname"
-        name="sibling-lastname"
-        class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-        placeholder="Sibling's Last Name"
-      />
-    </div>
+        <div class="sibling-block grid md:grid-cols-2 md:gap-6">
+          <div>
+            <label
+              for="sibling-firstname"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Sibling's First Name</label
+            >
+            <input
+              type="text"
+              id="sibling-firstname"
+              name="sibling-firstname"
+              class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+              placeholder="Sibling's First Name"
+            />
+          </div>
+          <div>
+            <label
+              for="sibling-lastname"
+              class="block mb-2 text-sm font-medium text-gray-900"
+            >
+              Sibling's Last Name</label
+            >
+            <input
+              type="text"
+              id="sibling-lastname"
+              name="sibling-lastname"
+              class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+              placeholder="Sibling's Last Name"
+            />
+          </div>
 
-    <div>
-      <!-- Group / Room  -->
-      <label for="sibling-room" class="block mb-2 text-sm font-medium text-gray-900"
-        >Select Group/Room</label
-      >
-      <select
-        id="sibling-room"
-        name="sibling-room"
-        class="sibling-room bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
-      >
-        <option disabled selected>Sibling's Group/Room</option>
-      </select>
-    </div>
+          <div>
+            <!-- Group / Room  -->
+            <label
+              for="sibling-room"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Select Group/Room</label
+            >
+            <select
+              id="sibling-room"
+              name="sibling-room"
+              class="sibling-room bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
+            >
+              <option disabled selected>Sibling's Group/Room</option>
+            </select>
+          </div>
 
-    <div>
-      <label
-        for="sibling-date"
-        class="block mb-2 text-sm font-medium text-gray-900"
-      >
-      Date</label
-      >
-      <input
-        type="text"
-        id="sibling-date"
-        name="sibling-date"
-        class="sibling-date block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-        placeholder="Please select a date for the first child"
-        disabled
-      />
-    </div>
+          <div>
+            <label
+              for="sibling-date"
+              class="block mb-2 text-sm font-medium text-gray-900"
+            >
+              Date</label
+            >
+            <input
+              type="text"
+              id="sibling-date"
+              name="sibling-date"
+              class="sibling-date block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
+              placeholder="Please select a date for the first child"
+              disabled
+            />
+          </div>
 
-    <div class="flex md:col-span-2 justify-end">
-      <button type="button" class="remove-sibling text-sm text-gray-600 hover:text-gray-800 hidden">Remove</button>
-    </div>
-
-    </div>
-
-    <div class="md:col-span-2 mt-4">
-      <button
-        type="button"
-        id="add-sibling"
-        class="py-2 px-3 text-sm font-medium text-center text-white rounded-lg bg-little-lens-green-700 hover:bg-little-lens-green-600 focus:ring-4 focus:outline-none focus:ring-little-lens-green-300 hidden"
-      >
-        Add another sibling
-      </button>
-    </div>
-
-    <template id="sibling-template">
-      <div class="sibling-block grid md:grid-cols-2 md:gap-6 mt-6">
-        <div>
-          <label class="block mb-2 text-sm font-medium text-gray-900">Sibling's First Name</label>
-          <input
-            type="text"
-            name="sibling-firstname"
-            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-            placeholder="Sibling's First Name"
-            required
-          />
+          <div class="flex md:col-span-2 justify-end">
+            <button
+              type="button"
+              class="remove-sibling text-sm text-gray-600 hover:text-gray-800 hidden"
+            >
+              Remove
+            </button>
+          </div>
         </div>
-        <div>
-          <label class="block mb-2 text-sm font-medium text-gray-900">Sibling's Last Name</label>
-          <input
-            type="text"
-            name="sibling-lastname"
-            class="block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-            placeholder="Sibling's Last Name"
-            required
-          />
-        </div>
-        <div>
-          <label class="block mb-2 text-sm font-medium text-gray-900">Select Group/Room</label>
-          <select
-            name="sibling-room"
-            class="sibling-room bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-little-lens-green-500 focus:border-little-lens-green-500 block w-full p-2.5"
-            required
+
+        <div class="md:col-span-2 mt-4">
+          <button
+            type="button"
+            id="add-sibling"
+            class="py-2 px-3 text-sm font-medium text-center text-white rounded-lg bg-little-lens-green-700 hover:bg-little-lens-green-600 focus:ring-4 focus:outline-none focus:ring-little-lens-green-300 hidden"
           >
-            <option disabled selected>Sibling's Group/Room</option>
-          </select>
+            Add another sibling
+          </button>
         </div>
-        <div>
-          <label class="block mb-2 text-sm font-medium text-gray-900">Date</label>
-          <input
-            type="text"
-            name="sibling-date"
-            class="sibling-date block p-3 w-full text-sm text-gray-900 bg-little-lens-light-400 rounded-lg border border-gray-300 shadow-sm focus:ring-little-lens-green-500 focus:border-little-lens-green-500"
-            placeholder="Please select a date for the first child"
-            disabled
-          />
-        </div>
-        <div class="flex md:col-span-2 justify-end">
-          <button type="button" class="remove-sibling text-sm text-gray-600 hover:text-gray-800">Remove</button>
-        </div>
-      </div>
-    </template>
 
   </div>
   </div>
@@ -336,9 +320,7 @@
 
   <hr class="h-px my-8 bg-gray-200 border-0" />
 
-  <h3 class="block mb-1 text-sm font-medium text-gray-900">
-    Outfit
-  </h3>
+  <h3 class="block mb-1 text-sm font-medium text-gray-900">Outfit</h3>
   <div
     class="p-4 mb-8 text-sm text-little-lens-green-800 rounded-lg bg-little-lens-green-100"
   >
@@ -348,8 +330,6 @@
     isn’t what you had in mind — so a quick check in the morning can go a long
     way!
   </div>
-
- 
 
   <!-- Permission to use the photo of the child for marketing purposes -->
   <h3 class="block mb-1 text-sm font-medium text-gray-900">
@@ -419,7 +399,8 @@
           <label
             for="sibling2-firstname"
             class="block mb-2 text-sm font-medium text-gray-900"
-          >Second sibling's First Name</label>
+            >Second sibling's First Name</label
+          >
           <input
             type="text"
             id="sibling2-firstname"
@@ -432,7 +413,8 @@
           <label
             for="sibling2-lastname"
             class="block mb-2 text-sm font-medium text-gray-900"
-          >Second sibling's Last Name</label>
+            >Second sibling's Last Name</label
+          >
           <input
             type="text"
             id="sibling2-lastname"
@@ -443,8 +425,11 @@
         </div>
 
         <div>
-          <label for="sibling2-room" class="block mb-2 text-sm font-medium text-gray-900"
-          >Select Group/Room</label>
+          <label
+            for="sibling2-room"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Select Group/Room</label
+          >
           <select
             id="sibling2-room"
             name="sibling2-room"
@@ -459,7 +444,8 @@
             for="sibling2-date"
             class="block mb-2 text-sm font-medium text-gray-900"
           >
-          Date</label>
+            Date</label
+          >
           <input
             type="text"
             id="sibling2-date"
@@ -473,13 +459,28 @@
     </div>
   </div>
 
-  
+  <hr class="h-px my-8 bg-gray-200 border-0" />
+
+  <div
+    class="px-4 py-0 mt-12 mb-2 text-sm text-gray-700 rounded-lg bg-gray-50 border border-gray-200"
+  >
+    <p class="font-medium mb-1">🔒 Secure payment powered by Stripe</p>
+    <p>💳 $25 per child – fully credited towards your order</p>
+  </div>
+
+  <p class="text-sm text-gray-500">
+    By clicking "Continue to Secure Booking", you agree to our <a href="/privacy-policy" class="text-little-lens-green-700 hover:underline">Privacy Policy</a> and <a href="/terms-and-conditions" class="text-little-lens-green-700 hover:underline">Terms and Conditions</a>.
+  </p>
+
+  <p class="text-sm text-gray-500">
+    <span id="deposit-amount">$25</span> booking deposit for <span id="child-name">your child</span> is required.
+  </p>
 
   <button
     type="submit"
     class="py-3 px-5 mt-5 text-sm font-medium text-center text-white rounded-lg bg-little-lens-green-800 sm:w-fit hover:bg-little-lens-green-700 focus:ring-4 focus:outline-none focus:ring-little-lens-green-300"
   >
-    Register <span id="register-name">your child</span>
+    Continue to Secure Booking
   </button>
 
   <div
@@ -487,8 +488,12 @@
     class="hidden mt-4 text-sm text-gray-900 bg-little-lens-light-400 rounded-lg p-4"
     role="alert"
   >
-    <span class="font-medium">Thank you for registering <span id="thank-you-child-name">your child</span>!</span> We have sent a confirmation
-    email to you. If you don't see it, please check your spam folder.
+    <span class="font-medium"
+      >Thank you for registering
+      <span id="thank-you-child-name">your child</span>!</span
+    >
+    We have sent a confirmation email to you. If you don't see it, please check
+    your spam folder.
   </div>
   <div
     id="formError"
@@ -523,8 +528,7 @@
         </svg>
         <span class="sr-only">Loading...</span>
       </span>
-      <span class="font-medium">Sending...</span> Please wait while we send your
-      message.
+      <span class="font-medium">Loading...</span> We will forward you to the payment page.
     </div>
   </div>
 </form>
@@ -550,7 +554,7 @@
 
       // Pre-select centre from URL if present
       const centreFromUrl = new URLSearchParams(window.location.search).get(
-        "c"
+        "c",
       );
 
       if (centreFromUrl) {
@@ -558,7 +562,7 @@
 
         // Wait until the dropdown is populated
         const isValidCentre = Array.from(centreSelect.options).some(
-          (option) => option.value === centreFromUrl
+          (option) => option.value === centreFromUrl,
         );
 
         if (isValidCentre) {
@@ -584,7 +588,7 @@
           populateDateDropdown(centreFromUrl);
         } else {
           console.warn(
-            `Centre "${centreFromUrl}" not found in available options.`
+            `Centre "${centreFromUrl}" not found in available options.`,
           );
         }
       }
@@ -608,7 +612,7 @@
 
     bookingsData.forEach((centre) => {
       centre.Dates = centre.Dates.filter((dateObj) =>
-        isFutureDate(dateObj.Date, now)
+        isFutureDate(dateObj.Date, now),
       );
     });
 
@@ -639,10 +643,10 @@
 
   const populateRoomDropdown = (selectedCentre) => {
     const select = document.getElementById("room");
-    select.innerHTML = "<option disabled selected>Select your child's Group/Room</option>";
+    select.innerHTML =
+      "<option disabled selected>Select your child's Group/Room</option>";
     console.log("populateRoomDropdown", selectedCentre);
     console.log("bookingsData", bookingsData);
-
 
     const centre = bookingsData.find((c) => c.Center === selectedCentre);
     if (!centre) return;
@@ -673,9 +677,11 @@
 
     applyRooms(siblingRoomSelect, "Sibling's Group/Room");
     // Apply to all dynamic sibling blocks
-    document.querySelectorAll("#siblings-container .sibling-room").forEach((selectEl) => {
-      applyRooms(selectEl, "Sibling's Group/Room");
-    });
+    document
+      .querySelectorAll("#siblings-container .sibling-room")
+      .forEach((selectEl) => {
+        applyRooms(selectEl, "Sibling's Group/Room");
+      });
   };
 
   const populateDateDropdown = (selectedCentre) => {
@@ -716,12 +722,16 @@
     const firstSiblingDate = document.getElementById("sibling-date");
     if (firstSiblingDate) firstSiblingDate.value = selectedValue;
     // Apply to all dynamic sibling blocks
-    document.querySelectorAll('#siblings-container .sibling-date').forEach((input) => {
-      input.value = selectedValue;
-    });
+    document
+      .querySelectorAll("#siblings-container .sibling-date")
+      .forEach((input) => {
+        input.value = selectedValue;
+      });
 
     if (sameDayText) {
-      const selectedText = photoDaySelect.options[photoDaySelect.selectedIndex]?.textContent || "same day";
+      const selectedText =
+        photoDaySelect.options[photoDaySelect.selectedIndex]?.textContent ||
+        "same day";
       sameDayText.innerHTML = `<strong>${selectedText}</strong>`;
     }
   };
@@ -740,16 +750,19 @@
 </script>
 
 <script>
-  const REGISTRATION_API =
-    "https://8xiczk0ua0.execute-api.us-east-1.amazonaws.com/default/register";
+  const CHECKOUT_API =
+    "https://8xiczk0ua0.execute-api.us-east-1.amazonaws.com/default/checkout";
 
+  const DEPOSIT_PER_CHILD = 25;
   const form = document.getElementById("registerForm");
   const childFirstNameInput = document.getElementById("child-firstname");
   const registerName = document.getElementById("register-name");
   const thankYouName = document.getElementById("thank-you-child-name");
+  const childNameSpan = document.getElementById("child-name");
+  const depositAmountSpan = document.getElementById("deposit-amount");
   const siblingCheckbox = document.getElementById("sibling");
   const siblingNameContainer = document.getElementById(
-    "sibling-name-container"
+    "sibling-name-container",
   );
   const siblingFirstNameInput = document.getElementById("sibling-firstname");
   const siblingLastNameInput = document.getElementById("sibling-lastname");
@@ -757,16 +770,19 @@
   const addSiblingBtn = document.getElementById("add-sibling");
   const siblingsContainer = document.getElementById("siblings-container");
 
-  const showLoadingState = () => {
+  const showLoadingState = (message = "Creating checkout...") => {
     document.getElementById("formLoading").classList.remove("hidden");
     document.getElementById("formSuccess").classList.add("hidden");
     document.getElementById("formError").classList.add("hidden");
-    
+
+    const loadingSpan = document.querySelector("#formLoading .font-medium");
+    if (loadingSpan) loadingSpan.textContent = message;
+
     // Disable submit button to prevent multiple submissions
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = "Submitting...";
+      submitBtn.textContent = "Processing...";
     }
   };
 
@@ -778,12 +794,13 @@
   const handleFormError = () => {
     document.getElementById("formLoading").classList.add("hidden");
     document.getElementById("formError").classList.remove("hidden");
-    
+
     // Re-enable submit button on error
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
       submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Register <span id="register-name">your child</span>';
+      submitBtn.innerHTML =
+        'Register <span id="register-name">your child</span>';
     }
   };
 
@@ -792,62 +809,73 @@
     showLoadingState();
 
     const formData = new FormData(form);
-    const jsonData = Object.fromEntries(formData.entries());
-    
-    // Generate idempotency key to prevent duplicate submissions
-    // Check if we already have a key for this form session
-    let idempotencyKey = sessionStorage.getItem('form-idempotency-key');
-    if (!idempotencyKey) {
-      idempotencyKey = crypto.randomUUID();
-      sessionStorage.setItem('form-idempotency-key', idempotencyKey);
-    }
-    
+    const rawData = Object.fromEntries(formData.entries());
+
     // Collect siblings into an array
     const siblings = [];
-    const siblingBlocks = document.querySelectorAll('#siblings-container .sibling-block');
-    
+    const siblingBlocks = document.querySelectorAll(
+      "#siblings-container .sibling-block",
+    );
+
     siblingBlocks.forEach((block) => {
-      const firstname = block.querySelector('input[name="sibling-firstname"]')?.value?.trim();
-      const lastname = block.querySelector('input[name="sibling-lastname"]')?.value?.trim();
-      const room = block.querySelector('select[name="sibling-room"]')?.value?.trim();
-      
-      // Only add sibling if at least firstname is provided
+      const firstname = block
+        .querySelector('input[name="sibling-firstname"]')
+        ?.value?.trim();
+      const lastname = block
+        .querySelector('input[name="sibling-lastname"]')
+        ?.value?.trim();
+      const room = block
+        .querySelector('select[name="sibling-room"]')
+        ?.value?.trim();
+
       if (firstname) {
         siblings.push({
           firstname: firstname,
-          lastname: lastname || '',
-          room: room || ''
+          lastname: lastname || "",
+          room: room || "",
         });
       }
     });
-    
-    // Remove individual sibling fields from jsonData and add siblings array
-    delete jsonData['sibling-firstname'];
-    delete jsonData['sibling-lastname'];
-    delete jsonData['sibling-room'];
-    delete jsonData['sibling-date'];
-    
-    jsonData.siblings = siblings;
-    
-    console.log("Form data:", jsonData);
+
+    const childFirst = rawData["child-firstname"] || "";
+    const childLast = rawData["child-lastname"] || "";
+    const parentFirst = rawData["parent-firstname"] || "";
+    const parentLast = rawData["parent-lastname"] || "";
+
+    const checkoutPayload = {
+      childName: `${childFirst} ${childLast}`.trim(),
+      parentName: `${parentFirst} ${parentLast}`.trim(),
+      parentEmail: rawData["parent-email"] || "",
+      centreName: rawData["centre-name"] || "",
+      siblings,
+      childFirstname: childFirst,
+      childLastname: childLast,
+      parentFirstname: parentFirst,
+      parentLastname: parentLast,
+      photoDay: rawData["photo-day"] || "",
+      room: rawData["room"] || "",
+      parentPhone: rawData["parent-phone"] || "",
+    };
 
     try {
-      const response = await fetch(REGISTRATION_API, {
+      const response = await fetch(CHECKOUT_API, {
         method: "POST",
-        headers: { 
-          "Content-Type": "application/json",
-          "x-idempotency-key": idempotencyKey
-        },
-        body: JSON.stringify(jsonData),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(checkoutPayload),
       });
 
-      const result = await response.json();
-      form.reset();
-      
-      // Clear the idempotency key on successful submission
-      sessionStorage.removeItem('form-idempotency-key');
-      
-      handleFormSuccess();
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Checkout failed");
+      }
+
+      if (data.url) {
+        showLoadingState("Redirecting to checkout...");
+        window.location.href = data.url;
+      } else {
+        throw new Error("No checkout URL received");
+      }
     } catch (error) {
       console.error("Submission error:", error);
       handleFormError();
@@ -856,26 +884,36 @@
 
   const updateChildrenNames = () => {
     const childName = childFirstNameInput.value || "your child";
-    
+
     // Build children list for button and success message
     let childrenList = childName;
-    const siblingBlocks = document.querySelectorAll('#siblings-container .sibling-block');
+    const siblingBlocks = document.querySelectorAll(
+      "#siblings-container .sibling-block",
+    );
     const siblingNames = [];
-    
+
     siblingBlocks.forEach((block) => {
-      const siblingFirst = block.querySelector('input[name="sibling-firstname"]');
+      const siblingFirst = block.querySelector(
+        'input[name="sibling-firstname"]',
+      );
       if (siblingFirst && siblingFirst.value.trim()) {
         siblingNames.push(siblingFirst.value.trim());
       }
     });
-    
+
     if (siblingNames.length > 0) {
-      childrenList += ` & ${siblingNames.join(' & ')}`;
+      childrenList += ` & ${siblingNames.join(" & ")}`;
     }
-    
-    registerName.textContent = childrenList;
-    thankYouName.textContent = childrenList;
-    
+
+    // Child count: main (1) + siblings with first name
+    const childCount = 1 + siblingNames.length;
+    const totalDeposit = DEPOSIT_PER_CHILD * childCount;
+
+    if (registerName) registerName.textContent = childrenList;
+    if (thankYouName) thankYouName.textContent = childrenList;
+    if (childNameSpan) childNameSpan.textContent = childrenList;
+    if (depositAmountSpan) depositAmountSpan.textContent = `$${totalDeposit}`;
+
     // Update placeholders for dynamic blocks
     siblingBlocks.forEach((block, index) => {
       const first = block.querySelector('input[name="sibling-firstname"]');
@@ -900,21 +938,31 @@
     }
     if (!show) {
       // Remove all dynamic siblings
-      document.querySelectorAll('#siblings-container .sibling-block').forEach((block, idx) => {
-        if (idx > 0) block.remove();
-      });
+      document
+        .querySelectorAll("#siblings-container .sibling-block")
+        .forEach((block, idx) => {
+          if (idx > 0) block.remove();
+        });
       // Hide remove button on the initial block
-      const firstRemove = document.querySelector('#siblings-container .sibling-block .remove-sibling');
-      if (firstRemove) firstRemove.classList.add('hidden');
+      const firstRemove = document.querySelector(
+        "#siblings-container .sibling-block .remove-sibling",
+      );
+      if (firstRemove) firstRemove.classList.add("hidden");
       // Reset inputs in the first block
-      const firstBlock = document.querySelector('#siblings-container .sibling-block');
+      const firstBlock = document.querySelector(
+        "#siblings-container .sibling-block",
+      );
       if (firstBlock) {
-        firstBlock.querySelectorAll('input').forEach((i) => { i.value = ''; i.required = false; });
-        const room = firstBlock.querySelector('.sibling-room');
+        firstBlock.querySelectorAll("input").forEach((i) => {
+          i.value = "";
+          i.required = false;
+        });
+        const room = firstBlock.querySelector(".sibling-room");
         if (room) room.selectedIndex = 0;
       }
       if (addSiblingBtn) addSiblingBtn.classList.add("hidden");
     }
+    updateChildrenNames();
   };
 
   // Event listeners
@@ -924,20 +972,22 @@
   form.addEventListener("submit", handleFormSubmit);
 
   const addSiblingFromTemplate = () => {
-    const template = document.getElementById('sibling-template');
+    const template = document.getElementById("sibling-template");
     if (!template || !siblingsContainer) return;
     const clone = template.content.cloneNode(true);
     siblingsContainer.appendChild(clone);
-    
+
     // Add event listeners to new sibling inputs
     const newBlock = siblingsContainer.lastElementChild;
-    const siblingFirstInput = newBlock.querySelector('input[name="sibling-firstname"]');
+    const siblingFirstInput = newBlock.querySelector(
+      'input[name="sibling-firstname"]',
+    );
     if (siblingFirstInput) {
-      siblingFirstInput.addEventListener('input', updateChildrenNames);
+      siblingFirstInput.addEventListener("input", updateChildrenNames);
     }
-    
+
     // Populate rooms for the new block
-    const centreSelect = document.getElementById('centre-name');
+    const centreSelect = document.getElementById("centre-name");
     if (centreSelect && centreSelect.value) {
       populateSiblingRoomDropdowns(centreSelect.value);
     }
@@ -946,25 +996,32 @@
   };
 
   if (addSiblingBtn) {
-    addSiblingBtn.addEventListener('click', addSiblingFromTemplate);
+    addSiblingBtn.addEventListener("click", addSiblingFromTemplate);
   }
 
   // Delegate remove button clicks
   if (siblingsContainer) {
-    siblingsContainer.addEventListener('click', (e) => {
+    siblingsContainer.addEventListener("click", (e) => {
       const target = e.target;
-      if (target && target.classList && target.classList.contains('remove-sibling')) {
-        const block = target.closest('.sibling-block');
+      if (
+        target &&
+        target.classList &&
+        target.classList.contains("remove-sibling")
+      ) {
+        const block = target.closest(".sibling-block");
         if (!block) return;
-        const allBlocks = siblingsContainer.querySelectorAll('.sibling-block');
+        const allBlocks = siblingsContainer.querySelectorAll(".sibling-block");
         if (allBlocks.length > 1) {
           block.remove();
         } else {
           // On the first block, just clear inputs
-          block.querySelectorAll('input').forEach((i) => { i.value = ''; });
-          const room = block.querySelector('.sibling-room');
+          block.querySelectorAll("input").forEach((i) => {
+            i.value = "";
+          });
+          const room = block.querySelector(".sibling-room");
           if (room) room.selectedIndex = 0;
         }
+        updateChildrenNames();
       }
     });
   }

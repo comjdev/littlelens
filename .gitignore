@@ -8,3 +8,4 @@ public/
 _multiconfig.yml
 .qodo
 _lambda-function/credentials.json
+register-deploy.zip

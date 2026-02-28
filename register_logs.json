@@ -1,0 +1,1804 @@
+{
+    "events": [
+        {
+            "logStreamName": "2025/05/10/[$LATEST]d1b8c8c77595442e8cf7dd8f7f057e55",
+            "timestamp": 1746919405322,
+            "message": "2025-05-10T23:23:25.322Z\tbb354dbf-8b9a-43ea-a160-cc336bf95c5f\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1746919409808,
+            "eventId": "38957604540454563008729564381980427262191057870253588483"
+        },
+        {
+            "logStreamName": "2025/05/11/[$LATEST]a3503543578447719d99593ef2bce73d",
+            "timestamp": 1746922405417,
+            "message": "2025-05-11T00:13:25.417Z\t6897f4d4-a85e-4438-82b8-03d8cc0070c6\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1746922406811,
+            "eventId": "38957671444808729394459401810735253668759113269733031939"
+        },
+        {
+            "logStreamName": "2025/05/12/[$LATEST]6c2d2f4910cb43e98d01d7a3d08476b9",
+            "timestamp": 1747012333392,
+            "message": "2025-05-12T01:12:13.392Z\tab5f9ad2-603d-4934-af59-2d24586e45be\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1747012335268,
+            "eventId": "38959676905665424226374116973103265518435755475886669827"
+        },
+        {
+            "logStreamName": "2025/05/19/[$LATEST]83e92f24afdf45c8ae4e7c703a24fa49",
+            "timestamp": 1747640592756,
+            "message": "2025-05-19T07:43:12.756Z\t9ae25289-ca34-4dd3-ba03-79c89ecebe6d\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1747640593931,
+            "eventId": "38973687557660579129404301403567239306771712786256560131"
+        },
+        {
+            "logStreamName": "2025/05/19/[$LATEST]83e92f24afdf45c8ae4e7c703a24fa49",
+            "timestamp": 1747640793953,
+            "message": "2025-05-19T07:46:33.953Z\t8133deee-f346-4a74-80ba-4a044f65c978\tINFO\tConfirmation email sent to christoph@theapphub.com.au\n",
+            "ingestionTime": 1747640800617,
+            "eventId": "38973692044503610838170085860997508480315908082878316546"
+        },
+        {
+            "logStreamName": "2025/05/20/[$LATEST]3da02de490ef4b1eac60b56e1bc24144",
+            "timestamp": 1747734654144,
+            "message": "2025-05-20T09:50:54.144Z\t7c35fb87-a976-4664-af12-e379604b8604\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1747734655742,
+            "eventId": "38975785196707387255377612887432011560125079123961118723"
+        },
+        {
+            "logStreamName": "2025/05/20/[$LATEST]3da02de490ef4b1eac60b56e1bc24144",
+            "timestamp": 1747734747984,
+            "message": "2025-05-20T09:52:27.984Z\ta15007bc-205b-48d6-8ffb-1ae14436e714\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1747734754625,
+            "eventId": "38975787289409316685491288608686070423162178863155445763"
+        },
+        {
+            "logStreamName": "2025/05/20/[$LATEST]9e7b8fbc9a974ddc9fe4b706541db148",
+            "timestamp": 1747784932028,
+            "message": "2025-05-20T23:48:52.028Z\t2c07b741-af4f-4d14-b457-f0b8e614113d\tINFO\tConfirmation email sent to gillianjuergens@gmail.com\n",
+            "ingestionTime": 1747784937654,
+            "eventId": "38976906430987592535018431522958620657833290510895808514"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]80814d1bba9748529379c37e09b6156d",
+            "timestamp": 1747802851854,
+            "message": "2025-05-21T04:47:31.854Z\t1643d544-d191-43b1-888a-d7ec73ac665b\tINFO\tConfirmation email sent to daniellepolkinghorne98@gmail.com\n",
+            "ingestionTime": 1747802852981,
+            "eventId": "38977306056461220539240821074704405211981879719249969155"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]80814d1bba9748529379c37e09b6156d",
+            "timestamp": 1747802922412,
+            "message": "2025-05-21T04:48:42.412Z\te610800a-1114-4d5b-adf1-9b99cb4e3880\tINFO\tConfirmation email sent to nprusso@gmail.com\n",
+            "ingestionTime": 1747802929013,
+            "eventId": "38977307629957200257164528787098373203169674172983803907"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]80814d1bba9748529379c37e09b6156d",
+            "timestamp": 1747802965053,
+            "message": "2025-05-21T04:49:25.053Z\t70926ec3-da7f-4049-977d-7bb41862995a\tINFO\tConfirmation email sent to karlyjt21@gmail.com\n",
+            "ingestionTime": 1747802972703,
+            "eventId": "38977308580883276267708830218140789065859701738565664771"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]ca4ac7a4e5ee40cf9ff4c31aa3655c25",
+            "timestamp": 1747802969070,
+            "message": "2025-05-21T04:49:29.070Z\tf5a758c5-e74b-4aaa-a5cf-865798884c46\tINFO\tConfirmation email sent to victoriagrindlay@gmail.com\n",
+            "ingestionTime": 1747802973634,
+            "eventId": "38977308670465369730206343378815582327072464805932892164"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]ca4ac7a4e5ee40cf9ff4c31aa3655c25",
+            "timestamp": 1747803055731,
+            "message": "2025-05-21T04:50:55.731Z\t81acb2e0-f7ed-479b-93d7-33d3110364a0\tINFO\tConfirmation email sent to charlottemac1995@hotmail.com\n",
+            "ingestionTime": 1747803062427,
+            "eventId": "38977310603070249380068675554786424713189673801081880578"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]ca4ac7a4e5ee40cf9ff4c31aa3655c25",
+            "timestamp": 1747803138571,
+            "message": "2025-05-21T04:52:18.571Z\te119cc15-433b-4032-9fe5-41722185fda3\tINFO\tConfirmation email sent to nikki.stebbing@gmail.com\n",
+            "ingestionTime": 1747803146322,
+            "eventId": "38977312450463981626345496701028540807669618443997675523"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]ca4ac7a4e5ee40cf9ff4c31aa3655c25",
+            "timestamp": 1747803145810,
+            "message": "2025-05-21T04:52:25.810Z\t5019f812-aa5f-4d2c-9a6a-53e37a3bfe76\tINFO\tConfirmation email sent to sam.nicolson1996@gmail.com\n",
+            "ingestionTime": 1747803146322,
+            "eventId": "38977312611899076118508677622605605383371107385789906954"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]c7197eadb9834ccca9011a13da12110b",
+            "timestamp": 1747804008788,
+            "message": "2025-05-21T05:06:48.788Z\t3cc93831-5928-4610-a5f9-928ffccb1593\tINFO\tConfirmation email sent to fiona.m.okeefe@gmail.com\n",
+            "ingestionTime": 1747804009476,
+            "eventId": "38977331856951566056068776102305609806084945774372126723"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]c7197eadb9834ccca9011a13da12110b",
+            "timestamp": 1747804060266,
+            "message": "2025-05-21T05:07:40.266Z\td87873e6-647d-4c05-af28-34191e75cf02\tINFO\tConfirmation email sent to jessica_jacob@outlook.com.au\n",
+            "ingestionTime": 1747804066575,
+            "eventId": "38977333004949327386028194251310037423736916765500571651"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]d7ad90e00aa04dac88c293d0f10a523c",
+            "timestamp": 1747806159746,
+            "message": "2025-05-21T05:42:39.746Z\t7106b6e8-723e-4c52-a799-f8a3858d4f57\tINFO\tConfirmation email sent to kellshield@gmail.com\n",
+            "ingestionTime": 1747806168769,
+            "eventId": "38977379824917856797100869984116068741235811633269309440"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]eaaee5b34d634a06a40b16dcc0c49ca7",
+            "timestamp": 1747809968376,
+            "message": "2025-05-21T06:46:08.376Z\t890a325f-befe-41b8-9b3a-8c744770db20\tINFO\tConfirmation email sent to sarah50505@gmail.com\n",
+            "ingestionTime": 1747809970349,
+            "eventId": "38977464760205042276788090127127179310108149944331272195"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]ad9e9056dd3443e39b83d0ae622f663b",
+            "timestamp": 1747822684752,
+            "message": "2025-05-21T10:18:04.752Z\t481bebc7-4827-4571-8a62-d0ff8ddf8285\tINFO\tConfirmation email sent to casey.mercer@hotmail.com\n",
+            "ingestionTime": 1747822687759,
+            "eventId": "38977748344866066986839487570943537483067592979759497220"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]ad9e9056dd3443e39b83d0ae622f663b",
+            "timestamp": 1747822733971,
+            "message": "2025-05-21T10:18:53.971Z\t1007bb37-307c-4a3a-8baf-6c6318ff79c7\tINFO\tConfirmation email sent to casey.mercer@hotmail.com\n",
+            "ingestionTime": 1747822740742,
+            "eventId": "38977749442486444913318228038242100975901284555761254402"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]91e1800ccf274ef981ab8c4ffc5149c1",
+            "timestamp": 1747825122538,
+            "message": "2025-05-21T10:58:42.538Z\t8d1f9cf4-5ae5-466e-b8e8-1cafbc93a656\tINFO\tConfirmation email sent to choloem@outlook.com\n",
+            "ingestionTime": 1747825123705,
+            "eventId": "38977802709310501532013156227613730535428554525378543619"
+        },
+        {
+            "logStreamName": "2025/05/21/[$LATEST]4b8e16d9042b42e6b8b1ae7714818114",
+            "timestamp": 1747863365514,
+            "message": "2025-05-21T21:36:05.514Z\tad4845a2-c540-4521-a040-59f9fbe2e053\tINFO\tConfirmation email sent to aly.waters88@hotmail.com\n",
+            "ingestionTime": 1747863368189,
+            "eventId": "38978655556173911053869269257435181439768198513020895236"
+        },
+        {
+            "logStreamName": "2025/05/22/[$LATEST]cff2d3598e3042ff8f338e4fdf772ea1",
+            "timestamp": 1747888969253,
+            "message": "2025-05-22T04:42:49.253Z\ta603f292-314e-430f-b948-32eee9c09c19\tINFO\tConfirmation email sent to luciehadley1@gmail.com\n",
+            "ingestionTime": 1747888973282,
+            "eventId": "38979226538633479735127723452683181316335979291009286147"
+        },
+        {
+            "logStreamName": "2025/05/22/[$LATEST]721d8af76b874c718db474b10c6b8c11",
+            "timestamp": 1747889470390,
+            "message": "2025-05-22T04:51:10.390Z\t262d7451-803c-4715-a348-08d2b7160e02\tINFO\tConfirmation email sent to simmofarm83@yahoo.com.au\n",
+            "ingestionTime": 1747889473147,
+            "eventId": "38979237714362026291168613336767722322200220898545696771"
+        },
+        {
+            "logStreamName": "2025/05/24/[$LATEST]e380f0129b4f496b8852965581f8ba6a",
+            "timestamp": 1748045518853,
+            "message": "2025-05-24T00:11:58.853Z\tbc5250bf-974d-4bb9-85ed-f0065c6902f2\tINFO\tConfirmation email sent to natasha.m.jenkins@hotmail.com\n",
+            "ingestionTime": 1748045519950,
+            "eventId": "38982717711374011624768470866073336113063424911396044804"
+        },
+        {
+            "logStreamName": "2025/05/25/[$LATEST]c576cc6cae6f47809293ed98ab3ea0e5",
+            "timestamp": 1748212644474,
+            "message": "2025-05-25T22:37:24.474Z\t523dcdb9-d444-4cfd-8402-e72c52aefc70\tINFO\tConfirmation email sent to banoggi@gmail.com\n",
+            "ingestionTime": 1748212644689,
+            "eventId": "38986444737264078823448719035295511851934112503600775172"
+        },
+        {
+            "logStreamName": "2025/05/25/[$LATEST]7f55046037ee44f5a29468c818226230",
+            "timestamp": 1748214445385,
+            "message": "2025-05-25T23:07:25.385Z\t4e51b329-4669-44a8-a355-47ca6ba329fd\tINFO\tConfirmation email sent to gavin.tai@hotmail.com\n",
+            "ingestionTime": 1748214454407,
+            "eventId": "38986484898921415054431773669341783883853382510203895808"
+        },
+        {
+            "logStreamName": "2025/05/26/[$LATEST]3846e4e997ff424fb45f021641be5f78",
+            "timestamp": 1748224777653,
+            "message": "2025-05-26T01:59:37.653Z\tfce81f42-a5d3-4cfa-a43c-bbd2ff238114\tINFO\tConfirmation email sent to be.goebel92@gmail.com\n",
+            "ingestionTime": 1748224786670,
+            "eventId": "38986715316197405986036291509254219743108974682840236032"
+        },
+        {
+            "logStreamName": "2025/05/26/[$LATEST]2b099878cd774687861ee29c09154e81",
+            "timestamp": 1748244936165,
+            "message": "2025-05-26T07:35:36.165Z\tfca04648-faa3-43ad-bf12-f2a3554806a4\tINFO\tConfirmation email sent to kat_a_kat@hotmail.com\n",
+            "ingestionTime": 1748244936740,
+            "eventId": "38987164866037099507985281994669545605220303903748325379"
+        },
+        {
+            "logStreamName": "2025/05/26/[$LATEST]2169c6e8c9354af38cdd6f680f28666a",
+            "timestamp": 1748301644725,
+            "message": "2025-05-26T23:20:44.725Z\tfaf5f80c-2e14-4183-9c49-063085c06200\tINFO\tConfirmation email sent to emilyrose688@gmail.com\n",
+            "ingestionTime": 1748301645936,
+            "eventId": "38988429509184235093739609718652241512309938909587505155"
+        },
+        {
+            "logStreamName": "2025/05/28/[$LATEST]3ac3c2a9a27a403aa2c43ab8b8fad639",
+            "timestamp": 1748404643786,
+            "message": "2025-05-28T03:57:23.786Z\t6d658175-6c56-41a9-9bb0-c76b1c58fe9a\tINFO\tConfirmation email sent to jessicaday87@gmail.com\n",
+            "ingestionTime": 1748404647372,
+            "eventId": "38990726464999284006503057288828132334793154298440122371"
+        },
+        {
+            "logStreamName": "2025/05/28/[$LATEST]182408fa77ee4763a352ff5673c160d7",
+            "timestamp": 1748459065709,
+            "message": "2025-05-28T19:04:25.709Z\t8bc2e1ad-9134-4237-82d7-7b73c2416a82\tINFO\tConfirmation email sent to chelsiemsteve@gmail.com\n",
+            "ingestionTime": 1748459069084,
+            "eventId": "38991940114437321059788873755602438476228180329772285955"
+        },
+        {
+            "logStreamName": "2025/05/28/[$LATEST]182408fa77ee4763a352ff5673c160d7",
+            "timestamp": 1748459125671,
+            "message": "2025-05-28T19:05:25.671Z\t1b9a5452-842c-46e3-9bb2-8692eebf688e\tINFO\tConfirmation email sent to chelsiemsteve@gmail.com\n",
+            "ingestionTime": 1748459132335,
+            "eventId": "38991941451634604654082098644832914296143530042053492739"
+        },
+        {
+            "logStreamName": "2025/05/30/[$LATEST]64e4a534a5af4203b5de9bb8c0009cba",
+            "timestamp": 1748649172807,
+            "message": "2025-05-30T23:52:52.807Z\tb4165f35-7837-4393-94f6-ca50e106eb08\tINFO\tConfirmation email sent to m_picinich@hotmail.com\n",
+            "ingestionTime": 1748649175008,
+            "eventId": "38996179644390251150418672578226659141184713983673630723"
+        },
+        {
+            "logStreamName": "2025/06/03/[$LATEST]79cab26690634d209f6750648578034f",
+            "timestamp": 1748925468342,
+            "message": "2025-06-03T04:37:48.342Z\t2625edba-e1df-4167-bac1-0c3f7d61a670\tINFO\tConfirmation email sent to gillianjuergens@gmail.com\n",
+            "ingestionTime": 1748925477365,
+            "eventId": "39002341240715777850153780599281419973412478647279419392"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002434331,
+            "message": "2025-06-04T02:00:34.331Z\t85be28a9-22c6-4c14-972a-5b4a91d78e5e\tINFO\tConfirmation email sent to rhiannon.phelan@gmail.com\n",
+            "ingestionTime": 1749002438891,
+            "eventId": "39004057639625419760910748223592976740253655704076222467"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002446016,
+            "message": "2025-06-04T02:00:46.016Z\t327d4e5f-8cf2-4db3-830b-e46ab394c0a8\tINFO\tConfirmation email sent to alyarnton@hotmail.com\n",
+            "ingestionTime": 1749002453198,
+            "eventId": "39004057900209627405741079649734010670864317628849586178"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002490571,
+            "message": "2025-06-04T02:01:30.571Z\tdc964b99-8bf1-4225-9a7d-04fd3184c052\tINFO\tConfirmation email sent to rachel.a.morrison@hotmail.com\n",
+            "ingestionTime": 1749002495966,
+            "eventId": "39004058893819329726272993772561266545741116110021656583"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002510556,
+            "message": "2025-06-04T02:01:50.556Z\t28b88ee4-2bf7-4aec-8fde-2d35efe2c6a6\tINFO\tConfirmation email sent to aimee.leacy@hotmail.com\n",
+            "ingestionTime": 1749002518655,
+            "eventId": "39004059339499722518907497283582318563950816462502428675"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002526494,
+            "message": "2025-06-04T02:02:06.494Z\t28d0dc93-e46b-4aec-a96a-372acbfba3ad\tINFO\tConfirmation email sent to a.aston7@hotmail.com\n",
+            "ingestionTime": 1749002534621,
+            "eventId": "39004059694928999493088568932680304352244763340579667971"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002642215,
+            "message": "2025-06-04T02:04:02.215Z\td8f6adfb-3338-419b-a027-a12f62d47e50\tINFO\tConfirmation email sent to Christina.androutsos@gmail.com\n",
+            "ingestionTime": 1749002650278,
+            "eventId": "39004062275593534612250809634155905348137591880665006083"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002655595,
+            "message": "2025-06-04T02:04:15.595Z\t01b5bfd1-1f62-4f46-8135-5ca2b595fd71\tINFO\tConfirmation email sent to melissavuyst90@gmail.com\n",
+            "ingestionTime": 1749002663666,
+            "eventId": "39004062573977505368590547284088706624388078800589422595"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002784605,
+            "message": "2025-06-04T02:06:24.605Z\tf54c80fd-b4d6-4627-83b5-890754610cc2\tINFO\tConfirmation email sent to jblackman999@yahoo.com.au\n",
+            "ingestionTime": 1749002792693,
+            "eventId": "39004065450996643431026238929595855321086194778246545410"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002815779,
+            "message": "2025-06-04T02:06:55.779Z\t4550d113-ee7d-4560-aa3a-8eda56f9f2ed\tINFO\tConfirmation email sent to janebuckles88@gmail.com\n",
+            "ingestionTime": 1749002823773,
+            "eventId": "39004066146200074250019884781403800942429487998121148419"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]0684981061e24c0480fdb2f83f19ace0",
+            "timestamp": 1749002907436,
+            "message": "2025-06-04T02:08:27.436Z\te2cbb928-adb2-405a-9b9e-cc2aaa42500d\tINFO\tConfirmation email sent to lauren.baron88@gmail.com\n",
+            "ingestionTime": 1749002915564,
+            "eventId": "39004068190219476911741210176111447419637715736993398787"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]36a9b72495ce4f11a481f440e102f2aa",
+            "timestamp": 1749003656661,
+            "message": "2025-06-04T02:20:56.661Z\tc9dc8ce1-94e6-4a5b-a475-6bec76fdbef6\tINFO\tConfirmation email sent to karlyjt21@gmail.com\n",
+            "ingestionTime": 1749003659072,
+            "eventId": "39004084898495298280847334292056215781308928632581914627"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]36a9b72495ce4f11a481f440e102f2aa",
+            "timestamp": 1749003718262,
+            "message": "2025-06-04T02:21:58.262Z\t8cf792fe-7b5d-4d2e-8cbd-5e7f67f7ac62\tINFO\tConfirmation email sent to kellie_foster@live.com.au\n",
+            "ingestionTime": 1749003725014,
+            "eventId": "39004086272243503255532250513517068131354090363460714498"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]36a9b72495ce4f11a481f440e102f2aa",
+            "timestamp": 1749003732084,
+            "message": "2025-06-04T02:22:12.084Z\td334f3d1-5bf8-4995-821d-5570470b5da0\tINFO\tConfirmation email sent to mariapowell7655@gmail.com\n",
+            "ingestionTime": 1749003739733,
+            "eventId": "39004086580484403389622523593617386311069210187239718915"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]36a9b72495ce4f11a481f440e102f2aa",
+            "timestamp": 1749003782987,
+            "message": "2025-06-04T02:23:02.987Z\t761d622f-2824-4aba-994c-6c7d8a57749a\tINFO\tConfirmation email sent to mariapowell7655@gmail.com\n",
+            "ingestionTime": 1749003790980,
+            "eventId": "39004087715659236230426833429163905923418304576004030467"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]36a9b72495ce4f11a481f440e102f2aa",
+            "timestamp": 1749003797978,
+            "message": "2025-06-04T02:23:17.978Z\te84a7b56-58f2-41a6-aa10-be667c0cc376\tINFO\tConfirmation email sent to kellie_foster@live.com.au\n",
+            "ingestionTime": 1749003806057,
+            "eventId": "39004088049969707501599404962152822708999915412921974787"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]adfc83f7e5b44cf6b4eae56cca308ddb",
+            "timestamp": 1749004557479,
+            "message": "2025-06-04T02:35:57.479Z\t2ee5f316-e1bc-436d-86db-57967120eb7d\tINFO\tConfirmation email sent to rebecca.collinet@hotmail.com\n",
+            "ingestionTime": 1749004558566,
+            "eventId": "39004104987407986530806212491400247134139651244450119683"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]adfc83f7e5b44cf6b4eae56cca308ddb",
+            "timestamp": 1749004778440,
+            "message": "2025-06-04T02:39:38.440Z\t76c0e60f-078a-4532-8877-8815b6689d15\tINFO\tConfirmation email sent to aly.waters88@hotmail.com\n",
+            "ingestionTime": 1749004785448,
+            "eventId": "39004109915002946343331232742557320920969338857596649474"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]b648399a72d343ea90af8a95d0311440",
+            "timestamp": 1749005405279,
+            "message": "2025-06-04T02:50:05.279Z\t4417ae07-1925-47d2-bb8a-4984d308698d\tINFO\tConfirmation email sent to sam.harangozo@live.com.au\n",
+            "ingestionTime": 1749005410995,
+            "eventId": "39004123893979765845068512915905271789444324408260493314"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]b648399a72d343ea90af8a95d0311440",
+            "timestamp": 1749005474678,
+            "message": "2025-06-04T02:51:14.678Z\t2af4331f-8c38-4125-b408-9caff53e9f25\tINFO\tConfirmation email sent to sam.harangozo@live.com.au\n",
+            "ingestionTime": 1749005481575,
+            "eventId": "39004125441629181877895228400668722839545542607349678082"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]b648399a72d343ea90af8a95d0311440",
+            "timestamp": 1749005565210,
+            "message": "2025-06-04T02:52:45.210Z\t66a42f88-4ea2-463b-b1a5-8e6b0c107710\tINFO\tConfirmation email sent to elissaroelofs@outlook.com\n",
+            "ingestionTime": 1749005572773,
+            "eventId": "39004127460560246191269602760432044754775359970523480067"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]c3f19b9e9c2a4401b8c1b1acfd47ab38",
+            "timestamp": 1749005884624,
+            "message": "2025-06-04T02:58:04.624Z\t9a076671-d69b-45ff-b2fe-59e788ade7b1\tINFO\tConfirmation email sent to ilonayoung87@gmail.com\n",
+            "ingestionTime": 1749005888509,
+            "eventId": "39004134583730473034730063272623241291500560852578074628"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]a1d6210495394b36be4e18e68be38e5c",
+            "timestamp": 1749006769148,
+            "message": "2025-06-04T03:12:49.148Z\t4770aab6-f112-429a-81ed-67bae503eefc\tINFO\tConfirmation email sent to Inekembrandi@gmail.com\n",
+            "ingestionTime": 1749006778168,
+            "eventId": "39004154309274819019830967991895124603618246710217277440"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]9f3444eb8060485e880c90824e5cbee2",
+            "timestamp": 1749007763031,
+            "message": "2025-06-04T03:29:23.031Z\t981d7669-0ce4-493a-a82a-d080f3920c2b\tINFO\tConfirmation email sent to cdecourcy@goodstart.org.au\n",
+            "ingestionTime": 1749007765225,
+            "eventId": "39004176473606359171042288964117630140162369612359335939"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]9f3444eb8060485e880c90824e5cbee2",
+            "timestamp": 1749007838477,
+            "message": "2025-06-04T03:30:38.477Z\ta18ae2ea-7471-480a-a7ab-fa7ce905d4d0\tINFO\tConfirmation email sent to cdecourcy@goodstart.org.au\n",
+            "ingestionTime": 1749007845214,
+            "eventId": "39004178156108381419383682597122166214696044147489701891"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]64bc7af81d3041388a4fa7f1b3c55327",
+            "timestamp": 1749009886716,
+            "message": "2025-06-04T04:04:46.716Z\tee22928d-348b-4efb-aeea-296113cef2ee\tINFO\tConfirmation email sent to brittanyashtonn@gmail.com\n",
+            "ingestionTime": 1749009895735,
+            "eventId": "39004223833364426112548697872028213333310353361654448128"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]7261a4fa546642daa72f9aa833c31dab",
+            "timestamp": 1749014598787,
+            "message": "2025-06-04T05:23:18.787Z\tb1f3ff9f-3544-4389-a7af-e91328afbcee\tINFO\tConfirmation email sent to jamieknight93@hotmail.com\n",
+            "ingestionTime": 1749014599241,
+            "eventId": "39004328916059154497940620717571813910453415590526255107"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]6b8a883a24ce4507b53cbba0628f34a7",
+            "timestamp": 1749018187875,
+            "message": "2025-06-04T06:23:07.875Z\t53e79984-bd67-4e65-bafe-9ab4fd758596\tINFO\tConfirmation email sent to danielbeveridge2306@hotmail.com\n",
+            "ingestionTime": 1749018191702,
+            "eventId": "39004408955396137601817774868738689309406214118328893443"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]8ccb319bf4bf4c4782734e3959518c9c",
+            "timestamp": 1749031963345,
+            "message": "2025-06-04T10:12:43.345Z\t2b4be58a-8df8-447d-8157-9525d1539a8c\tINFO\tConfirmation email sent to Inekembrandi@gmail.com\n",
+            "ingestionTime": 1749031969111,
+            "eventId": "39004716158642597604460959055645128348285004402029166594"
+        },
+        {
+            "logStreamName": "2025/06/04/[$LATEST]f75babb50cf84a94bd33df10169ac2e1",
+            "timestamp": 1749036853689,
+            "message": "2025-06-04T11:34:13.689Z\t941c4c71-aa32-430f-882f-7c7ca5c6134e\tINFO\tConfirmation email sent to rebecca.collinet@hotmail.com\n",
+            "ingestionTime": 1749036859551,
+            "eventId": "39004825216958074767502661438174995765229033305228181506"
+        },
+        {
+            "logStreamName": "2025/06/05/[$LATEST]713fa8ef0ce14414acca0bf2548aaba5",
+            "timestamp": 1749090141388,
+            "message": "2025-06-05T02:22:21.388Z\t3b9b0005-ce66-4f13-85d8-374867835ab1\tINFO\tConfirmation email sent to samanthablackberry@hotmail.com\n",
+            "ingestionTime": 1749090150411,
+            "eventId": "39006013572355689762590974452624570895784013351694499840"
+        },
+        {
+            "logStreamName": "2025/06/05/[$LATEST]7e0c27073b49401bb202cf66dbb43045",
+            "timestamp": 1749090145674,
+            "message": "2025-06-05T02:22:25.674Z\tb3f41b1e-285c-4fd7-8329-cbde12602dd2\tINFO\tConfirmation email sent to samanthablackberry@hotmail.com\n",
+            "ingestionTime": 1749090154432,
+            "eventId": "39006013667936683683493225242107694500723131636629045249"
+        },
+        {
+            "logStreamName": "2025/06/05/[$LATEST]c61ad6bc45f3489c81a0439700cb5158",
+            "timestamp": 1749092669408,
+            "message": "2025-06-05T03:04:29.408Z\t161195b3-f726-42ba-afb0-e19655bc1040\tINFO\tConfirmation email sent to johanna.rourke@y7mail.com\n",
+            "ingestionTime": 1749092670684,
+            "eventId": "39006069949085566551976891764574068471706423617362722820"
+        },
+        {
+            "logStreamName": "2025/06/15/[$LATEST]ab63a2a8d87e4a0c97013e2e093b6222",
+            "timestamp": 1749996875613,
+            "message": "2025-06-15T14:14:35.613Z\t9a32b59b-28a5-4647-9a46-2a1240da4fef\tINFO\tConfirmation email sent to bahar.nasr@gmail.com\n",
+            "ingestionTime": 1749996877605,
+            "eventId": "39026234421270201898305078073358605420563642251267276803"
+        },
+        {
+            "logStreamName": "2025/06/22/[$LATEST]3e9de2f7fb33445888973c5b36f12f6b",
+            "timestamp": 1750611980030,
+            "message": "2025-06-22T17:06:20.030Z\t0bdd99e8-67a6-455c-bb44-1640a6c1f5b8\tINFO\tConfirmation email sent to suzy_daher@hotmail.com\n",
+            "ingestionTime": 1750611981241,
+            "eventId": "39039951708144209626509942724498701107723971522503245828"
+        },
+        {
+            "logStreamName": "2025/06/23/[$LATEST]efbe8abc68244156811a5bc5f2a57e45",
+            "timestamp": 1750642182102,
+            "message": "2025-06-23T01:29:42.102Z\t34f290cd-c812-4bb5-b3ed-a0eb61b9b372\tINFO\tConfirmation email sent to huynh.allison@gmail.com\n",
+            "ingestionTime": 1750642191122,
+            "eventId": "39040625236856349302684304773957444302346141837546160128"
+        },
+        {
+            "logStreamName": "2025/06/23/[$LATEST]efbe8abc68244156811a5bc5f2a57e45",
+            "timestamp": 1750642255400,
+            "message": "2025-06-23T01:30:55.400Z\td9bc1efd-bfec-4c4d-af26-8d1b54f0b6b4\tINFO\tConfirmation email sent to huynh.allison@gmail.com\n",
+            "ingestionTime": 1750642262084,
+            "eventId": "39040626871456370864581919888030056954666510796332859394"
+        },
+        {
+            "logStreamName": "2025/06/23/[$LATEST]a86c96e34e364411bcd5f72f94e58200",
+            "timestamp": 1750651317073,
+            "message": "2025-06-23T04:01:57.073Z\t8c9a9444-4098-4a33-9650-6cd1271e0d79\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1750651322771,
+            "eventId": "39040828953517016269169325671125727570377338927283175426"
+        },
+        {
+            "logStreamName": "2025/06/23/[$LATEST]a86c96e34e364411bcd5f72f94e58200",
+            "timestamp": 1750651367632,
+            "message": "2025-06-23T04:02:47.632Z\tc6524824-48cf-4df5-a7dd-3015546c3a51\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1750651374490,
+            "eventId": "39040830081020392761679101146554329122820053941635579907"
+        },
+        {
+            "logStreamName": "2025/06/23/[$LATEST]5585170328b24f14aeb19d6fb273bcfe",
+            "timestamp": 1750652709815,
+            "message": "2025-06-23T04:25:09.815Z\tfffd089a-e2e1-4e2d-9a78-00b8e969ebeb\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1750652710450,
+            "eventId": "39040860012701485561106462737466139664744511420988981251"
+        },
+        {
+            "logStreamName": "2025/06/24/[$LATEST]183a5892739b4cb6b9f552381b551277",
+            "timestamp": 1750808918535,
+            "message": "2025-06-24T23:48:38.535Z\t3ebe9ff7-7176-476f-9c21-15ad0c32674e\tINFO\tConfirmation email sent to tnorthby@hotmail.com\n",
+            "ingestionTime": 1750808922431,
+            "eventId": "39044343583563994175628393259548667684074351814815449091"
+        },
+        {
+            "logStreamName": "2025/06/24/[$LATEST]1f18ef5f4f724b6988d601516a757792",
+            "timestamp": 1750808922405,
+            "message": "2025-06-24T23:48:42.405Z\t55d053b2-7ce5-4212-a316-d7d7c9476eec\tINFO\tConfirmation email sent to tnorthby@hotmail.com\n",
+            "ingestionTime": 1750808931430,
+            "eventId": "39044343669867878093941904828171218049553503542782590976"
+        },
+        {
+            "logStreamName": "2025/06/25/[$LATEST]c22f385003044bda99ee8371984bb01f",
+            "timestamp": 1750814205653,
+            "message": "2025-06-25T01:16:45.653Z\t2919c03e-02be-4c30-83a2-c314b2bab85d\tINFO\tConfirmation email sent to tnorthby@hotmail.com\n",
+            "ingestionTime": 1750814206678,
+            "eventId": "39044461490235346740459562477855267075335622734706245635"
+        },
+        {
+            "logStreamName": "2025/06/25/[$LATEST]a7dc3dea688a4adba129a94510da0ca0",
+            "timestamp": 1750814207236,
+            "message": "2025-06-25T01:16:47.236Z\tb66cce03-5a2a-4aa9-9f60-d28de2c33a60\tINFO\tConfirmation email sent to tnorthby@hotmail.com\n",
+            "ingestionTime": 1750814208622,
+            "eventId": "39044461525537426389733538913256243775552044422659833860"
+        },
+        {
+            "logStreamName": "2025/06/25/[$LATEST]341da361a64d416a821a4407dfea376f",
+            "timestamp": 1750828476973,
+            "message": "2025-06-25T05:14:36.973Z\t7f858fae-9226-4efd-a93d-00a3fc801d6a\tINFO\tConfirmation email sent to louise@chaffard.org\n",
+            "ingestionTime": 1750828485992,
+            "eventId": "39044779751306313434512232002013360838749006945558200320"
+        },
+        {
+            "logStreamName": "2025/06/25/[$LATEST]74eb00037a704ec1adebc63bf005d1ef",
+            "timestamp": 1750830425357,
+            "message": "2025-06-25T05:47:05.357Z\t8dd2d532-827d-4a53-a36a-da87a3e5b383\tINFO\tConfirmation email sent to zarkah.bajawray@gmail.com\n",
+            "ingestionTime": 1750830428287,
+            "eventId": "39044823201721446328401873348032751951222015332559552515"
+        },
+        {
+            "logStreamName": "2025/06/25/[$LATEST]b0d8d1eae9b8483cbae52c18606da7cf",
+            "timestamp": 1750838796710,
+            "message": "2025-06-25T08:06:36.710Z\t776cc36b-7b17-4cc0-abea-b017c1d017cb\tINFO\tConfirmation email sent to lynchy1992.jl@gmail.com\n",
+            "ingestionTime": 1750838805733,
+            "eventId": "39045009889131666283329511240203480500128667040006930432"
+        },
+        {
+            "logStreamName": "2025/08/21/[$LATEST]94acec048be748538d4b9aecf2b28afb",
+            "timestamp": 1755836012450,
+            "message": "2025-08-22T04:13:32.450Z\t25a62b8a-eb89-4e65-86f3-c3dcd9476e22\tINFO\tConfirmation email sent to mel_barry@hotmail.com\n",
+            "ingestionTime": 1755836013631,
+            "eventId": "39156451524051492938170443032981547638046312181967814659"
+        },
+        {
+            "logStreamName": "2025/08/21/[$LATEST]94acec048be748538d4b9aecf2b28afb",
+            "timestamp": 1755836095611,
+            "message": "2025-08-22T04:14:55.611Z\te1db6325-a245-48f8-bb3a-bcf64a79edb3\tINFO\tConfirmation email sent to mel_barry@hotmail.com\n",
+            "ingestionTime": 1755836102390,
+            "eventId": "39156453378603764393175594213536528685092232070924533762"
+        },
+        {
+            "logStreamName": "2025/08/21/[$LATEST]2034c6b17f0849e1a458ce4278b5ee43",
+            "timestamp": 1755843608409,
+            "message": "2025-08-22T06:20:08.409Z\ta722b6ba-8d68-4b2f-944e-f7f46e892a73\tINFO\tConfirmation email sent to chloecrumpton3@gmail.com\n",
+            "ingestionTime": 1755843617432,
+            "eventId": "39156620919597690423644079781925673784723712382480220160"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]0590e3e1289941d9b2e3c323ab1e87b5",
+            "timestamp": 1757976693617,
+            "message": "2025-09-15T22:51:33.617Z\t04b46e94-63de-4647-9287-5311255ff135\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1757976694665,
+            "eventId": "39204190309308053119204890845119033103295996548961206275"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]766d204291694974a20c9fddb79cd41c",
+            "timestamp": 1757977594734,
+            "message": "2025-09-15T23:06:34.734Z\t4283bc42-d3a8-44f0-a657-1b779c5a41e2\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1757977603756,
+            "eventId": "39204210404888664183524425375384641768173046514457444352"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]9423504795104fe997cd744abaa66ea0",
+            "timestamp": 1757981255448,
+            "message": "2025-09-16T00:07:35.448Z\t6aa672c0-59a7-4c2e-b457-b45add13f7d7\tINFO\tConfirmation email sent to cass.davern@hotmail.com\n",
+            "ingestionTime": 1757981264478,
+            "eventId": "39204292041538822877355992744711040364526095218976030720"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]110a20f462324531b277b70f3f39fb1f",
+            "timestamp": 1757981758483,
+            "message": "2025-09-16T00:15:58.483Z\tf1a3f2a2-6631-4d80-9ef0-8fccb400eb6e\tINFO\tConfirmation email sent to jadie235@gmail.com\n",
+            "ingestionTime": 1757981764245,
+            "eventId": "39204303259594183820208005351312864820643805441223688194"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]110a20f462324531b277b70f3f39fb1f",
+            "timestamp": 1757982102157,
+            "message": "2025-09-16T00:21:42.157Z\t7642088e-ed05-4c6e-88f5-3da31a594221\tINFO\tConfirmation email sent to cassarnolf@gmail.com\n",
+            "ingestionTime": 1757982108600,
+            "eventId": "39204310923780489180021383311758541906158869121573715971"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]110a20f462324531b277b70f3f39fb1f",
+            "timestamp": 1757982180726,
+            "message": "2025-09-16T00:23:00.726Z\tcfa7bae1-48f8-4341-81f1-bc56c1512f79\tINFO\tConfirmation email sent to sjok@pm.me\n",
+            "ingestionTime": 1757982188019,
+            "eventId": "39204312675927738683373913015090138520785809697643692035"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]110a20f462324531b277b70f3f39fb1f",
+            "timestamp": 1757982493788,
+            "message": "2025-09-16T00:28:13.788Z\t9b34deb6-420d-469d-9fab-1891daeb2d74\tINFO\tConfirmation email sent to melissa.treble@hotmail.com\n",
+            "ingestionTime": 1757982501778,
+            "eventId": "39204319657443632025767855329856428237614420530328567811"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]a519d80d2bb44a87a7f49368bdbc99d4",
+            "timestamp": 1757983029803,
+            "message": "2025-09-16T00:37:09.803Z\t3660753e-ae47-4016-929f-6fe3abf4b934\tINFO\tConfirmation email sent to shamira.armstrong@gmail.com\n",
+            "ingestionTime": 1757983030077,
+            "eventId": "39204331610977569616159819178798973610734998345050030083"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]7826f381de0a41c2958e511bc03d523e",
+            "timestamp": 1757983855658,
+            "message": "2025-09-16T00:50:55.658Z\t03c21e92-2338-4f00-a3c2-80777e1bd97b\tINFO\tConfirmation email sent to md1029@hotmail.com\n",
+            "ingestionTime": 1757983859782,
+            "eventId": "39204350028159495548667594734831230085599263951570206723"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]292ea928775c4a3fbedcd434958c0ec6",
+            "timestamp": 1757984809746,
+            "message": "2025-09-16T01:06:49.746Z\tef578afa-e5e4-441d-86d2-dcc22b405571\tINFO\tConfirmation email sent to derinamills@live.com\n",
+            "ingestionTime": 1757984818666,
+            "eventId": "39204371305032880524352767755581424604593115703398105089"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]e649f7173a44449f8d497e826dfd59a2",
+            "timestamp": 1757986383126,
+            "message": "2025-09-16T01:33:03.126Z\tc0b9228a-ef37-44b6-8200-9724a1030be5\tINFO\tConfirmation email sent to sloothaakstephanie@gmail.com\n",
+            "ingestionTime": 1757986385918,
+            "eventId": "39204406392579360988464608079741481863944646067713212419"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]6dcb428f8a1e410f9eb43d8687854681",
+            "timestamp": 1757986849860,
+            "message": "2025-09-16T01:40:49.860Z\t9969436b-86f1-46f0-876b-ef2a0b05e2ec\tINFO\tConfirmation email sent to nhteripo1702@gmail.com\n",
+            "ingestionTime": 1757986855615,
+            "eventId": "39204416801095370479456469989102179778547330769310318595"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]5c1aed4933a34d5d9aa1be865e29e10f",
+            "timestamp": 1757987934097,
+            "message": "2025-09-16T01:58:54.097Z\taf544323-17eb-466a-973b-a0f043dcc843\tINFO\tConfirmation email sent to jess.l.ford@outlook.com\n",
+            "ingestionTime": 1757987940053,
+            "eventId": "39204440980388442298703714409369315887300283887499476995"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]ff817928dded4412b5d210548f109b2f",
+            "timestamp": 1757990021502,
+            "message": "2025-09-16T02:33:41.502Z\t64313454-d787-4396-8e31-391d62349088\tINFO\tConfirmation email sent to stefrock@hotmail.co.uk\n",
+            "ingestionTime": 1757990025956,
+            "eventId": "39204487531075473437519115688437782832345535800915525636"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]c1eff0717ad1476da3ac840040893a2d",
+            "timestamp": 1757990765777,
+            "message": "2025-09-16T02:46:05.777Z\t1fcbe7bb-a59e-4901-aa16-a8fc1b7fd97b\tINFO\tConfirmation email sent to bunjils_country@yahoo.com.au\n",
+            "ingestionTime": 1757990774599,
+            "eventId": "39204504128962606073898655259988048623248154709370077185"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]d3933c7067bc4d7aad5bd8c6bea32fc1",
+            "timestamp": 1757993123978,
+            "message": "2025-09-16T03:25:23.978Z\tf236a71a-37b5-4def-b931-b2a4b353fe4e\tINFO\tConfirmation email sent to slfitzgerald10@gmail.com\n",
+            "ingestionTime": 1757993127711,
+            "eventId": "39204556718602233994012681097398496068543525657691029507"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]9e46c41077a44c8585de99534c903fee",
+            "timestamp": 1757993766040,
+            "message": "2025-09-16T03:36:06.040Z\t0d909dbd-77ec-48d3-8c45-b7e9418ebf68\tINFO\tConfirmation email sent to aliciatshang@gmail.com\n",
+            "ingestionTime": 1757993774880,
+            "eventId": "39204571037063297652981637380484161757951447688753577985"
+        },
+        {
+            "logStreamName": "2025/09/15/[$LATEST]5d8d299dfa344a00b6343ccea80d5bf5",
+            "timestamp": 1757994300218,
+            "message": "2025-09-16T03:45:00.218Z\t42a1b150-b132-43ec-b8cf-0d3d93265a8b\tINFO\tConfirmation email sent to nedibattista@gmail.com\n",
+            "ingestionTime": 1757994301956,
+            "eventId": "39204582949630766313672846516946840942075774900337180676"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]f91be24e7b5e41d291069e1706188507",
+            "timestamp": 1757994690564,
+            "message": "2025-09-16T03:51:30.564Z\t48bb229f-0596-4deb-81c8-6021eed47199\tINFO\tConfirmation email sent to latito.bl91@gmail.com\n",
+            "ingestionTime": 1757994694684,
+            "eventId": "39204591654637451579307467797627514118125533467423932419"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]3a7b36e9473b4f78a342768cc19f4430",
+            "timestamp": 1757998450502,
+            "message": "2025-09-16T04:54:10.502Z\t496a1767-839f-4feb-b7bc-4c1ba7203ed3\tINFO\tConfirmation email sent to ebony.15@hotmail.com\n",
+            "ingestionTime": 1757998456450,
+            "eventId": "39204675504056751852141585884849100745319997022869258242"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]4f51b3109172421ca70439e15ebbfb45",
+            "timestamp": 1758000591837,
+            "message": "2025-09-16T05:29:51.837Z\t75df8cea-72be-4518-8a10-ffc2e7832fbe\tINFO\tConfirmation email sent to bunjils_country@yahoo.com.au\n",
+            "ingestionTime": 1758000597610,
+            "eventId": "39204723257422971547713493253739793938472614738087051266"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]ac12a36a833f499388d40515a631ec37",
+            "timestamp": 1758018437598,
+            "message": "2025-09-16T10:27:17.598Z\t7b0b3295-8ed4-4a9a-a52c-5553a01330d7\tINFO\tConfirmation email sent to kamila.nejedla@gmail.com\n",
+            "ingestionTime": 1758018446621,
+            "eventId": "39205121231191906422765279747471168316406867131450392576"
+        },
+        {
+            "logStreamName": "2025/09/16/[$LATEST]3b6a257b255a4fc596f4c16d827843ba",
+            "timestamp": 1758063223078,
+            "message": "2025-09-16T22:53:43.078Z\tfbacfc9d-46d2-4fc6-8082-d1319e3dc527\tINFO\tConfirmation email sent to laura@serwylo.com\n",
+            "ingestionTime": 1758063232097,
+            "eventId": "39206119980769980312017426674869648252425630705190633472"
+        },
+        {
+            "logStreamName": "2025/09/17/[$LATEST]279b658ecd08458f80f2ad6f566fff93",
+            "timestamp": 1758093354189,
+            "message": "2025-09-17T07:15:54.189Z\t3ba4c939-5ef2-48e5-92ad-8f3a197c875a\tINFO\tConfirmation email sent to annelise.nation@gmail.com\n",
+            "ingestionTime": 1758093358069,
+            "eventId": "39206791926998939955260239876372682146778308593079812100"
+        },
+        {
+            "logStreamName": "2025/09/17/[$LATEST]d425842de7264cba9a6d0ba2ea351e47",
+            "timestamp": 1758144371007,
+            "message": "2025-09-17T21:26:11.007Z\t81a5a068-c233-41c3-aad5-49f7c2d984cc\tINFO\tConfirmation email sent to mik.abercrombie@hotmail.com\n",
+            "ingestionTime": 1758144374524,
+            "eventId": "39207929640057997765928539867461798536149161679958310916"
+        },
+        {
+            "logStreamName": "2025/09/20/[$LATEST]585d4b94a5ce46ce98290cd0827b3265",
+            "timestamp": 1758410704367,
+            "message": "2025-09-20T23:25:04.367Z\t8823e97d-ef86-4706-b09d-13f8925fd01c\tINFO\tConfirmation email sent to hayley.budge@gmail.com\n",
+            "ingestionTime": 1758410708746,
+            "eventId": "39213869072457226293853040809186978754281014891198611459"
+        },
+        {
+            "logStreamName": "2025/09/22/[$LATEST]8d12633de5be48f38e0078565247d632",
+            "timestamp": 1758582523778,
+            "message": "2025-09-22T23:08:43.778Z\t48926ac6-997d-4100-a9f4-866595a0bda1\tINFO\tConfirmation email sent to j.mardjetko@gmail.com\n",
+            "ingestionTime": 1758582532594,
+            "eventId": "39217700773362098903586890168222245628040077828477091841"
+        },
+        {
+            "logStreamName": "2025/09/23/[$LATEST]526943dbcca84ad3805117f7d994a85d",
+            "timestamp": 1758586499734,
+            "message": "2025-09-23T00:14:59.734Z\t8414ae36-05bb-499b-84c8-2dfabfb187fb\tINFO\tConfirmation email sent to ashleyrbennett267@gmail.com\n",
+            "ingestionTime": 1758586502181,
+            "eventId": "39217789440143775472609158294947129489738651104700334084"
+        },
+        {
+            "logStreamName": "2025/09/23/[$LATEST]d9df2bb85d844518a7addf424775362b",
+            "timestamp": 1758663872391,
+            "message": "2025-09-23T21:44:32.391Z\t97c6fbbf-d36c-4ac9-9c61-4d2b2781b3a4\tINFO\tConfirmation email sent to claremustonart@gmail.com\n",
+            "ingestionTime": 1758663875402,
+            "eventId": "39219514908052865779417578139014711853293260565023621123"
+        },
+        {
+            "logStreamName": "2025/09/23/[$LATEST]d9ab2ba43e7a43e291b7a0bbfce9a717",
+            "timestamp": 1758670794547,
+            "message": "2025-09-23T23:39:54.547Z\ta04dbedc-fccf-41f6-a060-d3b0b0ab2975\tINFO\tConfirmation email sent to jenjay.taylor@gmail.com\n",
+            "ingestionTime": 1758670803568,
+            "eventId": "39219669277290046259361749434974892404726670018839117824"
+        },
+        {
+            "logStreamName": "2025/09/24/[$LATEST]842aa10297774dffb1df8ffa20eb7dff",
+            "timestamp": 1758752948250,
+            "message": "2025-09-24T22:29:08.250Z\te32edb83-5eff-4e3c-be55-06d56760e9f9\tINFO\tConfirmation email sent to barnie1000@gmail.com\n",
+            "ingestionTime": 1758752957274,
+            "eventId": "39221501366087765020211823405074010755475033376506773504"
+        },
+        {
+            "logStreamName": "2025/09/26/[$LATEST]69d06669bc524b7e80e3966457d2704a",
+            "timestamp": 1758931986451,
+            "message": "2025-09-27T00:13:06.451Z\t99b3d3a5-3930-4d06-93d9-f1cde8090d40\tINFO\tConfirmation email sent to srebwilliams@gmail.com\n",
+            "ingestionTime": 1758931995473,
+            "eventId": "39225494051389069330822709372352091687898375033742098432"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]bd1d8f9796224943a9cc18d7fbc362e4",
+            "timestamp": 1759148665565,
+            "message": "2025-09-29T12:24:25.565Z\t2a29027f-e32b-4aa5-a3ee-da88a2ddccfd\tINFO\tConfirmation email sent to sambickham@yahoo.com\n",
+            "ingestionTime": 1759148674587,
+            "eventId": "39230326157100226700347147177362469914365230908496609280"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]602756d785bb49fdbfa83c2551c6c19a",
+            "timestamp": 1759181018835,
+            "message": "2025-09-29T21:23:38.835Z\t6d8f3147-de8a-44fa-9b23-c9d4b8faf302\tINFO\tConfirmation email sent to carness_87@hotmail.com\n",
+            "ingestionTime": 1759181021494,
+            "eventId": "39231047659130835965200952635681294304582498843821932547"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]602756d785bb49fdbfa83c2551c6c19a",
+            "timestamp": 1759181066642,
+            "message": "2025-09-29T21:24:26.642Z\t23027404-0b66-4b2f-a741-dee414c4531e\tINFO\tConfirmation email sent to clairemheazlewood@gmail.com\n",
+            "ingestionTime": 1759181073268,
+            "eventId": "39231048725262561671354453225670515719727083543469752322"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]22b4734d17374b75b2ecf2c38c9e13e9",
+            "timestamp": 1759184016089,
+            "message": "2025-09-29T22:13:36.089Z\t8b053102-f28f-46c8-add8-7c8ce12b14bd\tINFO\tConfirmation email sent to lewis.rapleysmith@gmail.com\n",
+            "ingestionTime": 1759184018231,
+            "eventId": "39231114500128585241905289719011703107435150326220062723"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]a8c4470e0ed9468ab1a36371e1f1a379",
+            "timestamp": 1759184677043,
+            "message": "2025-09-29T22:24:37.043Z\tdd1e1f70-8fe6-4ca3-84f8-31a930d23edc\tINFO\tConfirmation email sent to guetatlaurie@gmail.com\n",
+            "ingestionTime": 1759184678074,
+            "eventId": "39231129239895327191514778407312099310589636332169986051"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]c92750bc353e4a6a8f67522690fdcf02",
+            "timestamp": 1759184960609,
+            "message": "2025-09-29T22:29:20.609Z\tbf15283d-73b9-4677-a77f-9a389a7b926f\tINFO\tConfirmation email sent to tara_nicholas1@hotmail.com\n",
+            "ingestionTime": 1759184961646,
+            "eventId": "39231135563628440158049460502847094793845380397063995395"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]81fe0e40cad24c0dbfab1327dc593ec6",
+            "timestamp": 1759185705879,
+            "message": "2025-09-29T22:41:45.879Z\t9f5f5f87-fe32-4594-b7a4-4972463ba37e\tINFO\tConfirmation email sent to claire_elizabeth@live.com.au\n",
+            "ingestionTime": 1759185709764,
+            "eventId": "39231152183704814266966970099591389261914691111699677188"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]81fe0e40cad24c0dbfab1327dc593ec6",
+            "timestamp": 1759185755308,
+            "message": "2025-09-29T22:42:35.308Z\t9c209a81-ab73-479e-a5b2-0fb9ffb5f17f\tINFO\tConfirmation email sent to leehunt86@hotmail.com\n",
+            "ingestionTime": 1759185761904,
+            "eventId": "39231153286008348685137141425593810723385691385453019139"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]e959b400539f4495ac9ce734c29dfffc",
+            "timestamp": 1759186364043,
+            "message": "2025-09-29T22:52:44.043Z\tc172736e-0ed3-4d2f-98a1-e4b72d60efb7\tINFO\tConfirmation email sent to c_mcinnes85@hotmail.com\n",
+            "ingestionTime": 1759186365926,
+            "eventId": "39231166861252477112676020218556769670092443329104510980"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]503bd59fcaca46b8901bb646237bdb0d",
+            "timestamp": 1759188219620,
+            "message": "2025-09-29T23:23:39.620Z\t39e49d6e-5749-482a-a8bc-0a01287cfd62\tINFO\tConfirmation email sent to lycey-loo@hotmail.com\n",
+            "ingestionTime": 1759188228401,
+            "eventId": "39231208242002350366534119571574808251502060015880830977"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]93ef380cfcc847ff93a23b440c8540f2",
+            "timestamp": 1759188642050,
+            "message": "2025-09-29T23:30:42.050Z\t6efb8752-c77a-4de4-b28d-b4632e162515\tINFO\tConfirmation email sent to ev.baxendale@gmail.com\n",
+            "ingestionTime": 1759188642207,
+            "eventId": "39231217662506144581825253750769051330346029152206782468"
+        },
+        {
+            "logStreamName": "2025/09/30/[$LATEST]6615517d5eb243eaa6d7065e53cc1f90",
+            "timestamp": 1759192300871,
+            "message": "2025-09-30T00:31:40.871Z\t16b58567-65ca-432c-bc4c-d62924f04628\tINFO\tConfirmation email sent to daniellebirthisel@outlook.com\n",
+            "ingestionTime": 1759192306829,
+            "eventId": "39231299256940992614838351517883460354132362876957622274"
+        },
+        {
+            "logStreamName": "2025/09/29/[$LATEST]52040c8cbd77408b9762215c34e1f2a5",
+            "timestamp": 1759196248118,
+            "message": "2025-09-30T01:37:28.118Z\tf8fa21a5-a478-4d3d-b760-ada9a4d66f4f\tINFO\tConfirmation email sent to bechurley22@outlook.com\n",
+            "ingestionTime": 1759196248256,
+            "eventId": "39231387283490575279244959840215150030321007464335736835"
+        },
+        {
+            "logStreamName": "2025/10/07/[$LATEST]12d807febced429796920b2285735bd2",
+            "timestamp": 1759802565793,
+            "message": "2025-10-07T02:02:45.793Z\t105d80e1-6cf7-4558-9ef8-e18ef64833bd\tINFO\tConfirmation email sent to gillianjuergens@gmail.com\n",
+            "ingestionTime": 1759802570243,
+            "eventId": "39244908619470115780085169971153183311453120863927730180"
+        },
+        {
+            "logStreamName": "2025/10/07/[$LATEST]f414ccd0ec6844928d1b1e63a5fa4829",
+            "timestamp": 1759876637672,
+            "message": "2025-10-07T22:37:17.672Z\t37f70fff-805b-41f9-8cfd-74dbd021b54d\tINFO\tConfirmation email sent to ilanna.furfaro@gmail.com\n",
+            "ingestionTime": 1759876646696,
+            "eventId": "39246560477570071171380393957687692089605246270198120448"
+        },
+        {
+            "logStreamName": "2025/10/07/[$LATEST]127c497088c44e3ea844fa4823aa55af",
+            "timestamp": 1759879192817,
+            "message": "2025-10-07T23:19:52.817Z\t103e3486-7c5f-4881-9bf5-cc64173af8be\tINFO\tConfirmation email sent to zyukies@yahoo.com.sg\n",
+            "ingestionTime": 1759879195461,
+            "eventId": "39246617459207661470909464018238672604467324691943849987"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]a6697c05f17042c8aab7ab719a960abe",
+            "timestamp": 1759886393254,
+            "message": "2025-10-08T01:19:53.254Z\tde20ac54-d9c9-4f92-8320-df45101a24f9\tINFO\tConfirmation email sent to joanfang2022@gmail.com\n",
+            "ingestionTime": 1759886402278,
+            "eventId": "39246778034318516543153974100768244661752005751033102336"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]a6697c05f17042c8aab7ab719a960abe",
+            "timestamp": 1759886723675,
+            "message": "2025-10-08T01:25:23.675Z\t1e24ab5c-c63f-4543-a4c6-51a5f2a8faa1\tINFO\tConfirmation email sent to bellahutchings627@gmail.com\n",
+            "ingestionTime": 1759886730009,
+            "eventId": "39246785402953045786841003546344391117275596679262109698"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]cde9db3fef5a47b4b3aa71c42f8ba1cf",
+            "timestamp": 1759887176289,
+            "message": "2025-10-08T01:32:56.289Z\t9208a1ed-07c3-4c79-9f21-b07217113ef6\tINFO\tConfirmation email sent to ongjuliana@yahoo.com\n",
+            "ingestionTime": 1759887178674,
+            "eventId": "39246795496582533074580466671794784197683339655423983619"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]96429c7939df4fac931749eb3255868f",
+            "timestamp": 1759888498916,
+            "message": "2025-10-08T01:54:58.916Z\t520a1c25-4ebf-4089-805b-8d4589f9d1e8\tINFO\tConfirmation email sent to Briony.prince@outlook.com\n",
+            "ingestionTime": 1759888507940,
+            "eventId": "39246824992150252771542962098740858388969807158546464768"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]b200fec32f7d4ba6a4e9a5665d9e101b",
+            "timestamp": 1759890600045,
+            "message": "2025-10-08T02:30:00.045Z\t86bfbd58-8633-499e-9093-9eb6139e8070\tINFO\tConfirmation email sent to annacszhang@gmail.com\n",
+            "ingestionTime": 1759890609069,
+            "eventId": "39246871848892711014992635390652143066987271875923542016"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]d9a5752413c24b6baea9e7417e3fae31",
+            "timestamp": 1759898775863,
+            "message": "2025-10-08T04:46:15.863Z\t438af34b-dfe8-4b3d-9b29-ff60b7bf3cc7\tINFO\tConfirmation email sent to chantal_mckay@hotmail.com\n",
+            "ingestionTime": 1759898784882,
+            "eventId": "39247054175726718575234877058876556443828115293109026816"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]ce1757e71b5f4098b6af27a94ca0c92a",
+            "timestamp": 1759919162035,
+            "message": "2025-10-08T10:26:02.035Z\td84943bb-67c1-4889-a2a1-2dd1808e795a\tINFO\tConfirmation email sent to richa.pujara20@gmail.com\n",
+            "ingestionTime": 1759919171058,
+            "eventId": "39247508802554063994665532231748466026609661641013067776"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]aac4769b14a44e4c9b0764bb9a9022c6",
+            "timestamp": 1759919687988,
+            "message": "2025-10-08T10:34:47.988Z\t92ed0e9d-e055-4461-8ac7-fe421d7e078c\tINFO\tConfirmation email sent to Natalie.didonato@hotmail.com\n",
+            "ingestionTime": 1759919691932,
+            "eventId": "39247520531697903397442366021581936880623876954315096067"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]cdb3dedaf1774edf9f8e535ea5bdac76",
+            "timestamp": 1759920372897,
+            "message": "2025-10-08T10:46:12.897Z\tad7e5f4b-ff7b-47cb-98b3-659c650af505\tINFO\tConfirmation email sent to kartika.phx@gmail.com\n",
+            "ingestionTime": 1759920376050,
+            "eventId": "39247535805678996577852932094717166545203252357044502531"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]e34b0ee6103744ac84fa9acd1a7e8060",
+            "timestamp": 1759929556971,
+            "message": "2025-10-08T13:19:16.971Z\tbe547a82-de52-413c-9ab4-95e38896c047\tINFO\tConfirmation email sent to surivand@gmail.com\n",
+            "ingestionTime": 1759929558937,
+            "eventId": "39247740617373155027787141172656795099445606195936165891"
+        },
+        {
+            "logStreamName": "2025/10/08/[$LATEST]06863a4d6921454495cb017548b1b986",
+            "timestamp": 1759954511167,
+            "message": "2025-10-08T20:15:11.167Z\tbb437535-5766-4719-9ba7-1e6806360185\tINFO\tConfirmation email sent to loveairsea@gmail.com\n",
+            "ingestionTime": 1759954515042,
+            "eventId": "39248297114539785219869047360790814221826292067997253635"
+        },
+        {
+            "logStreamName": "2025/10/09/[$LATEST]c8c760607f3d442da182c074a14d0598",
+            "timestamp": 1759983948061,
+            "message": "2025-10-09T04:25:48.061Z\tf997eac2-7681-4336-816b-0675eff2c611\tINFO\tConfirmation email sent to monica_tw82@yahoo.com\n",
+            "ingestionTime": 1759983948252,
+            "eventId": "39248953579212315374778254277294336782279507616046514179"
+        },
+        {
+            "logStreamName": "2025/10/09/[$LATEST]37d6642e2981465789dee064db4135b7",
+            "timestamp": 1759995999780,
+            "message": "2025-10-09T07:46:39.780Z\t35c16c6a-e5f6-43ea-8083-45f3765692a6\tINFO\tConfirmation email sent to kiumingtang86@gmail.com\n",
+            "ingestionTime": 1759996003693,
+            "eventId": "39249222341526938665061265537133679049470559734893445122"
+        },
+        {
+            "logStreamName": "2025/10/09/[$LATEST]742b6a7194224da99d10bf178292461a",
+            "timestamp": 1760046809286,
+            "message": "2025-10-09T21:53:29.286Z\t647911bb-5821-4cc5-8696-af86f9e734ea\tINFO\tConfirmation email sent to anninoller@gmail.com\n",
+            "ingestionTime": 1760046809670,
+            "eventId": "39250355431373907877949020555717592336134009894139199492"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]a8e3007ff8ec47d89c3e5a4d3c4f0643",
+            "timestamp": 1760066131534,
+            "message": "2025-10-10T03:15:31.534Z\tda39c43f-b761-42b7-a09b-56f07de1cb18\tINFO\tConfirmation email sent to khealey1202@gmail.com\n",
+            "ingestionTime": 1760066132169,
+            "eventId": "39250786331903218695884979207434758101328074560644251651"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]a8e3007ff8ec47d89c3e5a4d3c4f0643",
+            "timestamp": 1760066696855,
+            "message": "2025-10-10T03:24:56.855Z\tb37d2f00-5d6b-4b95-bf92-d435ea05040b\tINFO\tConfirmation email sent to sasha.srkulj@gmail.com\n",
+            "ingestionTime": 1760066703717,
+            "eventId": "39250798938982795074415384894507712069375642671097643010"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]a8e3007ff8ec47d89c3e5a4d3c4f0643",
+            "timestamp": 1760066739681,
+            "message": "2025-10-10T03:25:39.681Z\tc169803d-076a-41dd-85c1-9b94452e06c6\tINFO\tConfirmation email sent to humbler.wingers-7j@icloud.com\n",
+            "ingestionTime": 1760066747434,
+            "eventId": "39250799894034508946687851606767108944129404908179030018"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]a8e3007ff8ec47d89c3e5a4d3c4f0643",
+            "timestamp": 1760067028559,
+            "message": "2025-10-10T03:30:28.559Z\taa2833ea-710b-4fca-ad56-d072a59a4d5f\tINFO\tConfirmation email sent to shannoncmalone@gmail.com\n",
+            "ingestionTime": 1760067036564,
+            "eventId": "39250806336229180407817203836859371983713504310216884227"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]c1f6ebce3230450ea8df4f3254792a9b",
+            "timestamp": 1760069386837,
+            "message": "2025-10-10T04:09:46.837Z\t3318778c-d80b-4f4f-b464-e4a67958020f\tINFO\tConfirmation email sent to hayley.irving83@gmail.com\n",
+            "ingestionTime": 1760069390145,
+            "eventId": "39250858927585965708218087656734381268402544573304209411"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]998b2154f6204cc48fe8125131d0892d",
+            "timestamp": 1760069822979,
+            "message": "2025-10-10T04:17:02.979Z\t731d5d03-110d-4ab6-82d4-ee93d27fc41e\tINFO\tConfirmation email sent to megantymko@hotmail.com\n",
+            "ingestionTime": 1760069828820,
+            "eventId": "39250868653877578085761126382731472221860430857822273538"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]d8efce015ef74577bf27b551615b5b68",
+            "timestamp": 1760070283073,
+            "message": "2025-10-10T04:24:43.073Z\t688e303d-2d6c-49c9-9750-ba4e559dd62a\tINFO\tConfirmation email sent to s.doolan92@hotmail.com\n",
+            "ingestionTime": 1760070287304,
+            "eventId": "39250878914316639458509650618738996786936937869480296451"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]44bf1d9bc45b49e5b98d631bcf2f83c7",
+            "timestamp": 1760073730901,
+            "message": "2025-10-10T05:22:10.901Z\t11e6497b-bb90-4253-9653-b2205b8f0ae2\tINFO\tConfirmation email sent to etkidd@live.com.au\n",
+            "ingestionTime": 1760073734314,
+            "eventId": "39250955803450355817950979620731170901560502572166152195"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]6e3c1e8449104e9fbd4b4835c2d15791",
+            "timestamp": 1760074300829,
+            "message": "2025-10-10T05:31:40.829Z\t07b2a3dc-15f1-4000-acfc-b5996bd366f0\tINFO\tConfirmation email sent to bellawen2018@gmail.com\n",
+            "ingestionTime": 1760074306689,
+            "eventId": "39250968513269465326111966121858740559008984028081684482"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]5b3d45353893402cbad5f3e9d711a42f",
+            "timestamp": 1760075105775,
+            "message": "2025-10-10T05:45:05.775Z\t5629630c-1914-4be0-ba91-9a25f7ccd603\tINFO\tConfirmation email sent to vj.smith@hotmail.co.uk\n",
+            "ingestionTime": 1760075109068,
+            "eventId": "39250986464165109902542942378485841960322106471816691716"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]12147d30849c4e8cb2c05c1a7e0bec64",
+            "timestamp": 1760081156368,
+            "message": "2025-10-10T07:25:56.368Z\t04ca01e2-dc36-4f40-a789-a85046024596\tINFO\tConfirmation email sent to tag0703@gmail.com\n",
+            "ingestionTime": 1760081165390,
+            "eventId": "39251121396897902915541615514156124050059651450704429056"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]c5dc9321fc3c4d41b7412df3d521784f",
+            "timestamp": 1760082824809,
+            "message": "2025-10-10T07:53:44.809Z\t69b602e8-29fc-4345-a46c-cdb277a65e6e\tINFO\tConfirmation email sent to emily.neophitou@education.vic.gov.au\n",
+            "ingestionTime": 1760082825912,
+            "eventId": "39251158604375522697173022408599240948510854700440223747"
+        },
+        {
+            "logStreamName": "2025/10/10/[$LATEST]e1bb0bb5bc704b41b2580a06f1f6cc2c",
+            "timestamp": 1760126817489,
+            "message": "2025-10-10T20:06:57.489Z\tc4504d16-fe49-48cb-82db-d1c0f1495068\tINFO\tConfirmation email sent to michelle@briefaccess.com.au\n",
+            "ingestionTime": 1760126819224,
+            "eventId": "39252139673922803191347141768812509727759449918949097475"
+        },
+        {
+            "logStreamName": "2025/10/11/[$LATEST]f842088b03064dbdb09ab2051d8d850a",
+            "timestamp": 1760153205173,
+            "message": "2025-10-11T03:26:45.173Z\tcafaaf43-d421-4390-a040-4002a6dcb413\tINFO\tConfirmation email sent to clairewebb9@gmail.com\n",
+            "ingestionTime": 1760153208750,
+            "eventId": "39252728138940066534694955603600598843169896863037259780"
+        },
+        {
+            "logStreamName": "2025/10/11/[$LATEST]764f1dfb4b8946bf9607c67daf706d85",
+            "timestamp": 1760188404543,
+            "message": "2025-10-11T13:13:24.543Z\t2e6758d8-9ea7-465d-aab2-f90f88fb57cc\tINFO\tConfirmation email sent to menaka.s.wimalarathna@gmail.com\n",
+            "ingestionTime": 1760188410340,
+            "eventId": "39253513111121585337555287637827052593018511185854791682"
+        },
+        {
+            "logStreamName": "2025/10/12/[$LATEST]16c15ce74a4b4856b6c9b424ec08237e",
+            "timestamp": 1760239280342,
+            "message": "2025-10-12T03:21:20.342Z\tb2e712c3-58eb-4493-a42e-e849936f427e\tINFO\tConfirmation email sent to jonathan.cooke@live.com.au\n",
+            "ingestionTime": 1760239289361,
+            "eventId": "39254647679351855996633642666543482685041581756313305088"
+        },
+        {
+            "logStreamName": "2025/10/12/[$LATEST]d88f55611de84116ad5833fe11ea6e4a",
+            "timestamp": 1760268606631,
+            "message": "2025-10-12T11:30:06.631Z\td75e154d-ea42-4025-adc2-a8553342f76a\tINFO\tConfirmation email sent to sayalihulyalkar@gmail.com\n",
+            "ingestionTime": 1760268615652,
+            "eventId": "39255301677450463468063276884232018908899456912317743104"
+        },
+        {
+            "logStreamName": "2025/10/13/[$LATEST]a3c4289a72f34e3099c1e687d267750e",
+            "timestamp": 1760317134566,
+            "message": "2025-10-13T00:58:54.566Z\t47a18357-7306-49d1-af66-5250d1e2dc27\tINFO\tConfirmation email sent to sathyarubinee@gmail.com\n",
+            "ingestionTime": 1760317143588,
+            "eventId": "39256383886563909324238657492043367211894092271244541952"
+        },
+        {
+            "logStreamName": "2025/10/13/[$LATEST]c9a82978127444daab1b3b67908ed940",
+            "timestamp": 1760317136068,
+            "message": "2025-10-13T00:58:56.068Z\t825ae14b-95c1-4071-8b26-4efee2d5c2b1\tINFO\tConfirmation email sent to sathyarubinee@gmail.com\n",
+            "ingestionTime": 1760317140117,
+            "eventId": "39256383920059628612431653446433600737666683082769956868"
+        },
+        {
+            "logStreamName": "2025/10/13/[$LATEST]eb5928ac44c442a3914c9045d6d92fa4",
+            "timestamp": 1760337159761,
+            "message": "2025-10-13T06:32:39.761Z\t10e18d6a-b229-4fb7-b8a5-a5b41041c3c3\tINFO\tConfirmation email sent to alexandralditha@gmail.com\n",
+            "ingestionTime": 1760337161068,
+            "eventId": "39256830463335155213680562457049669624393850934993551363"
+        },
+        {
+            "logStreamName": "2025/10/13/[$LATEST]c894978ef3b84f2d93bb5315cbbadd94",
+            "timestamp": 1760353091623,
+            "message": "2025-10-13T10:58:11.623Z\tdac6c397-ea07-4c53-9a05-d2b777ed7302\tINFO\tConfirmation email sent to nokaberline14@gmail.com\n",
+            "ingestionTime": 1760353097213,
+            "eventId": "39257185755730155366171246676197932132478946275290447874"
+        },
+        {
+            "logStreamName": "2025/10/13/[$LATEST]746c8e9f8b484643b2715c1f92ca0ea1",
+            "timestamp": 1760367650142,
+            "message": "2025-10-13T15:00:50.142Z\t502f5827-4999-4e88-b167-965517af4490\tINFO\tConfirmation email sent to nhitlyvong@gmail.com\n",
+            "ingestionTime": 1760367650531,
+            "eventId": "39257510421552842333020352157523823494768202815011356675"
+        },
+        {
+            "logStreamName": "2025/10/13/[$LATEST]746c8e9f8b484643b2715c1f92ca0ea1",
+            "timestamp": 1760367802900,
+            "message": "2025-10-13T15:03:22.900Z\t82119360-6209-4eda-bd1c-2b63586cc4f3\tINFO\tConfirmation email sent to nhitlyvong@gmail.com\n",
+            "ingestionTime": 1760367808972,
+            "eventId": "39257513828170077370161282203780293433898988085269495810"
+        },
+        {
+            "logStreamName": "2025/10/15/[$LATEST]9688957f35b540abb53a284840923186",
+            "timestamp": 1760504030247,
+            "message": "2025-10-15T04:53:50.247Z\t86fa7b8d-502e-444c-a887-370a3cec3f59\tINFO\tConfirmation email sent to hayleyjane795@gmail.com\n",
+            "ingestionTime": 1760504032960,
+            "eventId": "39260551799524596185250275104882861041596203905404174339"
+        },
+        {
+            "logStreamName": "2025/10/15/[$LATEST]ed0b30ddc8494697b0b7e471d7a59d7b",
+            "timestamp": 1760508958424,
+            "message": "2025-10-15T06:15:58.424Z\t2f8bc952-faac-455f-a294-3753c0132d12\tINFO\tConfirmation email sent to latito.bl91@gmail.com\n",
+            "ingestionTime": 1760508967449,
+            "eventId": "39260661701544166444301042854385285725815772930385313792"
+        },
+        {
+            "logStreamName": "2025/10/15/[$LATEST]ed0b30ddc8494697b0b7e471d7a59d7b",
+            "timestamp": 1760509085642,
+            "message": "2025-10-15T06:18:05.642Z\t460925ef-14de-490d-a726-48140195a39b\tINFO\tConfirmation email sent to latito.bl91@gmail.com\n",
+            "ingestionTime": 1760509092143,
+            "eventId": "39260664538600369110969857825022080549560872815687761922"
+        },
+        {
+            "logStreamName": "2025/10/16/[$LATEST]1e5829a25fca4acb8be3e85e70be95af",
+            "timestamp": 1760622773923,
+            "message": "2025-10-16T13:52:53.923Z\t4074a877-48a2-454a-8191-1a4a64b12d87\tINFO\tConfirmation email sent to dolly41091@gmail.com\n",
+            "ingestionTime": 1760622776885,
+            "eventId": "39263199871987009061240815276952612034404273294071758851"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]b4acd7f7ac9447cebca5f9c5e7feab4d",
+            "timestamp": 1760668376471,
+            "message": "2025-10-17T02:32:56.471Z\t25cca423-8fb7-4ed0-ad93-60c8a2addd81\tINFO\tConfirmation email sent to sarahadibbs@gmail.com\n",
+            "ingestionTime": 1760668382109,
+            "eventId": "39264216842790360823512152203671637870487570817740439554"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]b763e9b58433438ab782d7674fa666d1",
+            "timestamp": 1760680449831,
+            "message": "2025-10-17T05:54:09.831Z\t0d0b4ce7-8edb-404a-a36f-5015aee6cadf\tINFO\tConfirmation email sent to alannahphilpot@hotmail.com\n",
+            "ingestionTime": 1760680458856,
+            "eventId": "39264486087715410955196378895242269767689306485858172928"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]b763e9b58433438ab782d7674fa666d1",
+            "timestamp": 1760680605751,
+            "message": "2025-10-17T05:56:45.751Z\taa9a1d23-45d0-49bc-bb92-9faeccf52998\tINFO\tConfirmation email sent to awalton95@hotmail.com\n",
+            "ingestionTime": 1760680612184,
+            "eventId": "39264489564847602310091139308853965731378301916840984578"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]af8260b8baa54ad7b8fa132400cf13d4",
+            "timestamp": 1760690284897,
+            "message": "2025-10-17T08:38:04.897Z\t05681133-4c84-4bd3-aff8-b36b142877fb\tINFO\tConfirmation email sent to ames_black@hotmail.com\n",
+            "ingestionTime": 1760690285438,
+            "eventId": "39264705417016287686978008905982007774365401380432248835"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]66323b18710143e28c6c477fc5918799",
+            "timestamp": 1760701035117,
+            "message": "2025-10-17T11:37:15.117Z\t19b64651-9e12-4da1-9e81-88e10d607128\tINFO\tConfirmation email sent to jennamack@gmail.com\n",
+            "ingestionTime": 1760701040903,
+            "eventId": "39264945154933335834853530508650228353523567443941523459"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]33814e7a67674a4385a57ea3a27a1291",
+            "timestamp": 1760733046663,
+            "message": "2025-10-17T20:30:46.663Z\td7069f2f-a043-4544-a16a-ebc04b91cfa7\tINFO\tConfirmation email sent to courtneyjade.richmond@gmail.com\n",
+            "ingestionTime": 1760733048958,
+            "eventId": "39265659036264092877028673139170578705645253113925533699"
+        },
+        {
+            "logStreamName": "2025/10/17/[$LATEST]29c19c244bb444188bfbb412b2edfbf2",
+            "timestamp": 1760736719706,
+            "message": "2025-10-17T21:31:59.706Z\t2b3e8513-0bba-4490-b06b-5cc26962781d\tINFO\tConfirmation email sent to belindamkeenan@gmail.com\n",
+            "ingestionTime": 1760736728728,
+            "eventId": "39265740947860139123544293243518858367689402344330821632"
+        },
+        {
+            "logStreamName": "2025/10/18/[$LATEST]92e0689d3e2348cbb96479d7bb5c2040",
+            "timestamp": 1760752032398,
+            "message": "2025-10-18T01:47:12.398Z\t7a51b6b1-860a-4ced-b91a-5fecc383edbc\tINFO\tConfirmation email sent to allison.ando.2019@gmail.com\n",
+            "ingestionTime": 1760752041425,
+            "eventId": "39266082432302734701829046164294597634684072179277824000"
+        },
+        {
+            "logStreamName": "2025/10/18/[$LATEST]09933aaa2c9f43878b2624a6b47f7128",
+            "timestamp": 1760752449252,
+            "message": "2025-10-18T01:54:09.252Z\t752fe7cb-1b40-402b-a50c-04a04fc29a96\tINFO\tConfirmation email sent to siv.yoganathan@gmail.com\n",
+            "ingestionTime": 1760752458274,
+            "eventId": "39266091728457573690113425709964313857215830334060822528"
+        },
+        {
+            "logStreamName": "2025/10/18/[$LATEST]c0eb301856cb49b7bac1ef67fb1facb6",
+            "timestamp": 1760754745659,
+            "message": "2025-10-18T02:32:25.659Z\t398c0dc9-fff8-4b32-9a5c-dc1eb84e1232\tINFO\tConfirmation email sent to stephaniesaunders052@gmail.com\n",
+            "ingestionTime": 1760754751636,
+            "eventId": "39266142940044952812226125067082790578177239366378455042"
+        },
+        {
+            "logStreamName": "2025/10/18/[$LATEST]f156e62443ab4945816367e83f6f3268",
+            "timestamp": 1760755462623,
+            "message": "2025-10-18T02:44:22.623Z\td1cc3cf2-b093-484c-b36a-d41a761125f6\tINFO\tConfirmation email sent to jessica.machell22@gmail.com\n",
+            "ingestionTime": 1760755468458,
+            "eventId": "39266158928876433331535815981682650486800367862297526274"
+        },
+        {
+            "logStreamName": "2025/10/18/[$LATEST]75ff0bec5a324b7886a8e508eada5c46",
+            "timestamp": 1760760717110,
+            "message": "2025-10-18T04:11:57.110Z\t35426581-a38e-4125-8c94-aaa6ad83a12b\tINFO\tConfirmation email sent to noble_rochelle@hotmail.com\n",
+            "ingestionTime": 1760760717348,
+            "eventId": "39266276107852169323114221425792725697994762993696768003"
+        },
+        {
+            "logStreamName": "2025/10/18/[$LATEST]75d42a24667b478daa2350064949a54b",
+            "timestamp": 1760773351567,
+            "message": "2025-10-18T07:42:31.567Z\tda233f1d-d621-47d1-acea-17449dc90c61\tINFO\tConfirmation email sent to kathrynparker@live.com.au\n",
+            "ingestionTime": 1760773354276,
+            "eventId": "39266557865658448114735501640847754799434352075769708547"
+        },
+        {
+            "logStreamName": "2025/10/19/[$LATEST]ff6e7b7235314c89a97be2d243979c1c",
+            "timestamp": 1760866129011,
+            "message": "2025-10-19T09:28:49.011Z\tac100777-6034-482c-9f94-dcbac566c00f\tINFO\tConfirmation email sent to lyshie90@gmail.com\n",
+            "ingestionTime": 1760866138034,
+            "eventId": "39268626871797263058506412743704271197345899255221125120"
+        },
+        {
+            "logStreamName": "2025/10/19/[$LATEST]ff6e7b7235314c89a97be2d243979c1c",
+            "timestamp": 1760866301890,
+            "message": "2025-10-19T09:31:41.890Z\t9533653d-e4b3-4ac6-bd06-2282ed3d28d4\tINFO\tConfirmation email sent to lyshie90@gmail.com\n",
+            "ingestionTime": 1760866307917,
+            "eventId": "39268630727127792235282011034633851019747631786305454082"
+        },
+        {
+            "logStreamName": "2025/10/19/[$LATEST]0f67e3184dcf4d6b96241eabde703cac",
+            "timestamp": 1760910113772,
+            "message": "2025-10-19T21:41:53.772Z\td8778a72-d3a0-4c2f-ac3a-2a6f594d45be\tINFO\tConfirmation email sent to anilguvel@gmail.com\n",
+            "ingestionTime": 1760910122712,
+            "eventId": "39269607764744942325516527435658579732325184390591741953"
+        },
+        {
+            "logStreamName": "2025/10/19/[$LATEST]bb3a901ff7504a1ca1cf379dfff25b13",
+            "timestamp": 1760910515892,
+            "message": "2025-10-19T21:48:35.892Z\t3195f867-abe0-4010-b1b2-3b7fc69c8957\tINFO\tConfirmation email sent to emma_clarke86@hotmail.com\n",
+            "ingestionTime": 1760910519621,
+            "eventId": "39269616732320601558650705589834838917378391824594698244"
+        },
+        {
+            "logStreamName": "2025/10/19/[$LATEST]bb3a901ff7504a1ca1cf379dfff25b13",
+            "timestamp": 1760910791057,
+            "message": "2025-10-19T21:53:11.057Z\t3327b83b-5911-4538-ace9-18139f22a304\tINFO\tConfirmation email sent to bmclennan95@gmail.com\n",
+            "ingestionTime": 1760910797457,
+            "eventId": "39269622868705154112329622666394199841063915454374805507"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]be2b879714214e8090b40732c1f6f6c3",
+            "timestamp": 1760918422910,
+            "message": "2025-10-20T00:00:22.910Z\t1fd10a15-ac3e-446e-9a26-f9eabe8214f5\tINFO\tConfirmation email sent to Astridcudlipp@gmail.com\n",
+            "ingestionTime": 1760918431929,
+            "eventId": "39269793064714299753861446494700566522611120666128285696"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]75a22b96e8ed4b2ca9439e6963d08968",
+            "timestamp": 1760923424642,
+            "message": "2025-10-20T01:23:44.642Z\tf2a3dd9c-b8e8-4510-a0da-33be921c8a55\tINFO\tConfirmation email sent to zyukies@yahoo.com.sg\n",
+            "ingestionTime": 1760923428213,
+            "eventId": "39269904607065183090832199494568679894028928431243132931"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]d478748664624f65b44ce023c9f02a07",
+            "timestamp": 1760923858883,
+            "message": "2025-10-20T01:30:58.883Z\t8458cafe-0598-43ba-8905-8a5b7417d0fa\tINFO\tConfirmation email sent to katrinapaul9@gmail.com\n",
+            "ingestionTime": 1760923860500,
+            "eventId": "39269914290963078845968523620783139893146452093588996099"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]cbe4c72cd5604038a5ec54c9be3b913c",
+            "timestamp": 1760923858922,
+            "message": "2025-10-20T01:30:58.922Z\t8d1ab34d-4f78-49bd-ae98-71f1f0d18557\tINFO\tConfirmation email sent to katrinapaul9@gmail.com\n",
+            "ingestionTime": 1760923867944,
+            "eventId": "39269914291832807908711217932302519546181226348681101312"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]a9b2cfdc5980471489afd3329f89a9ad",
+            "timestamp": 1760923860148,
+            "message": "2025-10-20T01:31:00.148Z\taba3d3fd-3d31-40ee-8eae-88402b5d3e6e\tINFO\tConfirmation email sent to katelboyle@hotmail.com\n",
+            "ingestionTime": 1760923860936,
+            "eventId": "39269914319173521522109761895352812933187686051484073987"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]d20467e87ba342b3973c1b71b554b8ae",
+            "timestamp": 1760923861499,
+            "message": "2025-10-20T01:31:01.499Z\tf3c585d5-6c89-41dd-93d3-b61761de9c1c\tINFO\tConfirmation email sent to katrinapaul9@gmail.com\n",
+            "ingestionTime": 1760923870439,
+            "eventId": "39269914349301828285324633771056476439006683029694644225"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]d20467e87ba342b3973c1b71b554b8ae",
+            "timestamp": 1760924024640,
+            "message": "2025-10-20T01:33:44.640Z\tc8c17514-f6c7-42cc-a3f5-c1a7d2694e7e\tINFO\tConfirmation email sent to daweskerry@gmail.com\n",
+            "ingestionTime": 1760924030913,
+            "eventId": "39269917987467700718809023898335791609207361842349080578"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]a9b2cfdc5980471489afd3329f89a9ad",
+            "timestamp": 1760924444630,
+            "message": "2025-10-20T01:40:44.630Z\t4eff2610-abc1-44a9-acb2-6934c1cd3d13\tINFO\tConfirmation email sent to superykzzh@gmail.com\n",
+            "ingestionTime": 1760924450794,
+            "eventId": "39269927353557676649685437619527341132798383367814578178"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]daf327e3796e41dfbaa3f3dd6706d64c",
+            "timestamp": 1760925190872,
+            "message": "2025-10-20T01:53:10.872Z\tb646e63b-3829-43ac-b335-949486ccfe7e\tINFO\tConfirmation email sent to steph.parsnip97@gmail.com\n",
+            "ingestionTime": 1760925199891,
+            "eventId": "39269943995310375091574712911027602184162427719456129024"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]daf327e3796e41dfbaa3f3dd6706d64c",
+            "timestamp": 1760925367332,
+            "message": "2025-10-20T01:56:07.332Z\t849e702d-ed6d-45f9-bee0-70d7551d8f51\tINFO\tConfirmation email sent to ellieb_13@hotmail.com\n",
+            "ingestionTime": 1760925374333,
+            "eventId": "39269947930499872824288472677308070805573444752498556930"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]343a3141ec674de2969ddeab4c41468e",
+            "timestamp": 1760925991280,
+            "message": "2025-10-20T02:06:31.280Z\t00321ee2-8af9-44a0-9fd9-5412206564d0\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1760926000300,
+            "eventId": "39269961845005237957073721348983576824862036354078081024"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]9ff30b93cc284ac9b7fbe465ec6340fb",
+            "timestamp": 1760929572341,
+            "message": "2025-10-20T03:06:12.341Z\tbed59ea5-31c6-4142-81c0-b891d76fd75e\tINFO\tConfirmation email sent to michelle.pascall@gmail.com\n",
+            "ingestionTime": 1760929581281,
+            "eventId": "39270041705334139352345563529165138123833149778496454657"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]f93115632150486b8bf3e3d4d8577a79",
+            "timestamp": 1760930704654,
+            "message": "2025-10-20T03:25:04.654Z\t4c4268dc-7f31-4f91-b553-3e2f0826d9f8\tINFO\tConfirmation email sent to stacey.peters@golf.org.au\n",
+            "ingestionTime": 1760930706905,
+            "eventId": "39270066956757837336151046151694897366733351174302728195"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]6071cb53e34f48abaa017b39e131188a",
+            "timestamp": 1760931200475,
+            "message": "2025-10-20T03:33:20.475Z\tcd4332e2-7450-4924-8897-780a4f9a6866\tINFO\tConfirmation email sent to mariannepanayi@hotmail.com\n",
+            "ingestionTime": 1760931209497,
+            "eventId": "39270078013935622416803143418672546103349287948586909696"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]05a4e5ba70fa4aaea007b4172ed4153f",
+            "timestamp": 1760934975224,
+            "message": "2025-10-20T04:36:15.224Z\t735d5438-0e3c-42cd-aec4-ad19d7ec8d98\tINFO\tConfirmation email sent to larabrosnan1@gmail.com\n",
+            "ingestionTime": 1760934984184,
+            "eventId": "39270162193651259825074320870800030325550766951877640193"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]b80675660cb247b5ad1044afa8c094d5",
+            "timestamp": 1760938647921,
+            "message": "2025-10-20T05:37:27.921Z\t89f96695-53f8-4a89-a7c7-44344be3ddfe\tINFO\tConfirmation email sent to charlottephilpot@hotmail.com\n",
+            "ingestionTime": 1760938649952,
+            "eventId": "39270244097531248232898345351249454771499806058000220163"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]79f627f5ed07489fbf3563497913c052",
+            "timestamp": 1760952168397,
+            "message": "2025-10-20T09:22:48.397Z\t991103b9-f393-48bf-8ecc-dd70b1495d53\tINFO\tConfirmation email sent to noor_jenkins@outlook.com\n",
+            "ingestionTime": 1760952177531,
+            "eventId": "39270545614221487081423811883370933879944708678146850816"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]8634c4b8bc934306a1b3d3e767bfd061",
+            "timestamp": 1760952169522,
+            "message": "2025-10-20T09:22:49.522Z\t483641f4-7639-4557-ae4b-86624b2b62d7\tINFO\tConfirmation email sent to noor_jenkins@outlook.com\n",
+            "ingestionTime": 1760952170160,
+            "eventId": "39270545639309825429770762908687839746362945960104886275"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]c312dcb00a0d43f3bab7b5fb25d28343",
+            "timestamp": 1760952172392,
+            "message": "2025-10-20T09:22:52.392Z\t2ffd42ff-8991-4309-9cf1-f41a7ffa86bd\tINFO\tConfirmation email sent to noor_jenkins@outlook.com\n",
+            "ingestionTime": 1760952181231,
+            "eventId": "39270545703312964149553651338279568116390359631787851777"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]84278dce5bf94e8284609da6e22197cd",
+            "timestamp": 1760952173249,
+            "message": "2025-10-20T09:22:53.249Z\t29eb4451-222e-4b66-b765-a7c95abf4a7f\tINFO\tConfirmation email sent to noor_jenkins@outlook.com\n",
+            "ingestionTime": 1760952182210,
+            "eventId": "39270545722424702784694395371758830877201593114185629697"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]84278dce5bf94e8284609da6e22197cd",
+            "timestamp": 1760952362249,
+            "message": "2025-10-20T09:26:02.249Z\t4129b24e-8a9d-4d72-b766-71c4cc63f42c\tINFO\tConfirmation email sent to fionamel0630@gmail.com\n",
+            "ingestionTime": 1760952368693,
+            "eventId": "39270549937265545306982169347454009845023044584943648770"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]052b2fa877db48518dacf439a5dd3720",
+            "timestamp": 1760992675660,
+            "message": "2025-10-20T20:37:55.660Z\td85268ba-d844-4ad7-adc8-d347027c1ea1\tINFO\tConfirmation email sent to budan2015@hotmail.com\n",
+            "ingestionTime": 1760992677798,
+            "eventId": "39271448956372339948589008918753403043677973611841978371"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]ca3311cafa7c4f569fc1d556476b32ec",
+            "timestamp": 1761001512236,
+            "message": "2025-10-20T23:05:12.236Z\tea4450cb-c6a9-4952-aa69-5f20e3161a42\tINFO\tConfirmation email sent to kellyschaper@hotmail.com\n",
+            "ingestionTime": 1761001521255,
+            "eventId": "39271646018602143399528737148968511583110820087337058304"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]b7fd4dfff45244bbb4347f95b0d82fba",
+            "timestamp": 1761004908198,
+            "message": "2025-10-21T00:01:48.198Z\te589a89d-5457-40cc-b706-64620ea2b058\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1761004912584,
+            "eventId": "39271721751085409291980766224754543680659860212635205637"
+        },
+        {
+            "logStreamName": "2025/10/20/[$LATEST]b7fd4dfff45244bbb4347f95b0d82fba",
+            "timestamp": 1761005043228,
+            "message": "2025-10-21T00:04:03.228Z\tcabcfca1-72d9-428d-9fd1-7daeb6ca6aaa\tINFO\tConfirmation email sent to com.juergens@gmail.com\n",
+            "ingestionTime": 1761005050316,
+            "eventId": "39271724762355033449570809192830063883521259468951977989"
+        },
+        {
+            "logStreamName": "2025/10/21/[$LATEST]07cd23725e654b4288f182390d8127d0",
+            "timestamp": 1761007076968,
+            "message": "2025-10-21T00:37:56.968Z\tea9ce017-f695-45b3-9a17-37f47da734f2\tINFO\tConfirmation email sent to gillianjuergens@gmail.com\n",
+            "ingestionTime": 1761007083968,
+            "eventId": "39271770116272573509240319518216584937016442760977121282"
+        },
+        {
+            "logStreamName": "2025/10/21/[$LATEST]074673263212402e9272cac215ed6f27",
+            "timestamp": 1761026066421,
+            "message": "2025-10-21T05:54:26.421Z\t2149250d-9070-4feb-a005-7cccb20e22ff\tINFO\tConfirmation email sent to monica_tw82@yahoo.com\n",
+            "ingestionTime": 1761026070051,
+            "eventId": "39272193595225385982177549375851962905146616632699977734"
+        },
+        {
+            "logStreamName": "2025/10/23/[$LATEST]98350e7c5f7e4627b201ac126200294c",
+            "timestamp": 1761253691868,
+            "message": "2025-10-23T21:08:11.868Z\t0df385e9-5a0b-4937-a512-d9c843dbf3fc\tINFO\tConfirmation email sent to kara.vogt@hotmail.com\n",
+            "ingestionTime": 1761253700470,
+            "eventId": "39277269812319634619013605176281293931855299716419813377"
+        },
+        {
+            "logStreamName": "2025/10/26/[$LATEST]6792d66214254a5eae36e04f24a6036a",
+            "timestamp": 1761509608808,
+            "message": "2025-10-26T20:13:28.808Z\t1f49e578-082c-4d85-951c-40784b776108\tINFO\tConfirmation email sent to danielle@daniellemacpherson.com\n",
+            "ingestionTime": 1761509615802,
+            "eventId": "39282976950790562268584589566855198441135221675143331842"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]7f8f544c28244f77ab35aa450f920529",
+            "timestamp": 1761605840583,
+            "message": "2025-10-27T22:57:20.583Z\td68c87e4-8f6a-4f62-aa5b-8cfab64092bc\tINFO\tConfirmation email sent to clare_raymond@outlook.com\n",
+            "ingestionTime": 1761605842165,
+            "eventId": "39285122991084839597841471955785121212519688604821618694"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]7f8f544c28244f77ab35aa450f920529",
+            "timestamp": 1761605877770,
+            "message": "2025-10-27T22:57:57.770Z\t1d6881ec-5f7d-4447-98f2-c21f66c1bdf6\tINFO\tConfirmation email sent to pradhipaseshadri@gmail.com\n",
+            "ingestionTime": 1761605884091,
+            "eventId": "39285123820382651295599754770759119686806416543479431173"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]7f8f544c28244f77ab35aa450f920529",
+            "timestamp": 1761605898776,
+            "message": "2025-10-27T22:58:18.776Z\tc08bd0f7-04c1-440a-95f2-089a67793410\tINFO\tConfirmation email sent to barlow.jessicapaige@hotmail.com\n",
+            "ingestionTime": 1761605904648,
+            "eventId": "39285124288832104935934024506710464806166113312946192389"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]7f8f544c28244f77ab35aa450f920529",
+            "timestamp": 1761606027106,
+            "message": "2025-10-27T23:00:27.106Z\t4f3aa14a-eb44-465b-bc93-ec270ddc171b\tINFO\tConfirmation email sent to kellyt.heath@gmail.com\n",
+            "ingestionTime": 1761606034652,
+            "eventId": "39285127150686736263368892417153952186275475784928722949"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]7f8f544c28244f77ab35aa450f920529",
+            "timestamp": 1761606085626,
+            "message": "2025-10-27T23:01:25.626Z\t65365909-dc59-4d12-a779-880b720e3673\tINFO\tConfirmation email sent to sarahwithers1@hotmail.com\n",
+            "ingestionTime": 1761606093223,
+            "eventId": "39285128455726345281380958730632487577075591525900943365"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]82b53c75b4094e2097e4f56abf1d5840",
+            "timestamp": 1761606432808,
+            "message": "2025-10-27T23:07:12.808Z\t945b9dc8-ff02-4c72-9ff1-c0c8fd48ea15\tINFO\tConfirmation email sent to lozzadee@hotmail.com\n",
+            "ingestionTime": 1761606435524,
+            "eventId": "39285136198143664797639762669102790298017780178742214662"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]9a521fc1b2ad4574b7e7c38d0d79c4ac",
+            "timestamp": 1761607023948,
+            "message": "2025-10-27T23:17:03.948Z\tf23c318e-d269-4cfa-82b9-c5efaa555a22\tINFO\tConfirmation email sent to steffykoops@gmail.com\n",
+            "ingestionTime": 1761607028867,
+            "eventId": "39285149381006181457032327273834843317177125305357434885"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]9a521fc1b2ad4574b7e7c38d0d79c4ac",
+            "timestamp": 1761607358752,
+            "message": "2025-10-27T23:22:38.752Z\t60e3bc14-937e-456e-8204-5dd365ddc17f\tINFO\tConfirmation email sent to shanejade826@gmail.com\n",
+            "ingestionTime": 1761607363942,
+            "eventId": "39285156847384876905879077957640045977024259407675850757"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]a82d36af0d6042c2a75f79a32c963be4",
+            "timestamp": 1761607720119,
+            "message": "2025-10-27T23:28:40.119Z\t1af1ec1f-1bdc-4abf-88f9-8513d2367ad0\tINFO\tConfirmation email sent to apoorva.kapoor03@gmail.com\n",
+            "ingestionTime": 1761607727226,
+            "eventId": "39285164906138267063294771184161582053370102909748772866"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]0110c90909ec483f99e30c8f520f20c8",
+            "timestamp": 1761608439148,
+            "message": "2025-10-27T23:40:39.148Z\td01d4642-962b-46c5-b242-f7e79e110159\tINFO\tConfirmation email sent to morrison.felicity@gmail.com\n",
+            "ingestionTime": 1761608448171,
+            "eventId": "39285180941020786417570198891016516692773091512442290176"
+        },
+        {
+            "logStreamName": "2025/10/27/[$LATEST]1b8efbeb59884ab1ab727b2d3ed8cc26",
+            "timestamp": 1761608867324,
+            "message": "2025-10-27T23:47:47.324Z\tf4a9a828-6ed6-4ed1-a66f-6bfe6594d812\tINFO\tConfirmation email sent to lily.moore1994@gmail.com\n",
+            "ingestionTime": 1761608872123,
+            "eventId": "39285190489664662543618293653740802972737634612137361413"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]4b7c3ef84de741699d577cd4a2b75285",
+            "timestamp": 1761616343382,
+            "message": "2025-10-28T01:52:23.382Z\t6ef0551a-d6d2-4e59-861f-a2ebca4a509d\tINFO\tConfirmation email sent to caitlin_burns@hotmail.com.au\n",
+            "ingestionTime": 1761616352242,
+            "eventId": "39285357211329209980071684959888486234109968438527393793"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]c0a813671e18402fb0a99f4c53495ff2",
+            "timestamp": 1761616970857,
+            "message": "2025-10-28T02:02:50.857Z\tabad45c3-4a10-4e79-a850-42a8a76c34bf\tINFO\tConfirmation email sent to Laura.agar88@gmail.com\n",
+            "ingestionTime": 1761616975536,
+            "eventId": "39285371204489303428074441448529739791343525690750730245"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]c0a813671e18402fb0a99f4c53495ff2",
+            "timestamp": 1761617016147,
+            "message": "2025-10-28T02:03:36.147Z\tdab7d37b-0fd6-44cd-9124-2fe3709698f9\tINFO\tConfirmation email sent to lily.moore1994@gmail.com\n",
+            "ingestionTime": 1761617022438,
+            "eventId": "39285372214490053469526363585383552449420020111040970757"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]047974d0b84d45ca8d7183d0b415c9de",
+            "timestamp": 1761620868780,
+            "message": "2025-10-28T03:07:48.780Z\tc6a12b4a-dd42-458a-845b-3e450d7d8d56\tINFO\tConfirmation email sent to sallyann88@hotmail.com\n",
+            "ingestionTime": 1761620870562,
+            "eventId": "39285458131076929920156593881659066259464645611041849350"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]7ca169ad22b049369f936b45cf3d174e",
+            "timestamp": 1761641408141,
+            "message": "2025-10-28T08:50:08.141Z\tf959a151-c447-442c-aa91-36b010e14f46\tINFO\tConfirmation email sent to thenikodems@outlook.com\n",
+            "ingestionTime": 1761641408269,
+            "eventId": "39285916174133131557294877666435256191634179561274015750"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]f90656027c5849259e266e6885fabcb9",
+            "timestamp": 1761644232923,
+            "message": "2025-10-28T09:37:12.923Z\t7e65b118-609e-4fe0-bd3d-5e504e8d4772\tINFO\tConfirmation email sent to delph112@hotmail.com\n",
+            "ingestionTime": 1761644241463,
+            "eventId": "39285979168876754953025580085105584303305635637623455745"
+        },
+        {
+            "logStreamName": "2025/10/28/[$LATEST]b59c467edc5f48189dd9696dcd1947a6",
+            "timestamp": 1761694172287,
+            "message": "2025-10-28T23:29:32.287Z\t68707b1a-3c63-443a-a15f-02598a2f58e3\tINFO\tConfirmation email sent to sarahtoivonen@outlook.com\n",
+            "ingestionTime": 1761694175639,
+            "eventId": "39287092853908695626079852427574194723474669401118408710"
+        },
+        {
+            "logStreamName": "2025/10/29/[$LATEST]f2325d1e88d14e3a891dee208fcc0acc",
+            "timestamp": 1761697984726,
+            "message": "2025-10-29T00:33:04.726Z\t2d9480b2-fc1b-4fa0-ad31-1091741b5486\tINFO\tConfirmation email sent to a.martina.danielsson@gmail.com\n",
+            "ingestionTime": 1761697985242,
+            "eventId": "39287177874139419566970216126394012523549483527320567814"
+        },
+        {
+            "logStreamName": "2025/10/29/[$LATEST]509f1ea7eedb4aac856c9ce697e2fc39",
+            "timestamp": 1761703386229,
+            "message": "2025-10-29T02:03:06.229Z\t7c58b9d1-8013-479c-ba09-bfffea7ceec1\tINFO\tConfirmation email sent to darrenbond86@hotmail.com\n",
+            "ingestionTime": 1761703394987,
+            "eventId": "39287298331681511665726713540981040467227838391209099265"
+        },
+        {
+            "logStreamName": "2025/10/29/[$LATEST]fe58a4a6cc564ef589f4f5f4c4330132",
+            "timestamp": 1761729365160,
+            "message": "2025-10-29T09:16:05.160Z\t5faddeff-9722-49c2-ad4c-d613b2c3bc1d\tINFO\tConfirmation email sent to embo18@hotmail.com\n",
+            "ingestionTime": 1761729374181,
+            "eventId": "39287877681202272874086725907558893993247472537993281536"
+        },
+        {
+            "logStreamName": "2025/10/29/[$LATEST]73ecbcfb3ad947c680bf4b3709891e71",
+            "timestamp": 1761734472955,
+            "message": "2025-10-29T10:41:12.955Z\tc5537aad-7424-43ca-b87f-92e69e2e9f7c\tINFO\tConfirmation email sent to christine18@live.com.au\n",
+            "ingestionTime": 1761734477954,
+            "eventId": "39287991588837094202810961298075662481578797790983684101"
+        },
+        {
+            "logStreamName": "2025/10/29/[$LATEST]7eb292bf7fa245f7abe9b6b9fbfc1e05",
+            "timestamp": 1761776469834,
+            "message": "2025-10-29T22:21:09.834Z\ta0334d72-f452-4196-b755-c2e3a9038112\tINFO\tConfirmation email sent to bonitamclean@yahoo.com.au\n",
+            "ingestionTime": 1761776474323,
+            "eventId": "39288928150534806724368881744005042962599002539439489029"
+        },
+        {
+            "logStreamName": "2025/10/30/[$LATEST]74561516b0d042288bf8e273bfebc777",
+            "timestamp": 1761805463326,
+            "message": "2025-10-30T06:24:23.326Z\te9433a87-1234-4477-963d-1f5263944cd6\tINFO\tConfirmation email sent to maddy.stephen21@gmail.com\n",
+            "ingestionTime": 1761805470279,
+            "eventId": "39289574727012314360402725928680178937997726624917159938"
+        },
+        {
+            "logStreamName": "2025/10/30/[$LATEST]3c43cab7379f436dada17cb2bb1e8819",
+            "timestamp": 1761854215445,
+            "message": "2025-10-30T19:56:55.445Z\t100f82ba-a753-4812-bab0-ce05e2cc50bd\tINFO\tConfirmation email sent to ellyjbramston@outlook.com\n",
+            "ingestionTime": 1761854222425,
+            "eventId": "39290661935596021803967325169588110402342332854634741762"
+        },
+        {
+            "logStreamName": "2025/10/31/[$LATEST]d78c2cd4f0c84be2adf857f84cb57888",
+            "timestamp": 1761884566145,
+            "message": "2025-10-31T04:22:46.145Z\t4df32718-1b0a-48cd-ac37-ff1a3c97e083\tINFO\tConfirmation email sent to stephanie.cai1994@gmail.com\n",
+            "ingestionTime": 1761884570994,
+            "eventId": "39291338778823318847351143666881419913145247418449723397"
+        },
+        {
+            "logStreamName": "2025/11/02/[$LATEST]50ea296b025141218a06cd3ff612b8fc",
+            "timestamp": 1762118022374,
+            "message": "2025-11-02T21:13:42.374Z\t9c78e5d7-cd57-44ed-b539-812729ed1993\tINFO\tConfirmation email sent to georgi_lamb@hotmail.com\n",
+            "ingestionTime": 1762118029292,
+            "eventId": "39296545026701257662971068962702787581807896570036027394"
+        },
+        {
+            "logStreamName": "2025/11/02/[$LATEST]2f774a84e6074b9697791533538e83e0",
+            "timestamp": 1762122667186,
+            "message": "2025-11-02T22:31:07.186Z\te5200a68-d106-4629-a8ab-446cf561ae96\tINFO\tConfirmation email sent to therizzutos21@gmail.com\n",
+            "ingestionTime": 1762122674083,
+            "eventId": "39296648609470164740391809860712852104182259736746262530"
+        },
+        {
+            "logStreamName": "2025/11/05/[$LATEST]311e788c27e44bf9bf63e284b19f7591",
+            "timestamp": 1762319685515,
+            "message": "2025-11-05T05:14:45.515Z\t8f4870de-b6b6-4874-981d-8eecdf3d4d37\tINFO\tConfirmation email sent to emaxwell90@hotmail.com\n",
+            "ingestionTime": 1762319694537,
+            "eventId": "39301042265024634017018722141534810009105128545300971520"
+        },
+        {
+            "logStreamName": "2025/11/05/[$LATEST]eb5ff41f5d01458e813ff4e99aeb7974",
+            "timestamp": 1762331492477,
+            "message": "2025-11-05T08:31:32.477Z\te5b542f8-a969-4d7d-9f01-1196714ed1a3\tINFO\tConfirmation email sent to Karissajsmith@outlook.com\n",
+            "ingestionTime": 1762331501257,
+            "eventId": "39301305569075764750542004847830793545057868859846361089"
+        },
+        {
+            "logStreamName": "2025/11/05/[$LATEST]47da9248883c4a0ea7216d5df155d0bb",
+            "timestamp": 1762379337555,
+            "message": "2025-11-05T21:48:57.555Z\t2a1ec895-1bc3-4c02-85a4-07716e00d60d\tINFO\tConfirmation email sent to jgoldsche@yahoo.com\n",
+            "ingestionTime": 1762379340564,
+            "eventId": "39302372549969246573691658063484523317364265514336976902"
+        },
+        {
+            "logStreamName": "2025/11/06/[$LATEST]b8a3231a9362471ca0b9725f7012d3e0",
+            "timestamp": 1762389423480,
+            "message": "2025-11-06T00:37:03.480Z\t6bb41c7a-17db-4c10-8279-0ea91fbcaa5a\tINFO\tConfirmation email sent to kahli.roach@yahoo.com\n",
+            "ingestionTime": 1762389430481,
+            "eventId": "39302597473612763063666879055085354773416810420469432322"
+        },
+        {
+            "logStreamName": "2025/11/06/[$LATEST]b8a3231a9362471ca0b9725f7012d3e0",
+            "timestamp": 1762389546739,
+            "message": "2025-11-06T00:39:06.739Z\t17782f31-e63b-4388-b9d5-e0c5156fc864\tINFO\tConfirmation email sent to marie.watling@hotmail.com\n",
+            "ingestionTime": 1762389552944,
+            "eventId": "39302600222380315489352957005685016846173151911596589061"
+        },
+        {
+            "logStreamName": "2025/11/06/[$LATEST]fdbdd10284344f63bc88b4e5ad506d56",
+            "timestamp": 1762407092171,
+            "message": "2025-11-06T05:31:32.171Z\tcb03f6fb-b262-4c6e-b625-b4b49bc59075\tINFO\tConfirmation email sent to fleur@preneurgroup.com\n",
+            "ingestionTime": 1762407099151,
+            "eventId": "39302991498588745634901225659068339119727790310610173954"
+        },
+        {
+            "logStreamName": "2025/11/06/[$LATEST]d904caa39a094e49925356eccb37cbc8",
+            "timestamp": 1762420717300,
+            "message": "2025-11-06T09:18:37.300Z\t6f5b094e-75eb-484f-8048-81858c5ead6b\tINFO\tConfirmation email sent to michael_atto@hotmail.com\n",
+            "ingestionTime": 1762420724242,
+            "eventId": "39303295349118871745251995940211943291367005884790603778"
+        },
+        {
+            "logStreamName": "2025/11/07/[$LATEST]e79d414d00e54bb9b5c229fe981e9c66",
+            "timestamp": 1762506051674,
+            "message": "2025-11-07T09:00:51.674Z\t8f23493b-9661-44f2-a117-5ad87d22da0e\tINFO\tConfirmation email sent to stacey.peters@golf.org.au\n",
+            "ingestionTime": 1762506053940,
+            "eventId": "39305198369250121861697711961404270072632704709268078598"
+        }
+    ],
+    "searchedLogStreams": []
+}

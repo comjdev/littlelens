@@ -6,8 +6,10 @@ const fs = require("fs");
 const path = require("path");
 const handlebars = require("handlebars");
 const { SESClient, SendEmailCommand } = require("@aws-sdk/client-ses");
+const Stripe = require("stripe");
 
 const ALLOWED_ORIGINS = ["http://localhost:4000", "https://littlelens.com.au"];
+const BASE_URL = "https://littlelens.com.au";
 const REQUIRED_FIELDS = [
   "centre-name",
   "photo-day",
@@ -21,88 +23,303 @@ const REQUIRED_FIELDS = [
 ];
 
 exports.handler = async (event) => {
-  const origin = event.headers?.origin || "";
+  console.log("Received request:", {
+    httpMethod: event.httpMethod,
+    headers: event.headers,
+    origin: event.headers?.origin || event.headers?.Origin || "",
+  });
+
+  const origin = event.headers?.origin || event.headers?.Origin || "";
 
   if (event.httpMethod === "OPTIONS") {
+    console.log("Handling OPTIONS preflight request");
     return {
       statusCode: 200,
       headers: getCorsHeaders(origin),
-      body: "",
+      body: JSON.stringify({ message: "CORS preflight" }),
     };
   }
 
+  return {
+    statusCode: 410,
+    headers: getCorsHeaders(origin),
+    body: JSON.stringify({
+      message: "Registration now requires payment. Please use checkout flow.",
+    }),
+  };
+};
+
+/**
+ * Lambda handler for creating Stripe Checkout sessions
+ * Configure Lambda to use: index.createCheckoutSession
+ */
+exports.createCheckoutSession = async (event) => {
+  const origin = event.headers?.origin || event.headers?.Origin || "";
+  const httpMethod = event.requestContext?.http?.method || event.httpMethod;
+
+  if (httpMethod === "OPTIONS") {
+    return {
+      statusCode: 200,
+      headers: getCorsHeaders(origin),
+      body: JSON.stringify({ message: "CORS preflight" }),
+    };
+  }
+
+  if (httpMethod !== "POST") {
+    return {
+      statusCode: 405,
+      headers: getCorsHeaders(origin),
+      body: JSON.stringify({ message: "Method not allowed" }),
+    };
+  }
+
+  const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
+
+  if (!stripeSecretKey) {
+    console.error("Missing STRIPE_SECRET_KEY env var");
+    return {
+      statusCode: 500,
+      headers: getCorsHeaders(origin),
+      body: JSON.stringify({ message: "Server configuration error" }),
+    };
+  }
+  console.log("Stripe key prefix:", stripeSecretKey.substring(0, 7));
+
+  let data;
   try {
     if (!event.body) {
-      console.warn("No body in request");
       return {
         statusCode: 400,
         headers: getCorsHeaders(origin),
         body: JSON.stringify({ message: "Missing request body" }),
       };
     }
+    data = JSON.parse(event.body);
+  } catch (parseError) {
+    return {
+      statusCode: 400,
+      headers: getCorsHeaders(origin),
+      body: JSON.stringify({ message: "Invalid JSON body" }),
+    };
+  }
 
-    const data = JSON.parse(event.body);
+  const requiredFields = ["childName", "parentName", "parentEmail", "centreName"];
+  const missingFields = requiredFields.filter(
+    (field) => !data[field] || (typeof data[field] === "string" && !data[field].trim())
+  );
 
-    // Generate or use provided idempotency key
-    const idempotencyKey =
-      event.headers["x-idempotency-key"] || crypto.randomUUID();
-    console.log("Processing request with idempotency key:", idempotencyKey);
+  if (missingFields.length > 0) {
+    return {
+      statusCode: 400,
+      headers: getCorsHeaders(origin),
+      body: JSON.stringify({
+        message: `Missing required fields: ${missingFields.join(", ")}`,
+      }),
+    };
+  }
 
-    // Check if this idempotency key has already been processed
-    const isDuplicate = await checkDuplicateSubmission(idempotencyKey);
-    if (isDuplicate) {
-      console.log("Duplicate submission detected for key:", idempotencyKey);
-      return {
-        statusCode: 200,
-        headers: getCorsHeaders(origin),
-        body: JSON.stringify({
-          message: "Form already submitted successfully!",
-        }),
-      };
-    }
+  const siblings = Array.isArray(data.siblings) ? data.siblings : [];
+  const childrenCount = 1 + siblings.length;
 
-    const missingFields = REQUIRED_FIELDS.filter((field) => !data[field]);
-    if (missingFields.length > 0) {
-      console.warn("Missing required fields:", missingFields);
-      return {
-        statusCode: 400,
-        headers: getCorsHeaders(origin),
-        body: JSON.stringify({
-          message: `Missing required fields: ${missingFields.join(", ")}`,
-        }),
-      };
-    }
+  const metadata = {
+    childName: String(data.childName).trim(),
+    parentName: String(data.parentName).trim(),
+    parentEmail: String(data.parentEmail).trim(),
+    centreName: String(data.centreName).trim(),
+    siblings: JSON.stringify(siblings),
+    childrenCount: String(childrenCount),
+  };
+  if (data.photoDay) metadata.photoDay = String(data.photoDay).trim();
+  if (data.room) metadata.room = String(data.room).trim();
+  if (data.parentPhone) metadata.parentPhone = String(data.parentPhone).trim();
+  if (data.childFirstname) metadata.childFirstname = String(data.childFirstname).trim();
+  if (data.childLastname) metadata.childLastname = String(data.childLastname).trim();
+  if (data.parentFirstname) metadata.parentFirstname = String(data.parentFirstname).trim();
+  if (data.parentLastname) metadata.parentLastname = String(data.parentLastname).trim();
 
-    // Write to Google Sheets and send email
-    console.log("Writing to Google Sheets and sending email...");
-    await Promise.all([
-      writeToGoogleSheet(data, idempotencyKey),
-      sendEmail(data),
-    ]);
+  try {
+    const stripe = new Stripe(stripeSecretKey);
 
-    console.log("Form submission and Google Sheet successful");
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          price_data: {
+            currency: "aud",
+            product_data: {
+              name: "Childcare Photography Registration Deposit",
+            },
+            unit_amount: 2500,
+          },
+          quantity: childrenCount,
+        },
+      ],
+      success_url: `${BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${BASE_URL}/cancel`,
+      metadata,
+    });
+
     return {
       statusCode: 200,
       headers: getCorsHeaders(origin),
-      body: JSON.stringify({ message: "Form submitted successfully!" }),
+      body: JSON.stringify({ url: session.url }),
     };
-  } catch (error) {
-    console.error("Unexpected error in Lambda:", error);
+  } catch (stripeError) {
+    console.error("Stripe error:", stripeError);
+
+    const statusCode = stripeError.statusCode || 500;
+    const message =
+      stripeError.message || "Failed to create checkout session";
+
     return {
-      statusCode: 500,
+      statusCode,
       headers: getCorsHeaders(origin),
-      body: JSON.stringify({ message: "Error processing form." }),
+      body: JSON.stringify({ message }),
     };
   }
 };
 
-function getCorsHeaders(origin) {
-  const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : "";
-  return {
-    "Access-Control-Allow-Origin": allowedOrigin,
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
+/**
+ * Stripe webhook Lambda handler
+ * Only registers child AFTER payment is confirmed via checkout.session.completed
+ * Configure Lambda to use: index.stripeWebhook
+ *
+ * API Gateway: Enable raw body passthrough, disable automatic JSON parsing
+ */
+exports.stripeWebhook = async (event) => {
+  const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+
+  if (!stripeSecretKey || !webhookSecret) {
+    console.error("Missing STRIPE_SECRET_KEY or STRIPE_WEBHOOK_SECRET");
+    return { statusCode: 500, body: "Server configuration error" };
+  }
+  console.log("Stripe key prefix:", stripeSecretKey.substring(0, 7));
+
+  let rawBody = event.body;
+  if (!rawBody) {
+    return { statusCode: 400, body: "Missing body" };
+  }
+
+  if (event.isBase64Encoded) {
+    rawBody = Buffer.from(rawBody, "base64").toString("utf8");
+  }
+
+  const signature =
+    event.headers?.["stripe-signature"] ||
+    event.headers?.["Stripe-Signature"];
+  if (!signature) {
+    return { statusCode: 400, body: "Missing Stripe-Signature header" };
+  }
+
+  let stripeEvent;
+  try {
+    stripeEvent = Stripe.webhooks.constructEvent(
+      rawBody,
+      signature,
+      webhookSecret
+    );
+  } catch (err) {
+    console.error("Stripe signature verification failed:", err.message);
+    return { statusCode: 400, body: "Invalid signature" };
+  }
+
+  if (stripeEvent.type !== "checkout.session.completed") {
+    return { statusCode: 200, body: "OK" };
+  }
+
+  const session = stripeEvent.data.object;
+  const metadata = session.metadata || {};
+
+  let siblings = [];
+  try {
+    const parsed = metadata.siblings ? JSON.parse(metadata.siblings) : [];
+    siblings = Array.isArray(parsed) ? parsed : [];
+  } catch (e) {
+    siblings = [];
+  }
+
+  const childName = metadata.childName || "";
+  const parentName = metadata.parentName || "";
+  const parentEmail = metadata.parentEmail || "";
+  const centreName = metadata.centreName || "";
+  const paymentIntent = session.payment_intent || "";
+
+  if (!childName || !parentEmail || !centreName) {
+    console.error("Missing required metadata in checkout session");
+    return { statusCode: 200, body: "OK" };
+  }
+
+  const childFirst =
+    metadata.childFirstname ||
+    childName.trim().split(/\s+/)[0] ||
+    "";
+  const childLastName =
+    metadata.childLastname ||
+    childName.trim().split(/\s+/).slice(1).join(" ") ||
+    "";
+  const parentFirst =
+    metadata.parentFirstname ||
+    parentName.trim().split(/\s+/)[0] ||
+    "";
+  const parentLastName =
+    metadata.parentLastname ||
+    parentName.trim().split(/\s+/).slice(1).join(" ") ||
+    "";
+
+  const idempotencyKey = session.id || paymentIntent || crypto.randomUUID();
+
+  const isDuplicate = await checkDuplicateSubmission(idempotencyKey);
+  if (isDuplicate) {
+    console.log("Duplicate webhook for session:", idempotencyKey);
+    return { statusCode: 200, body: "OK" };
+  }
+
+  const data = {
+    "centre-name": centreName,
+    "photo-day": metadata.photoDay || "",
+    "room": metadata.room || "",
+    "child-firstname": childFirst,
+    "child-lastname": childLastName,
+    "parent-firstname": parentFirst,
+    "parent-lastname": parentLastName,
+    "parent-email": parentEmail,
+    "parent-phone": metadata.parentPhone || "",
+    "message": "",
+    "siblings": siblings,
   };
+
+  try {
+    await Promise.all([
+      writeToGoogleSheet(data, idempotencyKey),
+      sendEmail(data),
+    ]);
+    console.log("Registration completed after payment:", parentEmail);
+    return { statusCode: 200, body: "OK" };
+  } catch (error) {
+    console.error("Failed to register after payment:", error);
+    throw error;
+  }
+};
+
+function getCorsHeaders(origin) {
+  console.log("Getting CORS headers for origin:", origin);
+  console.log("Allowed origins:", ALLOWED_ORIGINS);
+
+  const allowedOrigin = ALLOWED_ORIGINS.includes(origin)
+    ? origin
+    : ALLOWED_ORIGINS[1]; // Default to production URL
+  const headers = {
+    "Access-Control-Allow-Origin": allowedOrigin,
+    "Access-Control-Allow-Headers":
+      "Content-Type, x-idempotency-key, X-Requested-With",
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Max-Age": "86400", // 24 hours
+  };
+
+  console.log("Returning CORS headers:", headers);
+  return headers;
 }
 
 async function checkDuplicateSubmission(idempotencyKey) {
@@ -118,7 +335,7 @@ async function checkDuplicateSubmission(idempotencyKey) {
     });
 
     const spreadsheetId = "1ehUmTJyxkOS9F2fLIkgrdpuMbM0VIsNxvfmCB_kX-B4";
-    const range = "Registrations!Q:Q"; // Check column Q for idempotency keys
+    const range = "Registrations!P:P"; // Check column P for idempotency keys
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId,
@@ -136,6 +353,40 @@ async function checkDuplicateSubmission(idempotencyKey) {
   }
 }
 
+function getInitials(value) {
+  if (!value || typeof value !== "string") {
+    return "";
+  }
+
+  return value
+    .split(/[^A-Za-z]+/)
+    .filter(Boolean)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+}
+
+function generateRandomString(length) {
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz123456789";
+  const bytes = crypto.randomBytes(length);
+  let result = "";
+
+  for (let i = 0; i < length; i++) {
+    const index = bytes[i] % alphabet.length;
+    result += alphabet[index];
+  }
+
+  return result;
+}
+
+function generatePassword(centreName, childFirstName, childLastName) {
+  const centreInitials = getInitials(centreName);
+  const childInitials =
+    getInitials(childFirstName) + getInitials(childLastName);
+  const randomPart = generateRandomString(6);
+
+  return `${centreInitials}${childInitials}${randomPart}`;
+}
+
 async function writeToGoogleSheet(data, idempotencyKey) {
   try {
     const auth = new google.auth.GoogleAuth({
@@ -150,39 +401,40 @@ async function writeToGoogleSheet(data, idempotencyKey) {
     const spreadsheetId = "1ehUmTJyxkOS9F2fLIkgrdpuMbM0VIsNxvfmCB_kX-B4";
     const range = "Registrations";
 
-    // Prepare base data that will be reused
-    const baseData = [
-      data["centre-name"],
-      data["photo-day"],
-      data["parent-firstname"],
-      data["parent-lastname"],
-      data["parent-email"],
-      data["parent-phone"],
-      data["message"] || "",
-      data["permission-to-share"] || "",
-      data["family-photos"] || "no",
-      new Date().toLocaleString("en-AU", { timeZone: "Australia/Melbourne" }),
-      idempotencyKey, // Column Q: idempotency key
-    ];
+    const timestamp = new Date().toLocaleString("en-AU", {
+      timeZone: "Australia/Melbourne",
+    });
 
     const values = [];
 
     // 1. Main child row
+    const primarySibling =
+      Array.isArray(data["siblings"]) && data["siblings"].length > 0
+        ? data["siblings"][0]
+        : null;
+
     const mainChildRow = [
-      ...baseData.slice(0, 2), // centre-name, photo-day
+      data["centre-name"], // centre-name
+      data["photo-day"], // photo-day
       data["child-firstname"], // child-firstname
       data["child-lastname"], // child-lastname
       data["room"], // room
-      ...baseData.slice(2, 4), // parent-firstname, parent-lastname
-      ...baseData.slice(4, 6), // parent-email, parent-phone
-      ...baseData.slice(6, 7), // message
-      data["siblings"] && data["siblings"].length > 0
-        ? data["siblings"][0].firstname
-        : "", // sibling-firstname (first sibling if exists)
-      data["siblings"] && data["siblings"].length > 0
-        ? data["siblings"][0].lastname
-        : "", // sibling-lastname (first sibling if exists)
-      ...baseData.slice(7), // permission-to-share, family-photos, timestamp, idempotency-key
+      data["parent-firstname"], // parent-firstname
+      data["parent-lastname"], // parent-lastname
+      data["parent-email"], // parent-email
+      data["parent-phone"], // parent-phone
+      data["message"] || "", // message
+      primarySibling ? primarySibling.firstname : "", // sibling-firstname
+      primarySibling ? primarySibling.lastname : "", // sibling-lastname
+      data["permission-to-share"] || "", // permission-to-share
+      data["family-photos"] || "no", // family-photos
+      timestamp, // timestamp
+      idempotencyKey, // Column P: idempotency key
+      generatePassword(
+        data["centre-name"],
+        data["child-firstname"],
+        data["child-lastname"]
+      ), // Column Q: password
     ];
     values.push(mainChildRow);
 
@@ -190,32 +442,50 @@ async function writeToGoogleSheet(data, idempotencyKey) {
     if (data["siblings"] && data["siblings"].length > 0) {
       data["siblings"].forEach((sibling) => {
         const siblingRow = [
-          ...baseData.slice(0, 2), // centre-name, photo-day
+          data["centre-name"], // centre-name
+          data["photo-day"], // photo-day
           sibling.firstname, // child-firstname (sibling's name)
           sibling.lastname, // child-lastname (sibling's name)
-          sibling.room, // room (sibling's room)
-          ...baseData.slice(2, 4), // parent-firstname, parent-lastname
-          ...baseData.slice(4, 6), // parent-email, parent-phone
-          ...baseData.slice(6, 7), // message
+          sibling.room || "", // room (sibling's room)
+          data["parent-firstname"], // parent-firstname
+          data["parent-lastname"], // parent-lastname
+          data["parent-email"], // parent-email
+          data["parent-phone"], // parent-phone
+          data["message"] || "", // message
           data["child-firstname"], // sibling-firstname (main child's name)
           data["child-lastname"], // sibling-lastname (main child's name)
-          ...baseData.slice(7), // permission-to-share, family-photos, timestamp, idempotency-key
+          data["permission-to-share"] || "", // permission-to-share
+          data["family-photos"] || "no", // family-photos
+          timestamp, // timestamp
+          idempotencyKey, // Column P: idempotency key
+          generatePassword(
+            data["centre-name"],
+            sibling.firstname,
+            sibling.lastname
+          ), // Column Q: password
         ];
         values.push(siblingRow);
       });
 
       // 3. Family row (if there are siblings)
       const familyRow = [
-        ...baseData.slice(0, 2), // centre-name, photo-day
+        data["centre-name"], // centre-name
+        data["photo-day"], // photo-day
         "Family", // child-firstname
         data["child-lastname"], // child-lastname (main child's lastname)
         data["room"], // room (main child's room)
-        ...baseData.slice(2, 4), // parent-firstname, parent-lastname
-        ...baseData.slice(4, 6), // parent-email, parent-phone
-        ...baseData.slice(6, 7), // message
+        data["parent-firstname"], // parent-firstname
+        data["parent-lastname"], // parent-lastname
+        data["parent-email"], // parent-email
+        data["parent-phone"], // parent-phone
+        data["message"] || "", // message
         data["child-firstname"], // sibling-firstname (main child's name)
         data["child-lastname"], // sibling-lastname (main child's name)
-        ...baseData.slice(7), // permission-to-share, family-photos, timestamp, idempotency-key
+        data["permission-to-share"] || "", // permission-to-share
+        data["family-photos"] || "no", // family-photos
+        timestamp, // timestamp
+        idempotencyKey, // Column P: idempotency key
+        generatePassword(data["centre-name"], "Family", data["child-lastname"]), // Column Q: password
       ];
       values.push(familyRow);
     }
