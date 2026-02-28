@@ -473,7 +473,7 @@
   </p>
 
   <p class="text-sm text-gray-500">
-    <span id="deposit-amount">$25</span> booking deposit for <span id="child-name">your child</span> is required.
+    <span id="deposit-amount">$25</span> booking deposit for <span id="child-name">your child</span> is required, fully credited towards your order.<span id="sibling-session-note" class="hidden"> This includes a separate photo session with each child as well as a sibling photo session.</span>
   </p>
 
   <button
@@ -760,6 +760,7 @@
   const thankYouName = document.getElementById("thank-you-child-name");
   const childNameSpan = document.getElementById("child-name");
   const depositAmountSpan = document.getElementById("deposit-amount");
+  const siblingSessionNote = document.getElementById("sibling-session-note");
   const siblingCheckbox = document.getElementById("sibling");
   const siblingNameContainer = document.getElementById(
     "sibling-name-container",
@@ -913,6 +914,7 @@
     if (thankYouName) thankYouName.textContent = childrenList;
     if (childNameSpan) childNameSpan.textContent = childrenList;
     if (depositAmountSpan) depositAmountSpan.textContent = `$${totalDeposit}`;
+    if (siblingSessionNote) siblingSessionNote.classList.toggle("hidden", siblingNames.length === 0);
 
     // Update placeholders for dynamic blocks
     siblingBlocks.forEach((block, index) => {
