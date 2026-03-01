@@ -8,7 +8,7 @@ summary: My process is simple and easy to follow. I take care of everything, fro
 
 Booking your centre for a fun and stress-free photo experience is easy! Simply get in touch as early as possible to secure your preferred dates. We'll then work together to finalise all the necessary details based on your centre's specific requirements.
 
-Approximately six weeks before your scheduled dates, I'll provide you with posters and flyers with booking in info. This will guide parents through a simple online registration process where they can also select their child's preferred photo day. Importantly, there are absolutely no upfront payments required, just a straightforward registration for each child.
+Approximately six weeks before your scheduled dates, I'll provide you with posters and flyers with booking in info. This will guide parents through a simple online registration process where they can also select their child's preferred photo day. A small booking deposit per child is required when registering; this is fully credited towards their photo order and secures each child's individual session.
 
 Once the photo day is complete, parents will receive individual notifications when their child's gallery is ready for viewing, allowing them to conveniently make their purchases online, with all orders delivered directly to your centre. My primary aim throughout this entire process is to make everything as easy as possible for all staff members and families.
 
@@ -30,8 +30,8 @@ The flow of the day usually begins with the youngest children who are registered
 
 ### The benefits of booking Little Lens as your childcare photographer
 
-Booking me as your childcare photographer brings a wealth of benefits, starting with the reassurance of over ten years of experience specifically photographing children. You can also enjoy a completely stress-free process, as I take care of all the details, and there are no upfront payments required.
+Booking me as your childcare photographer brings a wealth of benefits, starting with the reassurance of over ten years of experience specifically photographing children. You can also enjoy a completely stress-free process, as I take care of all the details, and a small booking deposit per child is required when registering, fully credited towards their photo order.
 
-My approach is always fun and relaxed, ensuring a positive experience for every child. To ensure no one misses out due to attendance schedules, I'm happy to be on-site for the entire week. Families will also appreciate the fast turnaround times, with photos ready to view just 7-10 working days after my last day at your centre, and a range of affordable packages starting from only $30 to suit all budgets.
+My approach is always fun and relaxed, ensuring a positive experience for every child. To ensure no one misses out due to attendance schedules, I'm happy to be on-site for the entire week. Families will also appreciate the fast turnaround times, with photos ready to view just 7-10 working days after my last day at your centre, and a range of affordable packages starting from $45 to suit all budgets.
 
 As a thank you for choosing Little Lens, your centre will receive two printed copies of the class photos for office use, and staff will be provided with high-resolution digital files of their photos, along with 5x7 inch prints.

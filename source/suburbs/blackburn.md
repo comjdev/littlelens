@@ -32,7 +32,7 @@ My **childcare photography** in Blackburn focuses on documenting these real mome
 
 #### Stress-free and simple process for Blackburn families and centres
 
-I understand that time and convenience are important for busy Blackburn families and childcare centres. My **childcare photography** process is designed to be stress-free and simple for everyone involved. There are no upfront payments required for families. You only pay for the beautiful photos you truly love and want to keep, making it an accessible option for all families in Blackburn to cherish these early memories.
+I understand that time and convenience are important for busy Blackburn families and childcare centres. My **childcare photography** process is designed to be stress-free and simple for everyone involved. A small booking deposit per child is required when registering, fully credited towards your photo order. If no order is placed, the deposit covers the reserved session time. You only pay for the beautiful photos you truly love and want to keep, making it an accessible option for all families in Blackburn to cherish these early memories.
 
 #### Beautiful childcare photos for every Blackburn family
 

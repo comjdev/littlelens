@@ -16,7 +16,7 @@ Melbourne, a vibrant and family-friendly city, is filled with bustling childcare
 
 Melbourne, a vibrant and diverse city renowned for its cultural richness and beautiful parks like Fitzroy Gardens and the Royal Botanic Gardens, is home to countless thriving **childcare centres and kindergartens**. For Melbourne families seeking to capture the precious and fleeting moments of their children's early years, my childcare photography services offer a relaxed and joyful approach right within the familiar and safe environment of their centres.
 
-With a focus on natural outdoor photography on the play equipment where children are most comfortable and having fun, I bring over a decade of experience in capturing the unique personalities of little ones. My calm and patient demeanor ensures a positive and enjoyable experience for every child, resulting in authentic and heartwarming photographs that Melbourne families will treasure, all through a simple and stress-free process with no upfront costs.
+With a focus on natural outdoor photography on the play equipment where children are most comfortable and having fun, I bring over a decade of experience in capturing the unique personalities of little ones. My calm and patient demeanor ensures a positive and enjoyable experience for every child, resulting in authentic and heartwarming photographs that Melbourne families will treasure, all through a simple and stress-free process with a small booking deposit per child, fully credited towards your order.
 
 ## Why choose a dedicated Melbourne childcare photographer?
 
@@ -46,7 +46,7 @@ Every child is different, and some may take a little longer to feel comfortable 
 
 ### Stress-free childcare photography for Melbourne families and centres
 
-For busy Melbourne families and childcare centres, convenience and ease are essential. My **childcare photography** services are designed to be as stress-free as possible. There are no upfront payments required from families, and the entire process is managed efficiently in collaboration with the centre staff.
+For busy Melbourne families and childcare centres, convenience and ease are essential. My **childcare photography** services are designed to be as stress-free as possible. A small booking deposit per child is required when registering, fully credited towards your photo order. If no order is placed, the deposit covers the reserved session time. The entire process is managed efficiently in collaboration with the centre staff.
 
 Parents simply register their child, and after the photoshoot, they will have the opportunity to view and purchase the photos they love. This simple and transparent process ensures that capturing these precious early memories is accessible and hassle-free for everyone in the Melbourne community.
 

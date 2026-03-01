@@ -30,7 +30,7 @@ With extensive experience working with children of all ages and personalities, I
 
 I am committed to providing a stress-free and simple **childcare photography** experience for both the childcare centres in Nunawading and the families they serve. The process is designed to be seamless and efficient, minimising disruption to the daily routines of the centres.
 
-Importantly, there are no upfront payments for families. You only pay for the beautiful photos you truly love and want to keep, making professional **childcare photography** accessible to everyone in the Nunawading community.
+A small booking deposit per child is required when registering, fully credited towards your photo order. If no order is placed, the deposit covers the reserved session time. You only pay for the beautiful photos you truly love and want to keep, making professional **childcare photography** accessible to everyone in the Nunawading community.
 
 #### Capturing outdoor adventures in Nunawading childcare centres
 

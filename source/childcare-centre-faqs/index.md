@@ -5,7 +5,7 @@ layout: faqs
 
 # FAQs for Childcare centres
 
-I understand that organising photography for your kinder / childcare centre can bring up a few questions, so I’ve put together some answers to help you and your families feel completely at ease. First off, families only invest in the photos they truly love, paying after they have viewed their child’s images. And don’t worry about handling orders - I take care of everything and prints will be delivered directly to your centre.
+I understand that organising photography for your kinder / childcare centre can bring up a few questions, so I’ve put together some answers to help you and your families feel completely at ease. First off, a small booking deposit per child secures registration and is fully credited towards their photo order. Families then invest in the photos they truly love after viewing their child's images. And don’t worry about handling orders - I take care of everything and prints will be delivered directly to your centre.
 To capture those natural smiles, I prefer outdoor sessions, using the children’s familiar play spaces and beautiful natural light.
 
 You’ll find online galleries ready within 7-10 business days after my last day at your centre, with families receiving clear notifications and a 10-day window for free delivery to your centre. Digital files are available all year and I even provide bright marketing materials to help promote the photo day.
@@ -16,7 +16,7 @@ Staff and class photos are offered, with clear guidelines for scheduling. For th
 
 ### Do families pay upfront?
 
-Families will only invest in photos they truly love. They simply register their child for their session prior to photo day, and payment is due after they've viewed their images and placed an order.
+A small booking deposit per child is required when registering to secure their session. This deposit is fully credited towards their photo order. If no order is placed, the deposit covers the reserved session time. Families then pay for the photos they choose after viewing their gallery.
 
 ### Do we need to organise the photo orders?
 

@@ -5,7 +5,7 @@ layout: faqs
 
 # Information for families
 
-I understand that photo day can bring up a few questions, so I've gathered some helpful information to make the process as smooth as possible First, please register your child online [HERE] to secure their spot and view my package options, which start at just $30. If your little one is unwell, we can reschedule for another day where I’m booked in at your centre.
+I understand that photo day can bring up a few questions, so I've gathered some helpful information to make the process as smooth as possible First, please register your child online [HERE] to secure their spot and view my package options, which start at $45. If your little one is unwell, we can reschedule for another day where I’m booked in at your centre.
 
 I’m pro at working with shy children, creating a relaxed and playful atmosphere. Sibling photos are a special treat, so register them for the same day! For clothing, think comfort, and remember there's no time for outfit changes. If you need help with ordering or downloads, don't hesitate to reach out.
 
@@ -36,7 +36,7 @@ To have your child's individual photo taken, simply complete the online registra
 
 ### What are the prices of photo packages/ Prints?
 
-Pricing is to suit all budgets starting from $30 for a basic package with a selection of 1 photo in various sizes, then the option of bigger packages with more images selected up to full gallery options. A range of prints and digital packages are available. Package pricing is available to view when registering your child online.
+Pricing is to suit all budgets starting from $45 for a basic package with a selection of 1 photo in various sizes, then the option of bigger packages with more images selected up to full gallery options. A range of prints and digital packages are available. Package pricing is available to view when registering your child online.
 
 ### What if my child is absent on photo day?
 
