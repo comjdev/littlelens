@@ -1,54 +1,37 @@
-photopackages:
-  - name: Basic<br>Package 1
-    price: 30
-    text: Choose 1 photo from the gallery
-    features:
-      - One 6x8 inch print
-      - Two 5x7 inch prints
-      - Matching digital file
-
-  - name: Basic<br>Package 2
+collections:
+  - name: MINI COLLECTION
     price: 45
-    text: Choose 1 photo from the gallery
     features:
-      - One 6x8 inch print
-      - Two 5x7 inch prints
-      - Matching digital file
-      - Class photo 8x10 inch print
+      - 1 selected image
+      - Matching high-resolution digital file
+      - Two 5x7 prints
+    description: "A simple way to take home your child's portrait."
+    popular: false
 
-  - name: Multi Image<br>Package 1
-    price: 60
+  - name: CLASSIC COLLECTION
+    price: 95
     features:
-      - 3 ditigal files
-      - matching prints 5x7 inch
+      - 5 selected digital images
+      - Matching 5x7 prints
+      - Class photo (8x10) included
+    description: "Our most loved collection."
+    popular: true
 
-  - name: Multi Image<br>Package 2
-    price: 80
+  - name: COMPLETE COLLECTION
+    price: 155
     features:
-      - 6 ditigal files
-      - matching prints 5x7 inch
+      - All digital images
+      - Two 8x10 enlarged prints
+      - Class photo included
+    description: "Best value for families who love them all."
+    popular: false
 
-digitalpacks:
-  - name: 1 digital file
-    price: 20
-  - name: 5 digital files
-    price: 70
-  - name: 10 digital files
-    price: 110
-  - name: all digital files
-    price: 130
-  - name: Big Package
-    price: 160
+  - name: KEEPSAKE COLLECTION
+    price: 195
     features:
-      - all digital files
-      - one enlarged 8x10 print
-      - class photo 8x10 print
-
-keepsake:
-  - name: Keepsake Albums
-    price: 150
-    text: Choose 12 photos from the gallery
-    features:
-      - 12 prints 5x7 inch
-      - matching digital files
-      - class photo print
+      - 12 selected images
+      - 12 matching 5x7 prints
+      - Matching digital files
+      - Class photo included
+    description: "A beautiful keepsake set."
+    popular: false

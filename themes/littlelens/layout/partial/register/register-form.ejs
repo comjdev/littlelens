@@ -8,20 +8,13 @@
 
   <div class="">
     <p class="block m-0! p-0 text-gray-600">
-      To ensure we can dedicate time and care to every child, a $25 booking
-      deposit per child is required when registering.
+      To give every child a relaxed and personalised experience, a small booking deposit is required when registering.
     </p>
     <p class="block m-0! p-0 text-gray-600">
-      This deposit is <strong>fully credited towards your photo order</strong>, so you won’t pay
-      anything extra when purchasing your photo packages.
+      This deposit is fully credited towards your photo order and simply secures your child's individual session on photo day.
     </p>
     <p class="block m-0! p-0 text-gray-600">
-      If no photo package is ordered, the deposit is retained as a booking
-      commitment.
-    </p>
-    <p class="block m-0! p-0 text-gray-600">
-      This approach allows us to plan photo day efficiently and give every child
-      the attention they deserve.
+      If no order is placed, the deposit covers your child's reserved session time.
     </p>
   </div>
 
@@ -220,11 +213,7 @@
     </div>
 
     <p>
-      If you have more than one child at the centre, simply add all their names
-      when booking. We’ll make sure to capture lovely individual photos as well
-      as sibling photos on
-      <span id="same-day-text"><strong>same day</strong></span
-      >.
+      If you have more than one child enrolled at the centre, simply add all their names when registering. Each child will receive their own individual gallery, and we'll also capture beautiful sibling photos on <span id="same-day-text"><strong>the same day</strong></span> for you to enjoy.
     </p>
 
     <div class="hidden" id="sibling-name-container">
@@ -465,7 +454,9 @@
     class="px-4 py-0 mt-12 mb-2 text-sm text-gray-700 rounded-lg bg-gray-50 border border-gray-200"
   >
     <p class="font-medium mb-1">🔒 Secure payment powered by Stripe</p>
-    <p>💳 $25 per child – fully credited towards your order</p>
+    <p class="mb-1">A $25 booking deposit per child is required to secure your child's individual photo session.</p>
+    <p class="mb-1">This amount is fully credited towards your photo order once galleries are available.</p>
+    <p>If no order is placed, the deposit remains non-refundable as your child's session time has been reserved.</p>
   </div>
 
   <p class="text-sm text-gray-500">
@@ -473,7 +464,7 @@
   </p>
 
   <p class="text-sm text-gray-500">
-    <span id="deposit-amount">$25</span> booking deposit for <span id="child-name">your child</span> is required, fully credited towards your order.<span id="sibling-session-note" class="hidden"> This includes a separate photo session with each child as well as a sibling photo session.</span>
+    <span id="deposit-amount">$25</span> booking deposit for <span id="child-name">your child</span> is required.
   </p>
 
   <button
@@ -535,11 +526,60 @@
 
 <hr class="h-px my-8 bg-gray-200 border-0" />
 
-<div id="single-pricelist-container">
+<!-- Families with More Than One Child -->
+<section
+  id="families-sibling-info-block"
+  class="rounded-xl bg-little-lens-green-50/80 border border-little-lens-green-100 transition-all duration-300 ease-out overflow-hidden max-h-0 opacity-0 pointer-events-none my-0 py-0 px-0"
+  aria-labelledby="families-sibling-info-heading"
+  aria-hidden="true"
+>
+  <div class="flex items-start gap-3 mb-4 p-5 md:p-6">
+    <svg
+      class="w-5 h-5 md:w-6 md:h-6 mt-0.5 shrink-0 text-little-lens-green-600/70"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+    <div>
+      <h3 id="families-sibling-info-heading" class="text-sm font-medium text-gray-900 mb-1">
+        Families with More Than One Child
+      </h3>
+      <p class="text-sm text-gray-600 mb-4">
+        If you are registering siblings:
+      </p>
+      <ul class="space-y-3 text-sm text-gray-700 list-none pl-0">
+        <li class="flex items-start gap-2.5">
+          <span class="mt-1 shrink-0 text-little-lens-green-600/60" aria-hidden="true">•</span>
+          <span>Each child receives their own individual photo session</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="mt-1 shrink-0 text-little-lens-green-600/60" aria-hidden="true">•</span>
+          <span>A sibling photo session is included at no additional cost</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="mt-1 shrink-0 text-little-lens-green-600/60" aria-hidden="true">•</span>
+          <span>You will receive a separate gallery for each child</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="mt-1 shrink-0 text-little-lens-green-600/60" aria-hidden="true">•</span>
+          <span>Sibling images will appear in both galleries for easy ordering</span>
+        </li>
+      </ul>
+      <p class="text-sm text-gray-600 mt-4 pt-2">
+        Many families with siblings choose the Complete Collection for the best overall value.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div id="pricelist-container">
   <%- partial('partial/register/pricelist') %>
-</div>
-<div id="family-pricelist-container" class="hidden">
-  <%- partial('partial/register/family-pricelist') %>
 </div>
 
 <script>
@@ -650,8 +690,6 @@
     const select = document.getElementById("room");
     select.innerHTML =
       "<option disabled selected>Select your child's Group/Room</option>";
-    console.log("populateRoomDropdown", selectedCentre);
-    console.log("bookingsData", bookingsData);
 
     const centre = bookingsData.find((c) => c.Center === selectedCentre);
     if (!centre) return;
@@ -761,13 +799,9 @@
   const DEPOSIT_PER_CHILD = 25;
   const form = document.getElementById("registerForm");
   const childFirstNameInput = document.getElementById("child-firstname");
-  const registerName = document.getElementById("register-name");
   const thankYouName = document.getElementById("thank-you-child-name");
   const childNameSpan = document.getElementById("child-name");
   const depositAmountSpan = document.getElementById("deposit-amount");
-  const siblingSessionNote = document.getElementById("sibling-session-note");
-  const singlePricelistContainer = document.getElementById("single-pricelist-container");
-  const familyPricelistContainer = document.getElementById("family-pricelist-container");
   const siblingCheckbox = document.getElementById("sibling");
   const siblingNameContainer = document.getElementById(
     "sibling-name-container",
@@ -805,11 +839,8 @@
 
     // Re-enable submit button on error
     const submitBtn = form.querySelector('button[type="submit"]');
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML =
-        'Register <span id="register-name">your child</span>';
-    }
+    if (submitBtn) submitBtn.disabled = false;
+    updateChildrenNames();
   };
 
   const handleFormSubmit = async (e) => {
@@ -917,14 +948,28 @@
     const childCount = 1 + siblingNames.length;
     const totalDeposit = DEPOSIT_PER_CHILD * childCount;
 
-    if (registerName) registerName.textContent = childrenList;
     if (thankYouName) thankYouName.textContent = childrenList;
     if (childNameSpan) childNameSpan.textContent = childrenList;
     if (depositAmountSpan) depositAmountSpan.textContent = `$${totalDeposit}`;
-    if (siblingSessionNote) siblingSessionNote.classList.toggle("hidden", siblingNames.length === 0);
-    const hasSiblings = siblingNames.length > 0;
-    if (singlePricelistContainer) singlePricelistContainer.classList.toggle("hidden", hasSiblings);
-    if (familyPricelistContainer) familyPricelistContainer.classList.toggle("hidden", !hasSiblings);
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn && !submitBtn.disabled) {
+      submitBtn.textContent = `Continue to Secure Booking ($${totalDeposit} deposit)`;
+    }
+
+    const hasSiblings = (siblingCheckbox && siblingCheckbox.checked) || siblingNames.length > 0;
+    const familiesInfoBlock = document.getElementById("families-sibling-info-block");
+    if (familiesInfoBlock) {
+      familiesInfoBlock.classList.toggle("max-h-[800px]", hasSiblings);
+      familiesInfoBlock.classList.toggle("opacity-100", hasSiblings);
+      familiesInfoBlock.classList.toggle("pointer-events-auto", hasSiblings);
+      familiesInfoBlock.classList.toggle("my-8", hasSiblings);
+      familiesInfoBlock.classList.toggle("max-h-0", !hasSiblings);
+      familiesInfoBlock.classList.toggle("opacity-0", !hasSiblings);
+      familiesInfoBlock.classList.toggle("pointer-events-none", !hasSiblings);
+      familiesInfoBlock.classList.toggle("my-0", !hasSiblings);
+      familiesInfoBlock.setAttribute("aria-hidden", !hasSiblings);
+    }
 
     // Update placeholders for dynamic blocks
     siblingBlocks.forEach((block, index) => {
@@ -982,6 +1027,8 @@
   siblingFirstNameInput.addEventListener("input", updateChildrenNames);
   siblingCheckbox.addEventListener("change", handleSiblingToggle);
   form.addEventListener("submit", handleFormSubmit);
+
+  updateChildrenNames();
 
   const addSiblingFromTemplate = () => {
     const template = document.getElementById("sibling-template");
