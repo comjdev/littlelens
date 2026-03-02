@@ -136,6 +136,8 @@ exports.createCheckoutSession = async (event) => {
   if (data.childLastname) metadata.childLastname = String(data.childLastname).trim();
   if (data.parentFirstname) metadata.parentFirstname = String(data.parentFirstname).trim();
   if (data.parentLastname) metadata.parentLastname = String(data.parentLastname).trim();
+  if (data.permissionToShare) metadata.permissionToShare = String(data.permissionToShare).trim();
+  if (data.familyPhotos) metadata.familyPhotos = String(data.familyPhotos).trim();
 
   try {
     const stripe = new Stripe(stripeSecretKey);
@@ -288,6 +290,8 @@ exports.stripeWebhook = async (event) => {
     "parent-phone": metadata.parentPhone || "",
     "message": "",
     "siblings": siblings,
+    "permission-to-share": metadata.permissionToShare || "no",
+    "family-photos": metadata.familyPhotos || "no",
   };
 
   try {
