@@ -17,13 +17,13 @@ collections:
     description: "Our most loved collection."
     popular: true
 
-  - name: COMPLETE COLLECTION
+  - name: SIGNATURE PACKAGE
     price: 155
     features:
-      - All digital images
-      - Two 8x10 enlarged prints
-      - Class photo included
-    description: "Best value for families who love them all."
+      - 8 selected digital images
+      - Matching 5x7 prints
+      - Class photo (8x10) included
+    description: "A premium package with your favourite images."
     popular: false
 
   - name: KEEPSAKE COLLECTION
